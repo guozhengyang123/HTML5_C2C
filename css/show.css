@@ -1,0 +1,140 @@
+/* 
+* @Author: anchen
+* @Date:   2016-11-24 13:01:23
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-11-24 13:43:47
+*/
+.scontent{
+    height:1000px;
+    z-index:10;
+    width:987px;
+    position:relative;
+    overflow:hidden;
+    margin:0 auto;
+    margin-top: 10px;
+ }
+.scontentup1{
+    float:left;
+    width:420px;
+    height:440px;
+    background-color:  ;
+    margin-top:20px;
+    padding-top:30px;
+    text-align: center;
+}
+.scontentup1.img{
+    width:450px;
+    height:450px;
+}
+.scontentup1 img:hover{
+    width:470px;
+    height:520px;
+    margin-top:-80px;
+}
+.scontentup2{
+    float:right;
+    width:520px;
+    height:500px;
+     
+    margin-top:20px;
+    padding-top:30px;
+    text-align: left; 
+    padding-left:20px;
+}
+.scontentup2 h2{
+    font-size:20px;
+    color:#ddaa00;
+    font-weight: bold;
+}
+.scontentup2 h3{
+    margin-top:20px;
+}
+.scontentup2 div a{
+
+    font-size:14px;
+    text-align:center;
+}
+.scontentdown1{
+    margin-top:10px;
+}
+.information{
+    font-size:2em;
+    width:100%;
+    height:120px;
+    color:red;
+}
+
+.comment{
+    margin-top:10px;
+    width:100%;
+    height:200px;
+}
+.textarea{
+    width:40%;
+    height:150px;
+}
+
+.content_icon1{
+    float:left;
+    width:110px;
+    height:35px;
+    background-color:#ddaa00;
+    margin-top:80px;
+    margin-left: 50px;
+    color:white;
+    font-size: 16px;
+
+}
+.icon1_left{
+    float:left;
+    margin-top:5px;
+    width:30px;
+    height:35px;
+
+}
+.icon1_right{
+    float:right;
+    margin-top:8px;
+    width:80px;
+    height:35px;
+}
+#main{
+    float:right;
+    width:130px;
+    height:35px;
+    background-color: #aaaaaa;
+    margin-top:80px;
+    margin-right: 100px;
+    color:black;
+    font-size: 16px;
+
+}
+.boxs{
+    float:right;
+    margin-top:8px;
+    margin-right:20px;
+}
+.content_icon3{
+    width:130px;
+    height:35px;
+    margin-top:60px;
+    margin-left:360px;
+    display:inline;
+}
+.content_icon3 a{
+       display:inline;
+       float:left;
+       margin-top: 80px;
+}
+.icon3_left{
+    float:left;
+    width:80px;
+    height:35px;
+}
+.icon3_right{
+    float:right;
+    margin-right:20px;
+    margin-top:-5px;
+    width:30px;
+    height:35px;
+}
