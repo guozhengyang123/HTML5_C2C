@@ -36,35 +36,14 @@
 #my_info{
 	background: #fff;
 	width: 800px;
-	height:600px;
+	height: 400px;
 	margin-top: 20px;
 	padding-bottom: 20px;
 	padding: 40px 60px;
 	margin-left: 15px;
 }
-#my_info ul li img {
-	width:164px;
-	height:224px;
-	margin-right: 233px;
-    border-bottom: 2px dashed #CD853F;
-
-	}
-#my_info ul li a {
-	font-weight:bold;
-	text-align:center;
-	color:#666;
-	width:164px;
-	font-size:14px;
-	display:block;
-	line-height:36px;
-	}
-#my_info li a:hover {
-	color:#ea7c14;
-	}
 #my_info li{
 	list-style: none;
-	float:left;
-	margin-left:60px;
 }
 #account_info h2,#base_info h2{
 	border-bottom:  1px solid #00AC90;
@@ -180,3 +159,47 @@
     margin-top: 7px;
     padding: 0px;
 }
+/*user3*/
+
+/*user4*/
+.enshrine_it{
+	font: 12px "Microsoft YaHei";
+	float: right;
+	margin-right: 50px;
+	display: block;
+	color: #4BC0A5;
+	border: 1px solid #4BC0A5;
+	padding: 3px 16px;
+	-webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    cursor: pointer;
+}
+#my_messages h1 span.enshrine_it:hover{
+	color: #fff;
+	background: #4BC0A5;
+}
+#my_messages{
+	background: #fff;
+	padding-bottom: 20px;
+	padding: 40px 60px 0px 22px ;
+	overflow: hidden;
+}
+#my_messages h1{
+	position: relative;
+	color: #00AC90;
+	border-bottom: 1px solid #00AC90;
+	font: 16px "Microsoft YaHei";
+	padding-bottom: 10px;
+	margin-left:  22px;
+}
+#my_messages h1 span{
+	background: #fff;
+	position: absolute;
+	bottom: -10px;
+	right: -50px;
+}
+
+
+
+
