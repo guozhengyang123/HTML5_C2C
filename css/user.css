@@ -1,4 +1,4 @@
-/*user1*/	
+/*user1*/
 #user_nav{
 	background: #fff;
 	border-top: 3px solid #00AC90;
@@ -22,13 +22,13 @@
 	text-align: center;
 }
 #user_nav li:hover{
-	background: #00AC90; 
+	background: #00AC90;
 }
 #user_nav li:hover a{
 	color: #fff;
 }
 #user_nav li.on{
-	background: #00AC90; 
+	background: #00AC90;
 }
 #user_nav li.on a{
 	color: #fff;
@@ -36,19 +36,40 @@
 #my_info{
 	background: #fff;
 	width: 800px;
-	height: 400px;
+	height:600px;
 	margin-top: 20px;
 	padding-bottom: 20px;
 	padding: 40px 60px;
 	margin-left: 15px;
 }
+#my_info ul li img {
+	width:164px;
+	height:224px;
+	margin-right: 233px;
+	border-bottom: 2px dashed #CD853F;
+
+}
+#my_info ul li a {
+	font-weight:bold;
+	text-align:center;
+	color:#666;
+	width:164px;
+	font-size:14px;
+	display:block;
+	line-height:36px;
+}
+#my_info li a:hover {
+	color:#ea7c14;
+}
 #my_info li{
 	list-style: none;
+	float:left;
+	margin-left:60px;
 }
 #account_info h2,#base_info h2{
 	border-bottom:  1px solid #00AC90;
 	font: 16px "Microsoft YaHei";
-	color: #00AC90; 
+	color: #00AC90;
 	padding-bottom: 7px;
 	width: 480px;
 	margin: 20px 0 0 360px;
@@ -80,21 +101,21 @@
 }
 #my_info .right_info  span{
 	display: inline;
-} 
+}
 #my_info .right_info  input{
 	display: none;
 	border: 1px solid #C4CBCE;
 	-webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    width: 180px;
-    height: 30px;
-    text-indent: 16px;
-    *line-height: 30px;
-} 
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	width: 180px;
+	height: 30px;
+	text-indent: 16px;
+	*line-height: 30px;
+}
 #my_info .right_info  input:focus{
 	border: 1px solid #3CC2A5;
-}  
+}
 
 #base_info{
 	margin-top: 30px;
@@ -114,9 +135,9 @@
 	display: block;
 	border-radius: 13px;
 	-webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    cursor: pointer;
+	-moz-border-radius: 13px;
+	-ms-border-radius: 13px;
+	cursor: pointer;
 }
 #edit_info:hover{
 	background: #4BC0A5;
@@ -129,7 +150,7 @@
 }
 #save_info:hover{
 	background: #fff;
-	color: #4BC0A5; 
+	color: #4BC0A5;
 }
 #img_info{
 	width: 300px;
@@ -140,66 +161,71 @@
 	margin-left: -120px;
 }
 .change_ph {
-    margin-top: -180px;
-    display: none;
+	margin-top: -180px;
+	display: none;
 }
 .img_infos:hover +.change_ph {
-    display: block;
+	display: block;
 }
 
 /*user2*/
 #img_info1{
-    height:180px;
-    width:150px;
-    margin-left: 10px;
-    margin-top: 6px;
-    padding-bottom: 4px;
+	height:180px;
+	width:150px;
+	margin-left: 10px;
+	margin-top: 6px;
+	padding-bottom: 4px;
 }
 #text_info1{
-    margin-top: 7px;
-    padding: 0px;
+	margin-top: 7px;
+	padding: 0px;
 }
 /*user3*/
 
-/*user4*/
-.enshrine_it{
-	font: 12px "Microsoft YaHei";
-	float: right;
-	margin-right: 50px;
-	display: block;
-	color: #4BC0A5;
-	border: 1px solid #4BC0A5;
-	padding: 3px 16px;
-	-webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    cursor: pointer;
-}
-#my_messages h1 span.enshrine_it:hover{
-	color: #fff;
-	background: #4BC0A5;
-}
-#my_messages{
+#my_info{
 	background: #fff;
+	width: 800px;
+	height:900px;
+	margin-top: 20px;
 	padding-bottom: 20px;
-	padding: 40px 60px 0px 22px ;
-	overflow: hidden;
+	padding: 40px 60px;
+	margin-left: 15px;
 }
-#my_messages h1{
-	position: relative;
-	color: #00AC90;
-	border-bottom: 1px solid #00AC90;
-	font: 16px "Microsoft YaHei";
-	padding-bottom: 10px;
-	margin-left:  22px;
+#my_info ul li img {
+	width:140px;
+	height:170px;
+	margin-right: 150px;
+	border-bottom: 2px dashed #CD853F;
+
 }
-#my_messages h1 span{
-	background: #fff;
-	position: absolute;
-	bottom: -10px;
-	right: -50px;
+#my_info ul li a {
+	font-weight:bold;
+	text-align:center;
+	color:#666;
+	width:164px;
+	font-size:14px;
+	display:block;
+	line-height:36px;
 }
-
-
-
-
+#my_info li a:hover {
+	color:#ea7c14;
+}
+#my_info li{
+	list-style: none;
+	float:left;
+	margin-left:20px;
+}
+#img_star1{
+	height:180px;
+	width:150px;
+	margin-left: 10px;
+	margin-top: 6px;
+	padding-bottom: 4px;
+}
+#text_star1{
+	margin-top: 7px;
+	padding: 0px;
+}
+#text_star1 button{
+	color:#00AC90;
+}
