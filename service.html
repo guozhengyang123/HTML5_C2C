@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>大学生校园二手网站</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/show.css" rel="stylesheet" type="text/css">
+<link href="css/news_list_css.css" rel="stylesheet" type="text/css">
+<link href="css/service.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<!--[if !IE]>导航条样式　JS<![endif]-->
+<script type="text/javascript" src="js/thcic_menu.js"></script>
+<script type="text/javascript" src="js/service.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.fly.min.js"></script>
+
+</head>
+<body>
+<div class="header_bg">
+    <div class="logo_search">
+        <div class="logo"><a href="#"><img src="img/logo.png" /></a></div>
+        <div class="search">
+            <ul>
+                <li>
+                 <div style="Z-INDEX:8888;POSITION:absolute;-moz-opacity:0.50;opacity:0.3;filter:alpha(opacity=30);BACKGROUND-COLOR:#000;display:none;" id="show">
+                </div>
+
+                <div class="topDiv" id="show_win">
+                   
+                        <h1>注册</h1>  
+                        
+                        <!-- <div id="register_bottom"> -->
+                            <form method="post" class="form" style="height:500px; width:500px;"> 
+                                
+                                    <h5 style="text-align: center; line-height: 30px; margin-bottom: 10px">欢迎您注册网站会员，如果您已拥有账户，则可在此<a href="#">登录</a></h5>
+                                <table>
+                                    <tr>
+                                        <td>昵称:</td>
+                                        <td><input type="text" class="input_one" required="required"/><b style="margin-left: 6px">*</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>用 户 名:</td><td><input type="text" class="input_one" required="required"/><b style="margin-left: 6px">*</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>设置密码:</td>
+                                        <td><input type="password" class="input_one" required="required"/><b style="margin-left: 6px">*</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>确认密码:</td>
+                                        <td><input type="password" class="input_one" required="required"/><b style="margin-left: 6px">*</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>性别:</td>
+                                        <td><input id="man" type="radio" name="1" />男<input id="woman" type="radio"  name="1"/>女<input id="man" type="radio" checked="checked" name="1" />保密</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>选择省市:</td>
+                                        <td><select name="province" class="input_three" id="selProvince" onChange = "getCity(this.options[this.selectedIndex].value)">  
+                                                </select>  
+                                                <select name="city" class="input_four" id="selCity">  
+                                                    <option>北京</option>  
+                                                </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>学校:</td>
+                                        <td><input type="text" class="input_one"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>E - mail:</td>
+                                        <td><input type="email" class="input_one" class="input_one" name="user_email"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align: center"><input type="checkbox" name="save" value="yes" />已同意<a href="">c2c网站服务条款</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><button class="but" type="submit"><a href="index.html">立即注册</a></button></td>
+                                    </tr>
+                                </table>
+                            </form>
+                      <!--   </div> -->
+                   
+                </div>
+
+                <a href="javascript:void(0);" onclick="javascript:showDiv();">注册 |</a></li>
+                <li><a href="#">登录</a>&nbsp&nbsp</li>
+
+                <li><a href="gwc.html">购物车</a> |</li>
+                <li><a href="user3.html">收藏夹</a> |</li>
+                <li><a href="user1.html">个人中心</a> |</li>
+                <li><a href="#">客户服务</a></li>
+            </ul>
+            <div class="clear"></div>
+            <form>
+                <input name="" type="text" class="intext"/><input name="" type="button" class="inbut" value="" />
+            </form>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!--nav-->
+    <div id="menu">
+            <ul id="nav">
+                  <li id="mainlevel_01" class="mainlevel">
+                  <a href="#">网站首页</a>
+                  </li>
+                  <li id="mainlevel_02" class="mainlevel">
+                  <a href="category.html">书籍报刊</a>
+                    <ul id="sub_02">
+                        <li><a href="category.html">资格证/等级考试</a></li>
+                        <li><a href="#">考研资料</a></li>
+                        <li><a href="#">教科书</a></li>
+                        <li><a href="#">计算机网络</a></li>
+                        <li><a href="#">小说杂志</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                 </li>
+                 <li id="mainlevel_03" class="mainlevel">
+                  <a href="#">闲置日用</a>
+                                      <ul id="sub_03">
+                                            <li><a href="#">卡卷</a></li>
+                                            <li><a href="#">台灯</a></li>
+                                            <li><a href="#">椅子</a></li>
+                                            <li><a href="#">书柜</a></li>
+                                            <li><a href="#">其他</a></li>
+
+                                            </ul>
+                                      </li>
+                 <li id="mainlevel_04" class="mainlevel">
+                  <a href="#">闲置数码</a>
+                                      <ul id="sub_04">
+                                            <li><a href="#">笔记本</a></li>
+                                            <li><a href="#">手机</a></li>
+                                            <li><a href="#">平板</a></li>
+                                            <li><a href="#">移动电源</a></li>
+                                            <li><a href="#">键盘鼠标</a></li>
+                                            <li><a href="#">充电器</a></li>
+                                            <li><a href="#">U盘</a></li>
+                                            <li><a href="#">其他</a></li>
+                                            </ul>
+                                      </li>
+                 <li id="mainlevel_05" class="mainlevel">
+                  <a href="#">影音小家电</a>
+                                      <ul id="sub_05">
+                                            <li><a href="#">小电扇</a></li>
+                                            <li><a href="#">吹风机</a></li>
+                                            <li><a href="#">音箱</a></li>
+                                            <li><a href="#">耳机</a></li>
+                                            <li><a href="#">插线板</a></li>
+                                            <li><a href="#">饮水机</a></li>
+                                            <li><a href="#">其他</a></li>
+                                            </ul>
+                                      </li>
+                 <li id="mainlevel_06" class="mainlevel">
+                  <a href="#">出行娱乐</a>
+                                      <ul id="sub_06">
+                                            <li><a href="#">电车</a></li>
+                                            <li><a href="#">自行车</a></li>
+                                            <li><a href="#">轮滑鞋</a></li>
+                                            <li><a href="#">行李箱</a></li>
+                                            <li><a href="#">帐篷</a></li>
+                                            <li><a href="#">背包</a></li>
+                                            <li><a href="#">其他</a></li>
+                                            </ul>
+                                      </li>
+                <li id="mainlevel_07" class="mainlevel">
+                  <a href="#">失物招领</a>
+                                      
+                </li>
+                <li id="mainlevel_08" class="mainlevel">
+                  <a href="#">Girls</a>
+                </li>
+                
+                                      
+            </ul>
+    </div>
+</div><!--header_bg-->
+
+<!--content-->
+<div class="wrapper">
+        <div class="daohang"> 
+            <img src="img/one_title.png" height="102" width="407">
+                <div class="one_title" >
+                   <a href="#"><img src="img/find.png" class="icons"></a>
+                   <h2>迷路指南：<span><a href="#">首页</a>&gt;&gt;<a href="#">客户服务</a></span></h2>
+                </div>
+        </div>
+        <div class="service">
+            <div class="service_top">
+                <div class="service_top_one">
+                    <p>注册与登录</p> 
+                    <span>
+                    <a href="#" class="tab_1">密码忘记了怎么办</a>|
+                    <a href="#" class="tab_2">怎么进行登陆</a>|
+                    <a href="#" class="tab_3">如何进行注册</a>|
+                    <a href="#" class="tab_4">如何修改昵称</a>
+                    </span>
+                </div>
+                <div class="service_top_two">
+                    <p>信息发布与购买</p> 
+                    <a href="#" class="tab_5">如何发布自己的商品</a>|
+                    <a href="#" class="tab_6">怎样对自己的商品信息进行修改</a>|
+                    <a href="#" class="tab_7">网站发布信息需要收费吗</a>|
+                    <a href="#" class="tab_8">如何进行商品购买</a>           
+                </div>               
+            </div><!--service_top-->
+
+            <div class="service_bottom">
+                <div class="caption caption_1">
+                    <h2>密码忘记了怎么办</h2><br/>
+                    <p>如果您忘记了账号密码，别担心，您可以通过点击“登录”进入快速登录页面,点击该页面“忘记密码”按钮获得。</p>
+                    <p>1、进入到找回密码页面后,如果您曾设置了密保，那么直接在页面中输入密保问题与答案便可找回。</p>
+                    <p>2、如果您没有设置密保，您也可以联系客服帮您重设密码。</p>
+                </div> 
+                <div class="caption caption_2">
+                    <h2>怎么进行登陆</h2><br />
+                    <p>在注册成为本网站用户后，你就可以使用账号进行登录了，下面来看看详细操作：</p>
+                    <p>1、进入本网首页－＞点击右上角“登录” </p>
+                    <p>2、正确输入您的账户、密码与验证码 点击“登录”即可。 </p>
+                    <p>3、恭喜您登陆成功，你可以发布信息或浏览信息，祝您使用愉快 </p>
+                </div> 
+                <div class="caption caption_3">
+                    <h2>如何进行注册</h2><br />
+                    <p>注册其实很简单，只要按照如下提示操作便可。 </p>
+                    <p>1、进入网站首页，点击右上角“注册”按钮； </p>
+                    <p>2、进入到“注册”页面，根据提示信息，填写您的昵称、用户名、密码、邮箱之后，点击“注册”即可。</p>
+                    </p>
+                </div> 
+                <div class="caption caption_4">
+                    <h2>如何修改昵称</h2><br />
+                    <p>如果您想修改昵称、那么下面这些步骤会有帮助哦</p>
+                    <p>1、在本网站进行登陆后，点击右上角的“个人中心”按钮，进入个人资料页面</p>
+                    <p>2、在个人资料页面，点击修改个人资料就可以进行昵称的修改</p>
+                    <p>3、最后保存提交即可</p>
+                </div>  
+                <div class="caption caption_5">
+                    <h2>如何发布自己的商品</h2><br />
+                    <p>如果您想发布自己的商品，跟着我们来一起了解一下吧</p>
+                    <p>1、在登录后，在网页右上角点击个人中心跳转到个人中心页面。</p>
+                    <p>2、在个人中心页面点击我发布的商品进入自己的商品页面。</p>
+                    <p>3、在我的商品页面点击发布商品按钮进行个人商品发布。</p>
+                    <p>4、根据提示填写完整商品信息。</p>
+                    <p>5、商品发布完成了，去看一看自己商品信息是什么样子的吧。</p>
+                </div>
+                <div class="caption caption_6">
+                    <h2>怎样对自己的商品信息进行修改</h2><br />
+                    <p>如果您对自己发布的商品进行信息修改，那么请您了解下面的步骤：</p>
+                    <p>1、在登录后，在网页右上角点击个人中心跳转到个人中心页面。</p>
+                    <p>2、在个人中心页面点击我发布的商品进入自己的商品页面。</p>
+                    <p>3、在我发布的商品一页可查看自己所发布的商品概略，点击想要修改的商品信息，进入信息修改页面</p>
+                    <p>4、根据提示进行商品信息的修改完善，提交保存后即可完成</p>
+                </div>
+                <div class="caption caption_7">
+                    <h2>网站发布信息需要收费吗</h2><br />
+                    <p>1、本站是一个免费的生活信息交流平台。 </p>
+                    <p>2、我们将在很长的一段时间内为广大普通用户提供免费发布生活信息的服务。</p>
+                    <p>3、我们将在开始收费的前一个月，在公告进行通知，现在请您尽情使用吧</p>
+                </div>
+                <div class="caption caption_8">
+                    <h2>如何进行商品购买</h2><br />
+                    <p>1、您可以在进入本网站后对各类商品进行浏览</p>
+                    <p>2、可以在想要选择的商品下进入商品的详情</p>
+                    <p>3、在商品的详情页面可以根据商品现有数量进行购买</p>
+                    <p>4、点击购买后，根据提示填写相关信息后进行网上支付等功能后即可等待卖家发货上门了</p>
+                </div>
+            </div><!--service_bottom-->
+        </div><!--service-->
+    
+        <div class="clear"></div>
+
+</div>    <!--wrapper-->
+    <!--底部-->
+    <footer>
+        <img class="footer-tri" src="img/footer-tri.png">
+        <div class="friend-links">
+            <div class="links-title center">友情链接</div>
+                <ul class="links-wr center">
+                    <li class="first">
+                        <a href="https://2.taobao.com/" target="_blank" class="links">闲鱼网</a>
+                    </li>
+                    <li>
+                        <a href="http://www.ganji.com/" target="_blank" class="links">赶集网</a>
+                    </li>
+                </ul>
+            </div>
+        <div class="site-msg line1">
+            <a class="about" id="fd_footer" href="javascript:;">产品意见反馈</a>
+            <a class="contact" href="http://www.2shoujie.com/open" target="_blank">开通学校|开放平台</a>
+        </div>
+        <div class="site-msg line2">
+            <span class="power">Power By Fighting-group ©2016-2017 奋斗小组 版权所有</span>
+            <span>ICP备14003265号-2</span>
+        </div>
+    </footer>
+
+</body>
+</html>
