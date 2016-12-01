@@ -74,7 +74,7 @@ body {
 	height:26px;
 	background:url(../img/search_bg.png) no-repeat left;
 	border:none;
-	float:left;
+	float:right;
 	line-height:26px;
 	}
 .inbut {
@@ -82,7 +82,7 @@ body {
 	width:36px;
 	height:26px;
 	border:none;
-	float:left;
+	float:right;
 	background:url(../img/search_but.png) no-repeat left;
 	cursor:pointer;
 	}
