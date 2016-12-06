@@ -2,40 +2,63 @@
 * @Author: anchen
 * @Date:   2016-11-24 13:01:23
 * @Last Modified by:   anchen
-* @Last Modified time: 2016-11-24 13:43:47
+* @Last Modified time: 2016-12-01 17:02:13
 */
 .scontent{
-    height:1000px;
+    height:800px;
     z-index:10;
-    width:987px;
+    width:1000px;
     position:relative;
     overflow:hidden;
     margin:0 auto;
-    margin-top: 10px;
+    margin-top: -20px;
  }
+
 .scontentup1{
     float:left;
     width:420px;
-    height:440px;
-    background-color:  ;
+    height:420px;
+   
     margin-top:20px;
-    padding-top:30px;
     text-align: center;
+     margin-left: 10px;
 }
-.scontentup1.img{
-    width:450px;
-    height:450px;
+#bigimg{
+    width:420px;
+    height:360px;
 }
-.scontentup1 img:hover{
-    width:470px;
-    height:520px;
-    margin-top:-80px;
+#litimg1{
+    float:left;
+    width:100px;
+    height:50px;
+    margin-top:10px;
+    margin-left: 1px;
+}
+#litimg2{
+    float:left;
+    width:100px;
+    height:50px;
+    margin-top:10px;
+    margin-left:6px;
+}
+#litimg3{
+   float:left;
+    width:100px;
+    height:50px;
+    margin-top:10px;
+    margin-left:6px;
+}
+#litimg4{
+    float:left;
+    width:100px;
+    height:50px;
+    margin-top:10px;
+    margin-left:6px;
 }
 .scontentup2{
     float:right;
     width:520px;
-    height:500px;
-     
+    height:390px;
     margin-top:20px;
     padding-top:30px;
     text-align: left; 
@@ -45,40 +68,43 @@
     font-size:20px;
     color:#ddaa00;
     font-weight: bold;
+
 }
 .scontentup2 h3{
     margin-top:20px;
+    float:right;
+    margin-right: 20px;
+}
+.content_icon2{
+    margin-top:25px;
+    float:left;
+    margin-left:30px;
+    color:red;
+
+}
+#min{
+    width:25px;
+    margin-right:-6px;
+
+}
+#text_box{
+    width:30px;
+    text-align: center;
+}
+#add{
+    width:25px;
+    margin-left:-6px;
 }
 .scontentup2 div a{
 
     font-size:14px;
     text-align:center;
 }
-.scontentdown1{
-    margin-top:10px;
-}
-.information{
-    font-size:2em;
-    width:100%;
-    height:120px;
-    color:red;
-}
-
-.comment{
-    margin-top:10px;
-    width:100%;
-    height:200px;
-}
-.textarea{
-    width:40%;
-    height:150px;
-}
-
 .content_icon1{
     float:left;
     width:110px;
     height:35px;
-    background-color:#ddaa00;
+    background-color:#ffa07a;
     margin-top:80px;
     margin-left: 50px;
     color:white;
@@ -90,7 +116,6 @@
     margin-top:5px;
     width:30px;
     height:35px;
-
 }
 .icon1_right{
     float:right;
@@ -138,3 +163,162 @@
     width:30px;
     height:35px;
 }
+#scontentbot{
+
+    margin-top:30px;
+    width:990px;
+    height:45px;
+    background-color: #aaaaaa;
+}
+.kefu{
+    float:left;
+    height:350px;
+}
+.kefu h4{
+    width:247px;
+    font-size: 30px;
+    background-color: #aaaaaa;
+    text-align: center;
+    margin-top: 5px;
+}
+.kefu h5{
+    margin-top: 15px;
+    font-size: 20px;
+    color: red;
+    margin-left: 2px;
+}
+.kefu h3{
+    width:247px;
+    font-size: 25px;
+    background-color: ffe4c4;
+    text-align: center;
+    margin-top: 15px;
+}
+.kefu1{
+    height:300px;
+    background-color: #ffe4c4;
+}
+.kefu1 h5{
+    margin-left: 30px;
+    font-size: 15px;
+    background-color: #ffe4c4;
+    padding-top: 13px;
+}
+.kefu p{
+    margin-left: 60px;
+    margin-top: 7px;
+    font-size:0.7em;
+    text-indent: 2em;
+}
+#xiang{
+    height:40px;
+    width:245px;
+    float: left;
+    font-size:30px;
+    text-align: center;
+    margin-top: 5px;
+    background-color: #e6e6fa;
+}
+#mai{
+    height:40px;
+    margin-top: 5px;
+    width:245px;
+    float: left;
+    font-size:30px;
+    text-align: center;
+}
+#bao{
+    float: left;
+    height:40px;
+    width:245px;
+    font-size:30px;
+    text-align: center;
+    margin-top: 5px;
+}
+#scontentbot1{
+    margin-top:20px;
+    margin-left: 195px;
+    font-size: 17px;
+    text-indent: 2em;
+    width:790px;
+}
+.m-sidebar
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background:#008800;
+            width: 35px;
+            height: 100%;
+            font-size: 12px;
+            color: #fff;
+        }
+        .cart
+        {
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            padding: 200px 0 0 0px;
+        }
+        .cart span
+        {
+            display: block;
+            width: 20px;
+            margin: 0 auto;
+        }
+        .cart i
+        {
+            width: 35px;
+            height: 35px;
+            display: block;
+            background: url(car.png) no-repeat;
+        }
+        #msg
+        {
+            position: fixed;
+            top: 300px;
+            right: 35px;
+            z-index: 10000;
+            width: 1px;
+            height: 52px;
+            line-height: 52px;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+            background: #360;
+            display: none;
+        }
+        .u-flyer
+        {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: fixed;
+            z-index: 9999;
+        }
+        
+        /* orange */
+/*        .orange
+{
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange:hover
+{
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active
+{
+    color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}  */
