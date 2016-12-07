@@ -15,58 +15,45 @@
 <div class="panel admin-panel margin-top">
   <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>修改分类</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="">        
-      <div class="form-group">
-        <div class="label">
-          <label>分类标题：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="title" value="" />
-          <div class="tips"></div>
-        </div>
-      </div>        
-      <!-- <div class="form-group">
-        <div class="label">
-          <label>关键字标题：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="s_title" value=""/>         
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>分类关键字：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="s_keywords" value=""/>         
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>关键字描述：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="s_desc" value=""/>        
-        </div>
-      </div> -->
-      <div class="form-group">
-        <div class="label">
-          <label>排序：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="sort" value="1"  data-validate="number:排序必须为数字" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label></label>
-        </div>
-        <div class="field">
-          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
-        </div>
-      </div>
-    </form>
+     <form action="{:U('Admin/category/update')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+      <table class="insert-tab" width="100%">
+          <tbody>
+          <tr>
+              <th width="120"><i class="require-red">*</i>上级分类：</th>
+              <td>
+                  <select name="pid" class="required">
+                      <option value="null">无</option>
+                      <volist name="result" id="vo">
+                      <option value="{$vo.id}">{$vo.name}</option>
+                      </volist>
+                  </select>
+              </td>
+          </tr>
+              <tr>
+                  <th><i class="require-red">*</i>分类级数：</th>
+                  <td>
+                      <select name="tag" class="required">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                  </select>
+                  </td>
+              </tr>
+              <tr>
+                  <th>分类名称</th>
+                  <td><input name="name" class="common-textarea" id="content"  style="width: 98%;" value="{$category.name}" /></td>
+              </tr>
+              <tr>
+                  <th></th>
+                  <td>
+                      <input type="hidden" name="id" value="{$category.id}">
+                      <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                      <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                  </td>
+              </tr>
+          </tbody>
+
+        </table>
+  </form>
   </div>
 </div>
 </body></html>

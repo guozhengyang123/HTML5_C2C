@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title></title>  
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/pintuer.css">
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/admin.css">
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/main.css">
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/table.css">
+
+
+    <script src="__PUBLIC__/admin/js/jquery.js"></script>
+    <script src="__PUBLIC__/admin/js/pintuer.js"></script>  
+</head>
+<body>
+<form action="{:U('Admin/vip/store')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+    <div class="result-content">
+        <table class="insert-tab" width="100%">
+            <tbody>
+                
+                <tr>
+                    <th><i class="require-red">*</i>用户名</th>
+                    <td>
+                        <input class="common-text required" id="title" name="username" size="50" value="" type="text">
+                    </td>
+                </tr>
+                <br/>
+                <tr>
+                    <th><i class="require-red">*</i>头像：</th>
+                    <td><input name="alt" id="" type="file"></td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>密码：</th>
+                    <td><input class="common-text required" name="password" id="" type="text"></td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>性别：</th>
+                    <td>
+                        <select name="sex" >
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>城市：</th>
+                    <td><input class="common-text required" name="city" id="" type="text"></td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>email：</th>
+                    <td><input class="common-text required" name="email" id="" type="text"></td>
+                </tr>
+                <tr>
+                    <th><i class="require-red">*</i>大学：</th>
+                    <td><input class="common-text required" name="school" id="" type="text"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                        <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+
+</body>
+</html>
