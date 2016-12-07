@@ -7,11 +7,24 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/css.css" rel="stylesheet" type="text/css">
 <link href="css/user.css" rel="stylesheet" type="text/css">
+<link href="css/news_list_css.css" rel="stylesheet" type="text/css">
+<!-- 个人资料修改 -->
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/style.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script>
+ --><script type="text/javascript" src="js/angular.min.js"></script>
+
+
+
+
+
 <!--[if !IE]>导航条样式　JS<![endif]-->
 <script type="text/javascript" src="js/thcic_menu.js"></script>
 <!--[if !IE]>banner图片  JS<![endif]-->
 <script type="text/javascript" src="js/solideForK13-min.js"></script>
+
 </head>
 <body>
 <div class="header_bg">
@@ -25,16 +38,18 @@
                     <li><a href="gwc.html">购物车</a> |</li>
                     <li><a href="user3.html">收藏夹</a> |</li>
                     <li><a href="user1.html">个人中心</a> |</li>
-                    <li><a href="#">客户服务</a></li>
+                    <li><a href="service.html">客户服务</a></li>
                 </ul>
                 <div class="clear"></div>
-                <form>
-                    <input name="" type="text" class="intext"/><input name="" type="button" class="inbut" value="" />
-                </form>
+                <div class="form">
+                    <div name="" type="button" class="inbut" value="">
+                        
+                    </div>
+                    <input name="" type="text" class="intext"/>
+                </div>
             </div>
         </div>
         <div class="clear"></div>
-        <!--nav-->
         <div id="menu">
                 <ul id="nav">
                       <li id="mainlevel_01" class="mainlevel">
@@ -111,56 +126,224 @@
                 </ul>
             </div>
     </div>
+
     <div class="clear"></div>
     <!--content-->
     <div class="wrapper">
-        <ul id="user_nav">
-            <li class="on"><a href="user1.html">个人资料</a></li>
-            <li><a href="user2.html">我发布的商品</a></li>
-            <li><a href="user3.html">我的收藏</a></li>
-            <li><a href="user4.html">消息中心</a></li>
-        </ul>
-        <div id="my_info">
-            <div id="img_info">
-                <img class="img_infos" src="img/touxiang.jpg" alt="" />
-                <img class="change_ph" src="img/person_hover.png" alt="头像"/>
-               
-            </div>
-            <div id="account_info">
-                <h2>账户信息</h2>
-                <ul class="infos">
-                    <li>账号</li>
-                    <li class="right_info">
-                        <span>zzz123</span>
-                    </li>
-                </ul>
-            </div>
-            <div id="base_info">
-                <h2>基本信息 <span id="edit_info">编辑</span><span id="save_info">保存</span></h2>
-                <ul class="infos">
-                    <li >昵称</li>
-                    <li class="right_info">
-                        <span id="nickname_span">mdzz</span>
-                        <input type="text" value="mdzz" id="nickname"/>
-                    </li> 
-                </ul>
-                <ul class="infos">
-                    <li >手机</li>
-                    <li class="right_info">
-                        <span id="phone_span"></span>
-                        <input type="text" value="" id="phone"/>
-                    </li>
-                </ul>
-                <ul class="infos">
-                    <li>邮箱</li>
-                    <li class="right_info">
-                        <span id="mail_span"></span>
-                        <input type="text" value="" id="mail"/>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <ul id="user_nav">
+                <li class="on"><a href="user1.html">个人资料</a></li>
+                <li><a href="user2.html">我发布的商品</a></li>
+                <li><a href="user3.html">我的收藏</a></li>
+                <li><a href="user4.html">消息中心</a></li>
+            </ul>
+            <div id="my_info">
+             <div class="Safety">
+              <dl>
+               <dt>
+                <strong>登录密码：</strong>
+                <span>保障账户安全，建议您定期更换密码</span>
+                <b><span class="glyphicon glyphicon-ok"> </span>已设置</b>
+                <em>修改</em>
+               </dt>
+               <dd>
+               <form action="#" method="get">
+                <table width="100%" class="safForm">
+                 <tr>
+                  <td width="35%" align="right">当前密码：</td>
+                  <td><input type="text" class="safinput1" /> <span style="display:none;">直接在input后加span没问题</span></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">设置新密码：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">确认新密码：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td><input type="submint" class="safSub" value="修改登录密码" /></td>
+                 </tr>
+                </table>
+               </form>
+               </dd>
+               <dt>
+                <strong>交易密码：</strong>
+                <span>保障资金安全，建议您交易密码区别于登录密码</span>
+                <b><span class="glyphicon glyphicon-exclamation-sign"> </span>未设置 </b>
+                <em>修改</em>
+               </dt>
+               <dd>
+               <form action="#" method="get">
+                <table width="100%" class="safForm">
+                 <tr>
+                  <td width="35%" align="right">设置交易密码：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">确认交易密码：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td><input type="submint" class="safSub" value="修改登录密码" /></td>
+                 </tr>
+                </table>
+               </form>
+               </dd>
+               <dt>
+                <strong>手机号码：</strong>
+                <span>保障账户与资金安全，是您在融合天下重要的身份凭证</span>
+                <b><span class="glyphicon glyphicon-ok"> </span>已设置 </b>
+                <em>修改</em>
+               </dt>
+               <dd>
+               <ul class="Step">
+                <li class="stepCur"><span>1</span></li>
+                <li><span>2</span></li>
+                <li><span>3</span></li>
+                <div class="clearfix"></div>
+               </ul><!--Step/-->
+               <form action="#" method="get" class="sjyz-one">
+                <table width="100%" class="safForm">
+                 <tr>
+                  <td width="35%" align="right">手机号：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">验证码：</td>
+                  <td><input type="text" class="safinput2" /> <button>点击获取</button></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">身份证号：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td><a class="safSub sjyz-one-next" href="javascript:;">下一步</a></td>
+                 </tr>
+                </table>
+               </form>
+               <form action="#" method="get" class="sjyz-two">
+                <table width="100%" class="safForm">
+                 <tr>
+                  <td width="35%" align="right">新手机号：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">验证码：</td>
+                  <td><input type="text" class="safinput2" /> <button>点击获取</button></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">身份证号：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td><a class="safSub sjyz-two-next" href="javascript:;">下一步</a></td>
+                 </tr>
+                </table>
+               </form>
+               <div class="sjyz-ok"><span class="glyphicon glyphicon-ok"></span> 恭喜您,设置成功!</div>
+               </dd>
+               <dt>
+                <strong>实名认证：</strong>
+                <span>保障账户安全，只有通过实名认证，才能充值投资、申请贷款</span>
+                <b><span class="glyphicon glyphicon-ok"> </span>已设置 </b>
+                <em>修改</em>
+               </dt>
+               <dd>
+               <form action="#" method="get" enctype="multipart/form-data">
+                <table width="100%" class="safForm">
+                 <tr>
+                  <td width="35%" align="right">用户名：</td>
+                  <td>asdsdfasdf</td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">真是姓名：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">身份证号：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">正面证件照</td>
+                  <td><input type="file" name="_f" /> </td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td>
+                   <img src="" width="280" height="188" />
+                  </td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">背面证件照</td>
+                  <td><input type="file" name="_f" /> </td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td>
+                   <img src="" width="280" height="188" />
+                  </td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td><input type="submint" class="safSub" value="提交" /></td>
+                 </tr>
+                </table>
+               </form>
+               </dd>
+               <dt>
+                <strong>电子邮箱：</strong>
+                <span>邮件接收账户通知，及时了解账户信息变动情况</span>
+                <b><span class="glyphicon glyphicon-exclamation-sign"> </span>未设置 </b>
+                <em>认证</em>
+               </dt>
+               <dd>
+               <ul class="Step">
+                <li class="stepCur"><span>1</span></li>
+                <li><span>2</span></li>
+                <li><span>3</span></li>
+                <div class="clearfix"></div>
+               </ul><!--Step/-->
+               <form action="#" method="get" class="sjyz-one">
+                <table width="100%" class="safForm">
+                 <tr>
+                  <td width="35%" align="right">邮箱验证：</td>
+                  <td><input type="text" class="safinput1" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td><a class="safSub sjyz-one-next" href="javascript:;">下一步</a></td>
+                 </tr>
+                </table>
+               </form>
+               <form action="#" method="get" class="sjyz-two">
+                <table width="100%" class="safForm">
+                 <tr>
+                  <td width="35%" align="right">邮箱验证码：</td>
+                  <td><input type="text" class="safinput2" /></td>
+                 </tr>
+                 <tr>
+                  <td width="35%" align="right">&nbsp;</td>
+                  <td><a class="safSub sjyz-two-next" href="javascript:;">下一步</a></td>
+                 </tr>
+                </table>
+               </form>
+               <div class="sjyz-ok"><span class="glyphicon glyphicon-ok"></span> 恭喜您,设置成功!</div>
+               </dd>
+              </dl>
+         </div>
+         </div>
+         
     </div>
+
+    <div id="scrollTop" >
+        <div class="level-2"></div>
+        <div class="level-3"></div>
+    </div>
+    <script src="js/mumayi_top.js"></script>
     <!--底部-->
     <footer>
         <img class="footer-tri" src="img/footer-tri.png">
@@ -184,7 +367,6 @@
             <span>ICP备14003265号-2</span>
         </div>
     </footer>
-<script type="text/javascript" src="js/add.js"></script>
 </body>
 </html>
 
