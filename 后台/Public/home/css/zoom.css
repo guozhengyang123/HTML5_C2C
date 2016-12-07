@@ -1,0 +1,3 @@
+﻿#zoomdiv{position:absolute;background: #ffffff;border:1px solid #333333;display:none;text-align: center; overflow: hidden;}
+#zoomup{position:absolute; background:#ffffff;display:none;filter:alpha(opacity=50);opacity:.5;cursor:move;}
+.zoom{width:250px;vertical-align:bottom;/*处理IE bug*/}

@@ -1,0 +1,2 @@
+﻿
+document.write("<select onChange=Link_Open(this.options[this.selectedIndex].value,'link')><option value=''>===学校友情链街===</option><option value='http://www.pageadmin.net'>pageadmin</option><option value='http://www.18inter.com'>18inter</option></select>");

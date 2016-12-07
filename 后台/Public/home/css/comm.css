@@ -1,0 +1,132 @@
+﻿@import url(/e/css/tab.css);
+
+/*文章样式*/
+.article{overflow:hidden;}
+.article li{clear:both;height:21px;padding:5px 0 2px 5px;text-align:left;border:0px dotted #381904;border-width:0 0 1px 0;overflow:hidden;}
+.article .title{float:left;text-align:left;padding:0 0 0 12px;background:url(images/article_arrow.png) no-repeat left center;}
+.article .date{float:right;color:#381904;padding-right:2px}
+.article table td{text-align:center}
+.article table td img{border:1px solid #ececec;margin:5px 5px 5px 5px;}
+.sublanmu_box .article li{height:25px}
+
+.tw_article{clear:both;}
+.tw_article li{text-align:left;border:1px dotted #cccccc;border-width:0 0 1px 0;padding:10px 0 10px 0;overflow:hidden;height:100%} /*置顶通用样式*/
+.tw_article .pic{float:left;margin:5px 10px 5px 0;border:1px solid #dddddd;display:inline;}
+.tw_article .content{float:none!important;float:left;display:inline}
+.tw_article .title{text-align:left;line-height:20px;}
+.tw_article .title a{font-weight:bold;padding-left:0px}
+.tw_article .introduct{padding:2px 5px 5px 0px;line-height:20px;color:#666666;}
+
+.lanmupage .tw_article li{padding:1px 0 2px 0;}
+
+.article_pic{display:block;}
+.article_pic li{float:left;text-align:center;padding:12px 6px 10px 36px;display:inline}
+.article_pic li img{border:3px solid #381904;background-color: #fff;senfe1:expression(this.onmouseover=function(){this.style.border='3px #381904 solid'});senfe2:expression(this.onmouseout=function(){this.style.border='3px #fff solid'});}
+.article_pic li .title{display:block;text-align:center}
+
+.articleinfor .title{text-align:center;padding:10px 0 5px 0;border:1px dotted #cccccc;border-width:0 0 1px 0}
+.articleinfor .title h1{font-size:16px;font-weight:bold;}
+.articleinfor .info{text-align:center;padding:2px 10px 0 0;color:#666666}
+.articleinfor .content{line-height:2.0;font-size:1.1em;padding:10px 0 10px 0;}
+.articleinfor .content p{margin-bottom:10px;min-height:10px}
+.articleinfor .bz{text-align:center;width:250px;background-color:#ffff99;border:1px solid #ff9900;padding:2px 0 3px 0;}
+
+.article_pic_infor{display:block;}
+.article_pic_infor .title{display:block;height:22px;padding:2px 0 0 25px;color:#DD5D12;font-size:13px;font-weight:bold;border:1px solid #cccccc}
+.article_pic_infor .left{float:left;text-align:center;width:30%}
+.article_pic_infor .right{float:none!important;float:left;text-align:left;width:70%}
+.article_pic_infor .left img{width:200px;}
+.article_pic_infor .info{text-align:right;padding:2px 2px 0 0;color:#666666}
+.article_pic_infor .introduct{display:block;text-align:left;padding:10px 5px 5px 5px}
+.article_pic_infor .content{display:block;text-align:left;padding:10px 0 5px 0;width:97%}
+.article_pic_infor .content .title{display:block;width:100%;height:29px;padding-top:5px;background:url(images/list_titlebg.jpg) repeat-x left top;}
+
+.related_article{display:block;margin:10px 0 10px 0}
+.related_article .header{font-size:13px;font-weight:bold;border:0 dotted #eeeeee;border-width:0 0 1px 0;margin:0 0 10px 0}
+.related_article li{height:25px}
+.related_article .title{padding:0 10px 0 10px}
+.related_article .title a{color:#000000;font-size:12px;}
+.related_article .date{color:#666666}
+
+
+/*产品表样式*/
+.product{overflow:hidden;}
+.product table td{text-align:center;padding:5px 0 5px 0}
+.product table td img{border:1px solid #ececec;margin:0 5px 6px 5px;padding:3px}
+
+.product_pic{display:block;}
+.product_pic li{float:left;text-align:center;padding:10px 0px 10px 40px;display:inline}
+.product_pic li img{border:1px solid #ececec;padding:3px}
+.product_pic li .title{display:block;text-align:center;}
+
+.product_pic_infor{display:block;}
+.product_pic_infor .left{float:left;text-align:left;width:280px;margin-right:5px;overflow:hidden}
+.product_pic_infor .right{float:none!important;float:left;text-align:left;overflow:hidden;}
+.product_pic_infor .left .view{padding:2px 10px 2px 0px;}
+.product_pic_infor .left .view img{height:150px;width:250px;cursor:pointer;border:1px solid #cccccc;padding:1px;}
+
+.product_pic_infor .left .thumbnails{float:left;text-align:left;width:225px;padding:2px 0 2px 0;height:46px;white-space:nowrap;overflow:hidden;}
+.product_pic_infor .left .thumbnails ul li{display:inline}
+.product_pic_infor .left .thumbnails img{height:42px;cursor:pointer;border:1px solid #eeeeee;}
+.product_pic_infor .left .thumbnails img.current{border:1px solid #999999;}
+.product_pic_infor .left .leftbar{float:left;height:50px;width:10px;cursor:pointer;margin-right:5px;display:inline;background:url(images/left.gif) no-repeat left center;}
+.product_pic_infor .left .rightbar{float:left;height:50px;width:10px;cursor:pointer;margin-left:5px;display:inline;background:url(images/right.gif) no-repeat left center;}
+
+.product_pic_infor .title{display:block;height:22px;padding:2px 0 0 5px;font-size:13px;font-weight:bold;border:0px dotted #cccccc;border-bottom-width:1px;margin-bottom:5px}
+.product_pic_infor .info{text-align:right;padding:2px 2px 0 0;color:#666666}
+.product_pic_infor .detailtitle{display:block;width:100%;height:29px;padding:1px 0 0 15px;background:url(images/detailinto_title.jpg) repeat-x left top;}
+.product_pic_infor .content{display:block;text-align:left;padding:10px 0 5px 0;width:97%}
+
+/*下载表样式*/
+.download{overflow:hidden;}
+.download li{clear:both;height:16px;padding:2px 0 2px 5px;margin-bottom:3px;text-align:left;overflow:hidden;}
+.download .title{float:left;text-align:left;padding:0 0 0 13px;background:url(images/article_arrow.gif) no-repeat 5px center;}
+.download .date{float:right;color:#666666;padding-right:3px}
+.download table td{text-align:center}
+.download table td img{border:1px solid #ececec;margin:5px 5px 5px 5px;padding:2px 0 2px 2px;}
+
+.sublanmu_dl li{height:20px;border:1px dotted #cccccc;border-width:0 0 1px 0;}
+
+/*用户反馈 标题模式*/
+
+.letter_list{border:0 solid #cccccc;padding:5px 0 5px 0}
+.letter_list .head td{padding:2px 0 2px 0;height:25px;line-height:15px;background-color:#ececec;background-image:none;overflow:hidden}
+.letter_list a.title{background:url(images/icon.png) no-repeat 0 -294px;padding-left:15px}
+.letter_list .item td{padding:5px 0 0px 5px;height:22px;}
+
+.lanmupage .letter_list .head td{padding:0 0 0 0px;height:15px;background-color:#ffffff;color:#D33506;}
+.lanmupage .letter_list a.title{background:url(images/icon.png) no-repeat 0 -294px;padding-left:15px}
+.lanmupage .letter_list .item td{padding:5px 0 0px 0px;height:15px;border:1px dotted #ececec;border-width:0 0 1px 0;}
+
+.letterinfo{border:1px solid #ececec}
+.letterinfo .header{background-color:#cccccc;color:#ffffff;font-weight:bold;text-align:center}
+.letterinfo td{border:1px solid #ececec;padding:4px 0 4px 5px;height:20px;}
+
+.sublanmu_letter_search{clear:both;padding:100px 0 0 157px;;width:300px;height:120px;background:url(hdjl/letter_search_bg.png) no-repeat 0 0;text-align:left}
+
+/*用户反馈 流言本模式*/
+
+.feedback_table{width:98%;border:1px solid #dddddd;}
+.feedback_table td{border:1px solid #dddddd;}
+
+.feedback_box{margin:5px 0 10px 5px;border:1px solid #856E3A;padding:15px 0 10px 5px;height:100%;overflow:hidden;background-color:#634e33}
+
+.feedbacklist_box{border:0 solid #cccccc;margin:5px 0 5px 5px;}
+.feedbacklist_item_jiange{clear:both;height:2px;line-height:0px;font-size:1px;border:0 dotted #856E3A;border-width:0 0 1px 0;margin:5px 0 5px 0}
+.feedbacklist_item_box{clear:both;border:0 solid #856E3A;border-width:1px 1px 1px 1px;padding:5px 5px 10px 10px;margin:0 0 15px 0;height:100%;background-color:#634e33;overflow:hidden;}
+
+
+/*招/应聘样式*/
+.job{width:99%;}
+.job table{width:99%;border:0px solid #cccccc;text-align:center}
+.job table td{align:center;padding:2px 2px 3px 2px}
+.job table td a{}
+.job table tr.header{height:25px;border:0 dashed #cccccc;background-color:#381904;color:#ffffff}
+.job table tr.item{height:28px;border:0 solid #dddddd;border-width:0 0 1px 0;}
+
+.jobinfo{width:99%;}
+.jobinfo .item{line-height:25px}
+.jobinfo .title{display:block;font-weight:bold;border:0px solid #cccccc;border-width:0 0 1px 0;}
+.jobinfo .description{line-height:25px}
+.jobinfo .beizhu{line-height:25px}
+

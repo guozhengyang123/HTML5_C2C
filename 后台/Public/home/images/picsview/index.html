@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML lang=zh-CN xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE>仿网易图片栏目相册展示代码 </TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META http-equiv=Content-Language content=zh-CN>
+
+<BODY>
+<LINK href="css/style.css" type=text/css rel=stylesheet>
+	<div class="box-cnfen" style="text-align:center;margin:10px auto;width:600px;border:1px solid #cccccc">
+      <div class="nph_gallery nph_skin_white" id=gallery342>
+		  <div class=nph_bg>
+			  <div class=nph_photo id=modePhoto342>
+				  <div class=nph_photo_view>
+					  <div class=nph_cnt id=photoView342>
+					  	<IMG id=photo342 src="images/blank.gif">					 
+					  </div>
+					  <div class=nph_photo_prev>
+						<A class=nph_btn_pphoto id=photoPrev342 hideFocus href="#" target=_self></A>					  
+						</div>
+					  <div class=nph_photo_next>
+					  <A class=nph_btn_nphoto id=photoNext342 hideFocus href="#" target=_self></A>					 
+					   </div>
+					  <div class=nph_photo_loading id=photoLoading342></div>
+				  </div>
+				  <div class=nph_cnt>
+					  <div class=nph_photo_ctrl>
+						  <UL>
+						  	<li><SPAN class="nph_set_cur hidden" id=photoType342>（<SPAN class=nph_c_lh id=photoIndex342></SPAN>/8）</SPAN><SPAN class=nph_set_size id=streamType342>（共<SPAN class=nph_c_lh>8</SPAN>张）</SPAN></li>
+							<LI><A class=nph_icon_orig id=viewOrig342  href="#" target=_blank>查看原图</A>|</LI>
+						</UL>
+					  </div>
+					  <div class=nph_photo_desc id=photoDesc342></div>
+				  </div>
+				  <SPAN class=nph_hr_solid></SPAN>
+				  <div class="nph_cnt clearfix">
+					  <div class=nph_photo_thumb id=scrl342>
+					    <div class=clearfix>
+							  <div class=nph_scrl>
+								  <div class=nph_scrl_thumb>
+									  <div class=nph_scrl_main>
+										  <UL class=nph_list_thumb id=thumb342></UL>
+									  </div>
+									  <div class="nph_scrl_bar clearfix">
+										  <SPAN class=nph_scrl_lt></SPAN><SPAN class=nph_scrl_rt></SPAN>
+										  <div class=nph_scrl_bd>
+											  <div class=nph_scrl_ct>
+												  <A class=nph_btn_scrl id=bar342 hideFocus href="#"><B class=nph_btn_lt></B><B class=nph_btn_rt></B><SPAN 
+												  class=nph_btn_bd><SPAN><B class=nph_btn_ct></B></SPAN></SPAN></A>											  </div>
+										  </div>
+									  </div>
+								  </div>
+							  </div>
+						    <SPAN class=nph_scrl_prev><A class=nph_btn_pscrl id=scrlPrev342 hideFocus href="#"></A></SPAN><SPAN class=nph_scrl_next><A class=nph_btn_nscrl id=scrlNext342 hideFocus href="#"></A></SPAN>						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	   </div>
+	  <TEXTAREA  id=photoList342>
+&lt;li&gt;
+&lt;a href="#p=01" hidefocus="true"&gt;&lt;img src="images/img01.jpg" alt="华南师范大学校园风景" /&gt;&lt;/a&gt;
+&lt;h2&gt;华南师范大学校园风景&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.cnfen.com/hihilinxuan/log/634178063266430153.html"&gt;[详细]&lt;/a&gt;&lt;/p&gt;
+&lt;i title="img"&gt;images/img01.jpg&lt;/i&gt;
+&lt;i title="timg"&gt;images/img01.jpg&lt;/i&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="#p=02" hidefocus="true"&gt;&lt;img src="images/img02.jpg" alt="广州大河马水上世界游玩" /&gt;&lt;/a&gt;
+&lt;h2&gt;广州大河马水上世界游玩&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.cnfen.com/"&gt;[详细]&lt;/a&gt;&lt;/p&gt;
+&lt;i title="img"&gt;images/img02.jpg&lt;/i&gt;
+&lt;i title="timg"&gt;images/img02.jpg&lt;/i&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="#p=03" hidefocus="true"&gt;&lt;img src="images/img03.jpg" alt="广东工业大学龙洞校区风景
+" /&gt;&lt;/a&gt;
+&lt;h2&gt;广东工业大学龙洞校区风景&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.cnfen.com/hihilinxuan/log/634177705332108138.html"&gt;[详细]&lt;/a&gt;&lt;/p&gt;
+&lt;i title="img"&gt;images/img03.jpg&lt;/i&gt;
+&lt;i title="timg"&gt;images/img03.jpg&lt;/i&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="#p=04" hidefocus="true"&gt;&lt;img src="images/img04.jpg" alt="华南理工大学校园风景
+" /&gt;&lt;/a&gt;
+&lt;h2&gt;华南理工大学校园风景&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.cnfen.com/hihilinxuan/log/634177439367905978.html"&gt;[详细]&lt;/a&gt;&lt;/p&gt;
+&lt;i title="img"&gt;images/img04.jpg&lt;/i&gt;
+&lt;i title="timg"&gt;images/img04.jpg&lt;/i&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="#p=05" hidefocus="true"&gt;&lt;img src="images/img05.jpg" alt="华南农业大学校园风景" /&gt;&lt;/a&gt;
+&lt;h2&gt;华南农业大学校园风景B&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.cnfen.com/hihilinxuan/log/634176595858183750.html"&gt;[详细]&lt;/a&gt;&lt;/p&gt;
+&lt;i title="img"&gt;images/img05.jpg&lt;/i&gt;
+&lt;i title="timg"&gt;images/img05.jpg&lt;/i&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="#p=06" hidefocus="true"&gt;&lt;img src="images/img06.jpg" alt="广州火炉山游玩
+" /&gt;&lt;/a&gt;
+&lt;h2&gt;广州火炉山游玩&lt;/h2&gt;
+&lt;p&gt;&lt;a href="ttp://www.cnfen.com/hihilinxuan/log/634178059511249870.html"&gt;[详细]&lt;/a&gt;&lt;/p&gt;
+&lt;i title="img"&gt;images/img06.jpg&lt;/i&gt;
+&lt;i title="timg"&gt;images/img06.jpg&lt;/i&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="#p=07" hidefocus="true"&gt;&lt;img src="images/img07.jpg" alt="广州沙面白鹅谭酒吧街游玩
+" /&gt;&lt;/a&gt;
+&lt;h2&gt;广州沙面白鹅谭酒吧街游玩&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.cnfen.com/hihilinxuan/log/634177462052738660.html"&gt;[详细]&lt;/a&gt;&lt;/p&gt;
+&lt;i title="img"&gt;images/img07.jpg&lt;/i&gt;
+&lt;i title="timg"&gt;images/img07.jpg&lt;/i&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="#p=08" hidefocus="true"&gt;&lt;img src="images/img08.jpg" alt="深圳大学,东门步行街,世界之窗游玩" /&gt;&lt;/a&gt;
+&lt;h2&gt;深圳大学,东门步行街,世界之窗游玩&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.cnfen.net/net163/log/634388338142445000.html"&gt;[详细]&lt;/a&gt;&lt;/p&gt;
+&lt;i title="img"&gt;images/img08.jpg&lt;/i&gt;
+&lt;i title="timg"&gt;images/img08.jpg&lt;/i&gt;
+&lt;/li&gt;
+
+
+</TEXTAREA> 
+      <div class=hidden id=galleryTpl342></div>
+      <SCRIPT language=javascript src="js/ntes_jslib_1.x.js" type=text/javascript charset=gb2312></SCRIPT>
+
+      <SCRIPT language=javascript src="js/ntes_ui_scroll.js" type=text/javascript charset=gb2312></SCRIPT>
+
+      <SCRIPT language=javascript  src="js/nph_gallery_2.11.js"  type=text/javascript charset=gb2312></SCRIPT>
+
+      <SCRIPT type=text/javascript>
+	NTES.ready(function ($) { new nph.Gallery({ sn: "342" }); });
+	</SCRIPT>
+</div>
+</BODY></HTML>

@@ -1,0 +1,469 @@
+[ 2016-09-14T09:07:02+08:00 ] 127.0.0.1 /hotelms/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002060s ]
+
+[ 2016-09-14T09:15:55+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003100s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003570s ]
+
+[ 2016-09-14T09:16:11+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2016-09-14T09:17:33+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002593s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002619s ]
+
+[ 2016-09-14T09:17:38+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002825s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002987s ]
+
+[ 2016-09-14T09:17:39+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004035s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002275s ]
+
+[ 2016-09-14T09:17:53+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002550s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002351s ]
+
+[ 2016-09-14T09:51:54+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002863s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002593s ]
+
+[ 2016-09-14T09:52:05+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003126s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2016-09-14T09:52:06+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002084s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003129s ]
+
+[ 2016-09-14T09:53:55+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002088s ]
+
+[ 2016-09-14T09:54:25+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001914s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002430s ]
+
+[ 2016-09-14T09:54:33+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002252s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002213s ]
+
+[ 2016-09-14T09:55:29+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002103s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002190s ]
+
+[ 2016-09-14T09:55:37+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002285s ]
+
+[ 2016-09-14T09:58:07+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002582s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002674s ]
+
+[ 2016-09-14T09:58:09+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002106s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002328s ]
+
+[ 2016-09-14T10:09:41+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004023s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002531s ]
+
+[ 2016-09-14T10:39:35+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002700s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002351s ]
+
+[ 2016-09-14T10:45:33+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003936s ]
+
+[ 2016-09-14T10:47:11+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002542s ]
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002602s ]
+
+[ 2016-09-14T10:54:17+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002790s ]
+
+[ 2016-09-14T10:54:20+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+
+[ 2016-09-14T10:54:33+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+
+[ 2016-09-14T10:54:35+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003799s ]
+
+[ 2016-09-14T10:54:46+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009984s ]
+
+[ 2016-09-14T10:56:10+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+
+[ 2016-09-14T10:56:32+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002567s ]
+
+[ 2016-09-14T10:57:09+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023833s ]
+
+[ 2016-09-14T10:58:27+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+
+[ 2016-09-14T10:58:48+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005429s ]
+
+[ 2016-09-14T11:00:02+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002737s ]
+
+[ 2016-09-14T11:00:42+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002661s ]
+
+[ 2016-09-14T11:01:09+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+NOTIC: [2048] Declaration of Wap\Controller\IndexController::show() should be compatible with that of Think\Controller::show() C:\wwwroot\hotelms\Application\Wap\Controller\IndexController.class.php 第 24 行.
+
+[ 2016-09-14T11:01:44+08:00 ] 127.0.0.1 /hotelms/wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002801s ]
+NOTIC: [2048] Declaration of Wap\Controller\IndexController::show() should be compatible with that of Think\Controller::show() C:\wwwroot\hotelms\Application\Wap\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002683s ]
+
+[ 2016-09-14T11:01:48+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002244s ]
+NOTIC: [2048] Declaration of Wap\Controller\IndexController::show() should be compatible with that of Think\Controller::show() C:\wwwroot\hotelms\Application\Wap\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002057s ]
+
+[ 2016-09-14T11:02:22+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001896s ]
+NOTIC: [2048] Declaration of Wap\Controller\IndexController::show() should be compatible with that of Think\Controller::show() C:\wwwroot\hotelms\Application\Wap\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002300s ]
+
+[ 2016-09-14T11:02:34+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007792s ]
+NOTIC: [2048] Declaration of Wap\Controller\IndexController::show() should be compatible with that of Think\Controller::show() C:\wwwroot\hotelms\Application\Wap\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004563s ]
+
+[ 2016-09-14T11:04:54+08:00 ] 127.0.0.1 /hotelms/wap/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003040s ]
+NOTIC: [2048] Declaration of Wap\Controller\IndexController::show() should be compatible with that of Think\Controller::show() C:\wwwroot\hotelms\Application\Wap\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `news`  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002186s ]
+
+[ 2016-09-14T11:04:59+08:00 ] 127.0.0.1 /hotelms/index.php/wap/index/show?id=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002210s ]
+NOTIC: [2048] Declaration of Wap\Controller\IndexController::show() should be compatible with that of Think\Controller::show() C:\wwwroot\hotelms\Application\Wap\Controller\IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `news` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `news` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002536s ]
+

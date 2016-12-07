@@ -1,0 +1,20 @@
+﻿/*下拉样式*/
+#Menu ul li{position:relative;z-index:2;}
+#Menu ul li ul{position:absolute;left:0;background-color:#cccccc;line-height:20px;padding:1px 1px 0 1px;display:none;}/*一级样式*/
+#Menu ul li ul li{position:relative;width:120px;height:21px;padding:5px 0 0 0;background-color:#fff;border:0 solid #cccccc;border-width:0 0 1px 0;text-align:center;}/*li行样式*/
+#Menu ul li ul li ul{position:absolute;left:120px;top:0px;display:none;}/*二级样式*/
+#Menu ul li ul li ul li ul{position:absolute;top:0px;display:none;}/*三级样式*/
+
+
+#Menu ul li.hover{} /*鼠标经过时栏目li样式*/
+#Menu ul li.hover a.menu{}
+#Menu ul li.hover ul{display:block} 
+#Menu ul li.hover ul li ul{display:none;} 
+#Menu ul li ul li.hover ul{display:block;}
+#Menu ul li ul li.hover{background-color:#ececec}/*鼠标经过时下拉li样式*/
+#Menu ul li ul li.hover ul li ul{display:none} 
+#Menu ul li ul li ul li.hover ul{display:block;} 
+
+
+#Menu ul li ul a{display:block!important;display:inline;height:20px;text-align:center;overflow:hidden}/*默认a样式*/
+#Menu ul li ul a:hover{text-decoration:none}/*鼠标经过a样式*/
