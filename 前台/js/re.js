@@ -1,31 +1,31 @@
 /* 
-* @Author: anchen
-* @Date:   2016-11-29 09:12:44
-* @Last Modified by:   anchen
-* @Last Modified time: 2016-11-29 15:11:25
-*/
+ * @Author: anchen
+ * @Date:   2016-11-29 09:12:44
+ * @Last Modified by:   anchen
+ * @Last Modified time: 2016-11-29 15:11:25
+ */
 //弹框效果
 function showDiv(){
- var winWidth;
- var winHeight;
+    var winWidth;
+    var winHeight;
     if (document.body && document.body.clientHeight && document.body.clientWidth)
-        {
-            winHeight = document.body.clientHeight;
-            winWidth = document.body.clientWidth;
-        }
+    {
+        winHeight = document.body.clientHeight;
+        winWidth = document.body.clientWidth;
+    }
     document.getElementById('show').style.display="block";
     document.getElementById('show_win').style.display="block";
     document.getElementById('show').style.width=winWidth+"px";
     document.getElementById('show').style.height=winHeight+"px";
 }
 function showDiv1(){
- var win1Width;
- var win1Height;
+    var win1Width;
+    var win1Height;
     if (document.body && document.body.clientHeight && document.body.clientWidth)
-        {
-            win1Height = document.body.clientHeight;
-            win1Width = document.body.clientWidth;
-        }
+    {
+        win1Height = document.body.clientHeight;
+        win1Width = document.body.clientWidth;
+    }
     document.getElementById('show1').style.display="block";
     document.getElementById('show_win1').style.display="block";
     document.getElementById('show1').style.width=win1Width+"px";
@@ -34,11 +34,11 @@ function showDiv1(){
 
 
 $(document).ready(function () {
-   function validateForm(){
-     if(checkUserName()&&checkPassword()&&checkRepassword()&&checkHobby()&&checkStatus()){
-         alert("恭喜您！注册成功！");
-     }
-}
+    function validateForm(){
+        if(checkUserName()&&checkPassword()&&checkRepassword()&&checkHobby()&&checkStatus()){
+            alert("恭喜您！注册成功！");
+        }
+    }
 });
 
 //验证用户名（为3~16个字符，且不能包含”@”和”#”字符）
@@ -101,11 +101,11 @@ function checkSchool(){
 //验证email不为空
 function checkEmail(){
     var email =document.getElementById("email").value.trim();
-    var pattern = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/; 
+    var pattern = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
     //校验密码和上面密码必须一致
     if(email == ""){
         document.getElementById("emailInfo").innerHTML="不能为空哦！";
-    }else if (!pattern.test(email)) {  
+    }else if (!pattern.test(email)) {
         document.getElementById("emailInfo").innerHTML = "请输入正确格式的email哦！"
     }
     else{
@@ -114,84 +114,59 @@ function checkEmail(){
 }
 
 /*function emailCheck(obj, labelName) {  
-    var objName = eval("document.all."+obj);  
-    var pattern = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;  
-    if (!pattern.test(objName.value)) {  
-        alert("请输入正确的邮箱地址。");  
-        objName.focus();  
-        return false;  
-    }  
-    return true;  
-}*/
+ var objName = eval("document.all."+obj);
+ var pattern = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+ if (!pattern.test(objName.value)) {
+ alert("请输入正确的邮箱地址。");
+ objName.focus();
+ return false;
+ }
+ return true;
+ }*/
 
 
-provinceArray = new Array("北京市","上海市","天津市","重庆市","河北省","山西省","内蒙古自治区","辽宁省","吉林省","黑龙江省","江苏省","浙江省","安徽省","福建省","江西省","山东省","河南省","湖北省","湖南省","广东省","广西壮族自治区","海南省","四川省","贵州省","云南省","西藏自治区","陕西省","甘肃省","宁夏回族自治区","青海省","新疆维吾尔族自治区","香港特别行政区","澳门特别行政区","台湾省","其它");  
-  
-//定义 城市 数据数组  
-cityArray = new Array();   
-cityArray[0] = new Array("北京市","东城|西城|崇文|宣武|朝阳|丰台|石景山|海淀|门头沟|房山|通州|顺义|昌平|大兴|平谷|怀柔|密云|延庆");   
-cityArray[1] = new Array("上海市","黄浦|卢湾|徐汇|长宁|静安|普陀|闸北|虹口|杨浦|闵行|宝山|嘉定|浦东|金山|松江|青浦|南汇|奉贤|崇明");   
-cityArray[2] = new Array("天津市","和平|东丽|河东|西青|河西|津南|南开|北辰|河北|武清|红挢|塘沽|汉沽|大港|宁河|静海|宝坻|蓟县");   
-cityArray[3] = new Array("重庆市","万州|涪陵|渝中|大渡口|江北|沙坪坝|九龙坡|南岸|北碚|万盛|双挢|渝北|巴南|黔江|长寿|綦江|潼南|铜梁 |大足|荣昌|壁山|梁平|城口|丰都|垫江|武隆|忠县|开县|云阳|奉节|巫山|巫溪|石柱|秀山|酉阳|彭水|江津|合川|永川|南川");   
-cityArray[4] = new Array("河北省","石家庄|邯郸|邢台|保定|张家口|承德|廊坊|唐山|秦皇岛|沧州|衡水");   
-cityArray[5] = new Array("山西省","太原|大同|阳泉|长治|晋城|朔州|吕梁|忻州|晋中|临汾|运城");   
-cityArray[6] = new Array("内蒙古自治区","呼和浩特|包头|乌海|赤峰|呼伦贝尔盟|阿拉善盟|哲里木盟|兴安盟|乌兰察布盟|锡林郭勒盟|巴彦淖尔盟|伊克昭盟");   
-cityArray[7] = new Array("辽宁省","沈阳|大连|鞍山|抚顺|本溪|丹东|锦州|营口|阜新|辽阳|盘锦|铁岭|朝阳|葫芦岛");   
-cityArray[8] = new Array("吉林省","长春|吉林|四平|辽源|通化|白山|松原|白城|延边");   
-cityArray[9] = new Array("黑龙江省","哈尔滨|齐齐哈尔|牡丹江|佳木斯|大庆|绥化|鹤岗|鸡西|黑河|双鸭山|伊春|七台河|大兴安岭");   
-cityArray[10] = new Array("江苏省","南京|镇江|苏州|南通|扬州|盐城|徐州|连云港|常州|无锡|宿迁|泰州|淮安");   
-cityArray[11] = new Array("浙江省","杭州|宁波|温州|嘉兴|湖州|绍兴|金华|衢州|舟山|台州|丽水");   
-cityArray[12] = new Array("安徽省","合肥|芜湖|蚌埠|马鞍山|淮北|铜陵|安庆|黄山|滁州|宿州|池州|淮南|巢湖|阜阳|六安|宣城|亳州");   
-cityArray[13] = new Array("福建省","福州|厦门|莆田|三明|泉州|漳州|南平|龙岩|宁德");   
-cityArray[14] = new Array("江西省","南昌市|景德镇|九江|鹰潭|萍乡|新馀|赣州|吉安|宜春|抚州|上饶");   
-cityArray[15] = new Array("山东省","济南|青岛|淄博|枣庄|东营|烟台|潍坊|济宁|泰安|威海|日照|莱芜|临沂|德州|聊城|滨州|菏泽");   
-cityArray[16] = new Array("河南省","郑州|开封|洛阳|平顶山|安阳|鹤壁|新乡|焦作|濮阳|许昌|漯河|三门峡|南阳|商丘|信阳|周口|驻马店|济源");   
-cityArray[17] = new Array("湖北省","武汉|宜昌|荆州|襄樊|黄石|荆门|黄冈|十堰|恩施|潜江|天门|仙桃|随州|咸宁|孝感|鄂州");  
-cityArray[18] = new Array("湖南省","长沙|常德|株洲|湘潭|衡阳|岳阳|邵阳|益阳|娄底|怀化|郴州|永州|湘西|张家界");   
-cityArray[19] = new Array("广东省","广州|深圳|珠海|汕头|东莞|中山|佛山|韶关|江门|湛江|茂名|肇庆|惠州|梅州|汕尾|河源|阳江|清远|潮州|揭阳|云浮");   
-cityArray[20] = new Array("广西壮族自治区","南宁|柳州|桂林|梧州|北海|防城港|钦州|贵港|玉林|南宁地区|柳州地区|贺州|百色|河池");   
-cityArray[21] = new Array("海南省","海口|三亚");   
-cityArray[22] = new Array("四川省","成都|绵阳|德阳|自贡|攀枝花|广元|内江|乐山|南充|宜宾|广安|达川|雅安|眉山|甘孜|凉山|泸州");   
-cityArray[23] = new Array("贵州省","贵阳|六盘水|遵义|安顺|铜仁|黔西南|毕节|黔东南|黔南");   
-cityArray[24] = new Array("云南省","昆明|大理|曲靖|玉溪|昭通|楚雄|红河|文山|思茅|西双版纳|保山|德宏|丽江|怒江|迪庆|临沧");  
-cityArray[25] = new Array("西藏自治区","拉萨|日喀则|山南|林芝|昌都|阿里|那曲");   
-cityArray[26] = new Array("陕西省","西安|宝鸡|咸阳|铜川|渭南|延安|榆林|汉中|安康|商洛");   
-cityArray[27] = new Array("甘肃省","兰州|嘉峪关|金昌|白银|天水|酒泉|张掖|武威|定西|陇南|平凉|庆阳|临夏|甘南");   
-cityArray[28] = new Array("宁夏回族自治区","银川|石嘴山|吴忠|固原");   
-cityArray[29] = new Array("青海省","西宁|海东|海南|海北|黄南|玉树|果洛|海西");   
-cityArray[30] = new Array("新疆维吾尔族自治区","乌鲁木齐|石河子|克拉玛依|伊犁|巴音郭勒|昌吉|克孜勒苏柯尔克孜|博尔塔拉|吐鲁番|哈密|喀什|和田|阿克苏");   
-cityArray[31] = new Array("香港特别行政区","香港特别行政区");   
-cityArray[32] = new Array("澳门特别行政区","澳门特别行政区");   
-cityArray[33] = new Array("台湾省","台北|高雄|台中|台南|屏东|南投|云林|新竹|彰化|苗栗|嘉义|花莲|桃园|宜兰|基隆|台东|金门|马祖|澎湖");   
-cityArray[34] = new Array("其它","北美洲|南美洲|亚洲|非洲|欧洲|大洋洲");  
-  
-window.onload=function initProvince(){  
-    document.all.selProvince.length = 0 ;   
-    for(i=0; i<provinceArray.length; i++){  
-       document.all.selProvince.options[i] = new Option(provinceArray[i],provinceArray[i]);  
-    }  
-    getCity(document.all.selProvince.options[0].value)  
-}  
- 
-function getCity(currProvince)  
-{  
+provinceArray = new Array("河北师范大学","河北科技大学","河北经贸大学","河北医科大学","河北政法学院","河北师范大学汇华学院","河北地质大学","石家庄铁道学院","石家庄学院");
+
+//定义 城市 数据数组
+cityArray = new Array();
+cityArray[0] = new Array("河北师范大学","商学院|软件学院|法政学院|教育学院|文学院|历史文化学院|外国语学院|音乐学院|数学与信息科学学院|美术与设计学院|新闻传播学院|物理科学与信息工程学院|化学与材料科学学院|生命科学学院|资源与环境科学学院");
+cityArray[1] = new Array("河北科技大学","材料科学与工程学院|化学与制药工程学院|经济管理学院|环境科学与工程学院|理学院|文法学院|外国语学院|机械电子工程学院|电气工程学院|信息科学与工程学院|纺织服装学院|建筑工程学院|艺术学院|影视学院");
+cityArray[2] = new Array("河北经贸大学","法学|电气信息|轻工纺织食品类|生物工程|管理学|工商管理类管理学|公共管理类|经济学类");
+cityArray[3] = new Array("河北医科大学","预防医学|临床医学|麻醉学|医学影像学|医学检验|口腔医学|中医学|针灸推拿学|中西医临床医学|法医学|护理学|药学类|中药学");
+cityArray[4] = new Array("河北政法学院","管理系|国际法商系|财经系|园林系|计算机系|会计系|外语系|电子商务系|法律系|国际经济与贸易|法律文秘|社区管理与服务|人力资源管理|物业管理");
+cityArray[5] = new Array("河北师范大学汇华学院","数学与应用数学|网络工程|通信工程|计算机科学与技术|物联网工程|汉语言文学|新闻学|历史学|秘书学|对外汉语学|物理学|化学|生物科学|地理科学|资源环境与城乡规划管理|科学教育|法学|心理学|会计学|人力资源管理|国际经济与贸易|旅游管理|学前教育|特殊教育");
+cityArray[6] = new Array("河北地质大学","经贸学院|法政学院|会计学院|商学院|管理科学与工程学院|艺术设计学院|外国语学院|信息工程学院|勘查技术与工程|资源学院|土地资源与城乡规划学院|水资源与环境学院|宝石与材料工艺学院|数理学院|国际教育学院");
+cityArray[7] = new Array("石家庄铁道学院","土木类|机械类|电气与电子类|交通类|经管类|英语系|数学力学系|人文类|计算机类|材料类|建筑与艺术类");
+cityArray[8] = new Array("石家庄学院","物理学|化工学院|英语系|计算机系|文传系|政法系|经济管理专业");
+cityArray[9] = new Array("其它","");
+
+window.onload=function initProvince(){
+    document.all.selProvince.length = 0 ;
+    for(i=0; i<provinceArray.length; i++){
+        document.all.selProvince.options[i] = new Option(provinceArray[i],provinceArray[i]);
+    }
+    getCity(document.all.selProvince.options[0].value)
+}
+
+function getCity(currProvince)
+{
     //当前 所选择 的 省  
-    var currProvincecurrProvince = currProvince;  
-    var i,j,k;  
+    var currProvincecurrProvince = currProvince;
+    var i,j,k;
     //清空 城市 下拉选单  
-    document.all.selCity.length = 0 ;   
-    for (i = 0 ;i <cityArray.length;i++)  
-      {     
-          //得到 当前省 在 城市数组中的位置  
-          if(cityArray[i][0]==currProvince)  
-            {     
-                //得到 当前省 所辖制的 地市  
-                tmpcityArray = cityArray[i][1].split("|")  
-                  for(j=0;j<tmpcityArray.length;j++)  
-                  {  
-                    //填充 城市 下拉选单  
-                    document.all.selCity.options[document.all.selCity.length] = new Option(tmpcityArray[j],tmpcityArray[j]);   
-                  }  
-            }   
-      }   
+    document.all.selCity.length = 0 ;
+    for (i = 0 ;i <cityArray.length;i++)
+    {
+        //得到 当前省 在 城市数组中的位置
+        if(cityArray[i][0]==currProvince)
+        {
+            //得到 当前省 所辖制的 地市
+            tmpcityArray = cityArray[i][1].split("|")
+            for(j=0;j<tmpcityArray.length;j++)
+            {
+                //填充 城市 下拉选单
+                document.all.selCity.options[document.all.selCity.length] = new Option(tmpcityArray[j],tmpcityArray[j]);
+            }
+        }
+    }
 } 
