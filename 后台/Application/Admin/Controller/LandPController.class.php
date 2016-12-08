@@ -8,17 +8,7 @@ class LandPController extends Controller {
 		$this->assign('lost', $data);
 		$this->display();
 	}
-	public function lostedit(){
-    	//获取id
-    	$id = I('id');
-    	//获取数据
-    	$lostModel = M('lost');
-    	$data = $lostModel->find($id);
 
-    	//分配数据
-    	$this->assign('lost',$data);
-    	$this->display();
-    }
      public function lostdestory(){
     		$id = I('id');
     		// 实例化User对象
@@ -40,17 +30,7 @@ class LandPController extends Controller {
 		$this->assign('pick', $data);
 		$this->display();
 	}
-	public function pickedit(){
-    	//获取id
-    	$id = I('id');
-    	//获取数据
-    	$pickModel = M('pick');
-    	$data = $pickModel->find($id);
 
-    	//分配数据
-    	$this->assign('pick',$data);
-    	$this->display();
-    }
      public function pickdestory(){
     		$id = I('id');
     		// 实例化User对象

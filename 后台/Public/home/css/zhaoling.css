@@ -1,0 +1,124 @@
+/*
+* @Author: anchen
+* @Date:   2016-11-24 12:43:36
+* @Last Modified by:   guozhengyang
+* @Last Modified time: 2016-11-29 12:44:44
+*/
+
+.fwrapper {
+    z-index:10;
+    width:987px;
+    height:1400px;
+    position:relative;
+    margin-top: 200px;
+    margin:0 auto;
+}
+.fbanner{
+    padding-top:150px;
+    width:980px;
+    height:310px;
+    margin:0 auto;
+}
+.news_title1 {
+    width:980px;
+    height:45px;
+    border-bottom:none;
+    float:left;
+}
+
+.findcontent1{
+    float:left;
+    background-color: white;
+    width:485px;
+    height:600px;
+
+}
+.find_title1 {
+    width:485px;
+    height:45px;
+    background:url(../img/news_bg.gif) repeat-x;
+    border:1px solid #c5c5c5;
+    border-bottom:none;
+    float:left;
+}
+.find_title1 h2{
+    font-size:18px;
+    text-align:left;
+    font-weight:bold;
+}
+.findcontent2{
+    float:left;
+    background-color: white;
+    width:485px;
+    height:600px;
+
+}
+.findcontent_body ul {
+    float:left;
+    padding-top:20px;
+}
+.findcontent_body ul li {
+    width:460px;
+    float:left;
+    line-height:26px;
+    background:url(../img/icon.png) no-repeat left center;
+    padding-left:15px;
+}
+.findcontent_body ul li a {
+    font-size:14px;
+}
+.findcontent_body ul li span {
+    float:right;
+    color:#999;
+}
+
+
+.scroll ul li { list-style: none;margin: 0; padding: 0;}
+.scroll li { float: left;}
+.scroll img { width: 280px; height: 260px; padding:0 2px}
+.scroll {
+    margin-top:-100px;
+    width: 980px;
+    height:300px;
+    margin:  auto;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.findcontent{
+    z-index:10;
+    width:987px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.gba{
+    z-index:10;
+    width:987px;
+    position:relative;
+    overflow:hidden;
+    margin:0 auto;
+    margin-top: 20px;
+
+}
+.btn1 {
+    width: 493px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background:#87cefa;
+    color:#fff;
+    font-size: 18px;
+    position:center;
+    float:left;
+    font-family:"微软雅黑";
+}
+.btn2 {
+    width: 493px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background:#20b2aa;
+    color:#fff;
+    font-size: 18px;
+    float:right;
+    font-family:"微软雅黑";
+}
