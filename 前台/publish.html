@@ -1,0 +1,172 @@
+<html>
+<head>
+<meta charset="uft-8">
+
+<style>
+body{
+	background-color: rgba(214,207,200,0.48); 
+}
+.publish_content{
+	width: 500px;
+	position: absolute;
+	top: 10%;
+	left:10%;
+}
+.publish_content input{
+	height: 25px;
+}	
+.publish_content b{
+	color: red;
+}
+.publish_content form div {
+	margin:15px auto;
+}
+.pub_1_1{
+	width: 90px;
+}
+.pub_1_2{
+	width: 120px;
+}
+.pub_3 input{
+	margin-left: 8px;
+	width:200px;
+}
+.pub_4 input{
+	height: 10px;
+}
+.pub_5 input,.pub_6 input{
+	margin-left: 16px;
+	width:30px;
+}
+.pub_7 input{
+	width:200px;
+}
+.pub_8 select{
+	margin-left: 8px;
+}
+.pub_9 div div{
+	margin-left: 2px;
+	border: 1px dotted;
+	width: 360px;
+	height: 25px;
+}
+.pub_9_2{
+	 background-color: #fff;
+	 background-abtuite
+}
+.pub_9 div div input{
+	margin-top: 2px;
+}
+.pub_10 input ,.pub_11 input,.pub_12 input,.pub_13 input,.pub_14 input{
+	width:200px;
+}
+.pub_10 input,.pub_13 input,.pub_14 input{
+	margin-left: 8px;
+}
+</style>
+</head>
+<body>
+<div class="publish_content">
+	<form>
+		<div class="pub_1"><b>*</b>所属分类:
+			<select name="province" class="pub_1_1" id="selProvince" onChange = "getCity(this.options[this.selectedIndex].value)">  
+			</select>  
+			<select name="city" class="pub_1_2" id="selCity">  
+			    <option>资格证/等级考试</option>  
+			</select> 
+		</div>
+		<div><b>*</b>有 效 期:
+			<select>
+				<option id="0">选择有效期</option>
+				<option id="1">一星期</option>
+				<option id="2">一个月</option>
+				<option id="3">一年</option>
+				<option id="4">长期有效</option>
+			</select>
+		</div>
+		<div class="pub_3"><b>*</b>商品名称:<input type="text" value="请输商品名称" onfocus="if(this.value=='请输商品名称'){this.value='';}" onblur="if(this.value==''){this.value='请输商品名称';}"></div>
+		<div class="pub_4"><b>*</b>付款方式:
+			<label><input name="pay" type="checkbox" value="" />面对面交易</label>
+			<label><input name="pay" type="checkbox" value="" />网银</label>
+			<label><input name="pay" type="checkbox" value="" />支付宝 </label>
+			<label><input name="pay" type="checkbox" value="" />微信 </label>
+		</div>
+		<div class="pub_5"><b>*</b>价&nbsp;&nbsp;格:<input type="text"> 元</div>
+		<div class="pub_6"><b>*</b>数&nbsp;&nbsp;量:<input type="text"></div>
+		<div class="pub_7"><b>*</b>商家所在地:<input type="text"></div>
+		<div class="pub_8"><b>*</b>新旧程度:
+			<select>
+				<option id="0">选择新旧程度</option>
+				<option id="1">全新</option>
+				<option id="2">9成新</option>
+				<option id="3">8成新</option>
+				<option id="4">7成新</option>
+				<option id="4">6成新</option>
+				<option id="4">5成新及以下</option>
+			</select>
+		</div>
+		<div class="pub_9">
+			<div class="pub_9_1">上传图片:</div>
+			<div class="pub_9_2">
+				<div><input type="file"/></div>
+				<div><input type="file"/></div>
+				<div><input type="file"/></div>
+				<div><input type="file"/></div>
+			</div>
+		</div>
+		<div class="pub_10">内容详情:<input type="text"></div>
+		<div class="pub_11"><b>*</b>联 系 人:<input type="text"></div>
+		<div class="pub_12"><b>*</b>联系电话:<input type="text"></div>
+		<div class="pub_13"> 联系 Q Q:<input type="text"></div>
+		<div class="pub_14"> 电子邮箱:<input type="text"></div>
+		<button type="submit">马上发布</button>
+	</form>
+</div><!--publish_content-->
+<div class="publish_bottom">
+	
+</div>
+</div>
+
+<script>  
+  provinceArray = new Array("书籍报刊","闲置日用","闲置数码","影音小家电","出行娱乐","Girls","其它");
+  cityArray= new Array();
+  cityArray[0]= new Array("书籍报刊","资格证/等级考试|考研资料|教科书|计算机网络|小说杂志|其他");
+  cityArray[1]= new Array("闲置日用","卡卷|台灯|椅子|书柜|其他");
+  cityArray[2]= new Array("闲置数码","笔记本|手机|平板|移动电源|键盘鼠标|充电器|U盘|其他");
+  cityArray[3]= new Array("影音小家电","小电风扇|吹风机|音箱|耳机|插线板|饮水机|其他");
+  cityArray[4]= new Array("出行娱乐","电车|自行车|轮滑鞋|行李箱|帐篷|背包|其他");
+  cityArray[5]= new Array("Girls","Girls");
+  window.onload=function initProvince(){  
+    document.all.selProvince.length = 0 ;   
+    for(i=0; i<provinceArray.length; i++){  
+       document.all.selProvince.options[i] = new Option(provinceArray[i],provinceArray[i]); 
+       console.log(provinceArray[i]) ;
+    }  
+    getCity(document.all.selProvince.options[0].value)  
+}  
+ 
+function getCity(currProvince)  
+{  
+    //当前 所选择 的 父类 
+    var currProvincecurrProvince = currProvince;  
+    var i,j,k;  
+    //清空 子类 下拉选单  
+    document.all.selCity.length = 0 ;   
+    for (i = 0 ;i <cityArray.length;i++)  
+      {     
+          //得到 当前父类 在 子类数组中的位置  
+          if(cityArray[i][0]==currProvince)  
+            {     
+                //得到 当前父类 所包括的子类  
+                tmpcityArray = cityArray[i][1].split("|")  
+                  for(j=0;j<tmpcityArray.length;j++)  
+                  {  
+                    //填充 子类 下拉选单  
+                    document.all.selCity.options[document.all.selCity.length] = new Option(tmpcityArray[j],tmpcityArray[j]);   
+                  }  
+            }   
+      }   
+}  
+</script>  
+</body>
+</html>
