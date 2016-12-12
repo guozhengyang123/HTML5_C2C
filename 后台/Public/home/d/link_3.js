@@ -1,2 +1,0 @@
-﻿
-document.write("<select onChange=Link_Open(this.options[this.selectedIndex].value,'link')><option value=''>youqing</option><option value='http://www.pageadmin.net'>111</option><option value='http://www.pageadmin.net'>aaaaaa</option></select>");

@@ -163,81 +163,86 @@
             </div>
             <div class="clear"></div>
             <!--nav-->
-            <div id="menu">
-                    <ul id="nav">
-                          <li id="mainlevel_01" class="mainlevel">
-                          <a href="{:U('Home/Index/index')}">网站首页</a>
-                          </li>
-                          <li id="mainlevel_02" class="mainlevel">
-                          <a href="{:U('Home/Category/category')}">书籍报刊</a>
-                            <ul id="sub_02">
-                                <li><a href="{:U('Home/Category/category')}">资格证/等级考试</a></li>
-                                <li><a href="{:U('Home/List/list')}">考研资料</a></li>
-                                <li><a href="#">教科书</a></li>
-                                <li><a href="#">计算机网络</a></li>
-                                <li><a href="#">小说杂志</a></li>
-                                <li><a href="#">其他</a></li>
-                            </ul>
-                         </li>
-                         <li id="mainlevel_03" class="mainlevel">
-                          <a href="#">闲置日用</a>
-                                              <ul id="sub_03">
-                                                    <li><a href="#">卡卷</a></li>
-                                                    <li><a href="#">台灯</a></li>
-                                                    <li><a href="#">椅子</a></li>
-                                                    <li><a href="#">书柜</a></li>
-                                                    <li><a href="#">其他</a></li>
+        <div id="menu">
+            <ul id="nav">
+                <li id="mainlevel_01" class="mainlevel">
+                    <a href="{:U('Home/Index/index')}">网站首页</a>
+                </li>
+                <volist name='list[0]' id='vo'>
+                    <li class="mainlevel" id="mainlevel_02">
+                        <a href="{:U('Home/Category/category')}">{$vo.name}</a>
+                        <ul id="sub_02">
+                            <volist name="list[$vo['id']]" id='vo2'>
+                                <li><a href="">{$vo2.name}</a></li>
+                            </volist>
+                            <!-- <li><a href="{:U('Home/Category/category')}">资格证/等级考试</a></li>
+                            <li><a href="{:U('Home/List/list')}">考研资料</a></li>
+                            <li><a href="#">教科书</a></li>
+                            <li><a href="#">计算机网络</a></li>
+                            <li><a href="#">小说杂志</a></li>
+                            <li><a href="#">其他</a></li> -->
+                        </ul>
+                    </li>
+                </volist>
+                <!-- <li id="mainlevel_03" class="mainlevel">
+                 <a href="#">闲置日用</a>
+                                     <ul id="sub_03">
+                                           <li><a href="#">卡卷</a></li>
+                                           <li><a href="#">台灯</a></li>
+                                           <li><a href="#">椅子</a></li>
+                                           <li><a href="#">书柜</a></li>
+                                           <li><a href="#">其他</a></li>
 
-                                                    </ul>
-                                              </li>
-                         <li id="mainlevel_04" class="mainlevel">
-                          <a href="#">闲置数码</a>
-                                              <ul id="sub_04">
-                                                    <li><a href="#">笔记本</a></li>
-                                                    <li><a href="#">手机</a></li>
-                                                    <li><a href="#">平板</a></li>
-                                                    <li><a href="#">移动电源</a></li>
-                                                    <li><a href="#">键盘鼠标</a></li>
-                                                    <li><a href="#">充电器</a></li>
-                                                    <li><a href="#">U盘</a></li>
-                                                    <li><a href="#">其他</a></li>
-                                                    </ul>
-                                              </li>
-                         <li id="mainlevel_05" class="mainlevel">
-                          <a href="#">影音小家电</a>
-                                              <ul id="sub_05">
-                                                    <li><a href="#">小电扇</a></li>
-                                                    <li><a href="#">吹风机</a></li>
-                                                    <li><a href="#">音箱</a></li>
-                                                    <li><a href="#">耳机</a></li>
-                                                    <li><a href="#">插线板</a></li>
-                                                    <li><a href="#">饮水机</a></li>
-                                                    <li><a href="#">其他</a></li>
-                                                    </ul>
-                                              </li>
-                         <li id="mainlevel_06" class="mainlevel">
-                          <a href="#">出行娱乐</a>
-                                              <ul id="sub_06">
-                                                    <li><a href="#">电车</a></li>
-                                                    <li><a href="#">自行车</a></li>
-                                                    <li><a href="#">轮滑鞋</a></li>
-                                                    <li><a href="#">行李箱</a></li>
-                                                    <li><a href="#">帐篷</a></li>
-                                                    <li><a href="#">背包</a></li>
-                                                    <li><a href="#">其他</a></li>
-                                                    </ul>
-                                              </li>
-                        <li id="mainlevel_07" class="mainlevel">
-                          <a href="image.html">失物招领</a>
-                                              
-                        </li>
-                        <li id="mainlevel_08" class="mainlevel">
-                          <a href="#">Girls</a>
-                        </li>
-                        
-                                              
-                    </ul>
-                </div>
+                                           </ul>
+                                     </li>
+                <li id="mainlevel_04" class="mainlevel">
+                 <a href="#">闲置数码</a>
+                                     <ul id="sub_04">
+                                           <li><a href="#">笔记本</a></li>
+                                           <li><a href="#">手机</a></li>
+                                           <li><a href="#">平板</a></li>
+                                           <li><a href="#">移动电源</a></li>
+                                           <li><a href="#">键盘鼠标</a></li>
+                                           <li><a href="#">充电器</a></li>
+                                           <li><a href="#">U盘</a></li>
+                                           <li><a href="#">其他</a></li>
+                                           </ul>
+                 </li>
+                <li id="mainlevel_05" class="mainlevel">
+                 <a href="#">影音小家电</a>
+                                     <ul id="sub_05">
+                                           <li><a href="#">小电扇</a></li>
+                                           <li><a href="#">吹风机</a></li>
+                                           <li><a href="#">音箱</a></li>
+                                           <li><a href="#">耳机</a></li>
+                                           <li><a href="#">插线板</a></li>
+                                           <li><a href="#">饮水机</a></li>
+                                           <li><a href="#">其他</a></li>
+                                           </ul>
+                                     </li>
+                <li id="mainlevel_06" class="mainlevel">
+                 <a href="#">出行娱乐</a>
+                                     <ul id="sub_06">
+                                           <li><a href="#">电车</a></li>
+                                           <li><a href="#">自行车</a></li>
+                                           <li><a href="#">轮滑鞋</a></li>
+                                           <li><a href="#">行李箱</a></li>
+                                           <li><a href="#">帐篷</a></li>
+                                           <li><a href="#">背包</a></li>
+                                           <li><a href="#">其他</a></li>
+                                           </ul>
+                                     </li>
+                                        <li id="mainlevel_07" class="mainlevel">
+                 <a href="image.html">失物招领</a>
+
+                                        </li>
+                                        <li id="mainlevel_08" class="mainlevel">
+                 <a href="{:U('Home/Girls/girls')}">Girls</a>
+                                        </li> -->
+
+
+            </ul>
+        </div>
         </div>
     <div class="clear"></div>
    
