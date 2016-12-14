@@ -2,13 +2,13 @@
 	background-color: rgba(214,207,200,0.48); 
 }*/
 .publish_content{
-	width: 820px;
+	width: 750px;
    /*position: absolute;*/
 	top: 10%;
 	left:10%;
 	/*margin-top:140px;*/
 	padding-top:140px;
-	padding-left:340px;
+	padding-left:300px;
 }
 .publish_content input{
 	height: 25px;
@@ -17,50 +17,69 @@
 	color: red;
 }
 .publish_content form div {
-	margin:15px auto;
+	margin:15px;
 }
+/*.pub_1{ 
+	margin-left: 10px;
+}*/
 .pub_1_1{
-	width: 90px;
+	margin-left:2px;
+	width: 96px;
 }
 .pub_1_2{
-	width: 120px;
+	width: 114px;
+}
+.pub_2 select{ 
+	margin-left:2px;
 }
 .pub_3 input{
 	margin-left: 8px;
 	width:200px;
 }
-.pub_4 input{
-	height: 10px;
+.pub_9_1 b,.pub_10 b,.pub_11 b,.pub_12 b,.pub_13 b,.pub_14 b{
+	color:white;
 }
-.pub_5 input,.pub_6 input{
-	margin-left: 16px;
+.pub_4 input,.pub_5 input,.pub_6 input{
+	margin-left: 8px;
 	width:30px;
 }
 .pub_7 input{
-	width:200px;
+	width:300px;
+	margin-left: 2px;
 }
 .pub_8 select{
-	margin-left: 8px;
+	margin-left: 2px;
+}
+.pub_9 div{
+	margin-left: -12px;
 }
 .pub_9 div div{
 	margin-left: 2px;
 	border: 1px dotted;
-	width: 360px;
+	width: 343px;
 	height: 25px;
 }
 .pub_9_2{
+	margin-left: -30px;
 	 background-color: #fff;
-	 background-abtuite
+	 width: 343px;
 }
 .pub_9 div div input{
 	margin-top: 2px;
+
 }
-.pub_10 input{
+/*.pub_10 input{
 	width:302px;
-}
-.pub_11 input,.pub_12 input,.pub_13 input,.pub_14 input{
+	margin-left: 2px;
+}*/
+/*.pub_11 input,.pub_12 input,.pub_13 input,.pub_14 input{
 	width:200px;
-}
-.pub_10 input,.pub_13 input,.pub_14 input{
+}*/
+.pub_10 input,.pub_11 input,.pub_12 input,.pub_13 input,.pub_14 input{
 	margin-left: 8px;
+	width:300px;
+}
+.pub_15{
+	width: 150px;
+	margin-left:300px; 
 }
