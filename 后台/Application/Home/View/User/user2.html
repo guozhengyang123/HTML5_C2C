@@ -19,15 +19,26 @@
         <div class="logo_search">
             <div class="logo"><a href="#"><img src="__PUBLIC__/home/img/logo.png" /></a></div>
             <div class="search">
-                <ul>
-                    <li><a href="#">注册</a> |</li>
-                    <li><a href="#">登录</a>&nbsp&nbsp</li>
-
-                    <li><a href="#">购物车</a> |</li>
-                    <li><a href="#">收藏夹</a> |</li>
-                    <li><a href="#">个人中心</a> |</li>
-                    <li><a href="#">客户服务</a></li>
-                </ul>
+                <if condition="$Think.session.username neq null">
+                        <ul class="nav">
+                            <li class="drop">
+                                <a href="#" class="dropdown">你好，{$Think.session.username}</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{:U('Home/User/user1')}">个人中心</a></li>
+                                    <li><a href="{:U('Home/User/logout')}">退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <else/>
+                        <ul class="nav">
+                            <li>
+                                <a href="{:U('Home/User/login')}">登录</a>
+                            </li>
+                            <li>
+                                <a href="{:U('Home/User/register')}">注册</a>
+                            </li>
+                        </ul>
+                    </if>
                 <div class="clear"></div>
                 <div class="form">
                     <div name="" type="button" class="inbut" value="" /></div>

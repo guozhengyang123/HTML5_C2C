@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="__PUBLIC__/admin/css/pintuer.css">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/admin.css">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/table.css">
+
+<script src="__PUBLIC__/admin/js/jquery.js"></script>
+<script src="__PUBLIC__/admin/js/pintuer.js"></script>
+</head>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>修改内容</strong></div>
+  <div class="body-content">
+   <form action="{:U('Admin/goods/update')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+      <table class="insert-tab" width="100%">
+          <tbody>
+              <tr>
+                  <th><i class="require-red">*</i>标题：</th>
+                  <td><input name="name" class="common-text required" style="width: 20%;" /></td>
+              </tr>
+              
+              <tr>
+                  <th width="120"><i class="require-red">*</i>分类：</th>
+                  <td>
+                    
+                      <select   class="required">
+                          <option value="">无</option>
+                          <volist name="first" id="vo">
+                          <option>{$vo.name}</option>
+                          </volist>
+                      </select>
+                      
+                      <select  name="cid" class="required">
+                            <option value="">无</option>
+                              <volist name="second" id='vo2'>
+                                  
+                                   <option value="{$vo2.id}">{$vo2.name}</option>
+                          
+                              </volist> 
+                      </select>
+
+                  </td>
+              </tr>
+
+              <tr>
+                  <th><i class="require-red">*</i>数量：</th>
+                  <td><input name="quantity" class="common-text required" style="width: 20%;" /></td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>原价：</th>
+                  <td><input name="price" class="common-text required" style="width: 20%;" /></td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>售价：</th>
+                  <td><input name="secprice" class="common-text required" style="width: 20%;" /></td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>新旧程度：</th>
+                  <td>
+                    <select  name="condition" class="required">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>描述：</th>
+                  <td><input name="intro" class="common-text required" style="width: 70%;" /></td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>图片：</th>
+                  <td>
+                    <input name="picture" type="file">
+                  </td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>上传用户：</th>
+                  <td><input name="username" class="common-text required" style="width: 70%;" /></td>
+              </tr>
+              <tr>
+                  <th></th>
+                  <td>
+                      <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                      <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                  </td>
+              </tr>
+          </tbody>
+          </table>
+  </form>
+  </div>
+</div>
+
+</body></html>

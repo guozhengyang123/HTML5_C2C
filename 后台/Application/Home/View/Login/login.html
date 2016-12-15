@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<mate charset="utf-8">
+<title>登录</title>
+<link href="login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+	<div class="header">
+		<div class="left">
+			<img src="logo.png" />
+		</div>
+
+		<div class="header_link">
+			<a href="#">免费注册 |</a>
+			<a href="#">代理加盟 |</a>
+			<a href="#">投诉建议</a>
+		</div>
+	</div>
+	
+	<div class="content">
+	    <form action="{:U('Home/User/login')}" method="post">
+	        <div class="panel loginbox">
+	        	<div class="panel-top">登录&nbsp;<a href="{:U('Home/User/register')}">/注册</a></div>
+	            <div class="panel-body">
+	                <div class="log-line">
+	                    <div class="log-text">
+	                        <input type="text" class="username" name="username" placeholder="用户名"/>
+	                    </div>
+	                </div>
+	                <div class="log-line">
+	                    <div class="log-text">
+	                        <input type="password"class="password" name="password" placeholder="密码"/>
+	                    </div>
+	                </div>
+	                <div class="log-line">
+	                    <div class="log-text">
+	                        <input type="text" style="height:44px;width:149px" class="verify" name="verify" placeholder="验证码"/>
+	                        <img id="ver" src="{:U('Admin/Login/verify')}" alt="verify_code" onclick="this.src='{:U('Admin/Login/verify')}'" />                       
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="forget">
+                    <a href="#">忘记密码？</a>
+                </div>
+
+	            <div class="log-sub">
+	            	<input type="submit" name="submit" class="style1" onmouseover="this.className='style2'" onmouseout="this.className='style1'" value="登    录">
+	            </div>
+	        </div>
+	    </form>
+	</div>
+		
+	<div class="foot">
+		Copyright &copy; 2016-2017 奋斗小组
+	</div>
+</div>	
+
+</body>
+</html> 
+

@@ -1,4 +1,142 @@
-<include file="nav/nav" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>大学生校园二手网站</title>
+<link href="__PUBLIC__/home/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/home/css/css.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/home/css/news_list_css.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/home/css/zhucedenglu.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/home/css/bootstrap.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.2.min.js"></script>
+<!--[if !IE]>导航条样式　JS<![endif]-->
+<script type="text/javascript" src="__PUBLIC__/home/js/thcic_menu.js"></script>
+</head>
+<body>
+<div class="header_bg">
+        <div class="logo_search">
+            <div class="logo"><a href="#"><img src="__PUBLIC__/home/img/logo.png" /></a></div>
+            <div class="search">
+                <if condition="$Think.session.username neq null">
+                        <ul class="nav">
+                            <li class="drop">
+                                <a href="#" class="dropdown">你好，{$Think.session.username}</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{:U('Home/User/user1')}">个人中心</a></li>
+                                    <li><a href="{:U('Home/User/logout')}">退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <else/>
+                        <ul class="nav">
+                            <li>
+                                <a href="{:U('Home/User/login')}">登录</a>
+                            </li>
+                            <li>
+                                <a href="{:U('Home/User/register')}">注册</a>
+                            </li>
+                        </ul>
+                    </if>
+                <div class="clear"></div>
+                <div class="form">
+                    <div name="" type="button" class="inbut" value="" /></div>
+                    <input name="" type="text" class="intext"/>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--nav-->
+        <div id="menu">
+                <ul id="nav">
+                         <li id="mainlevel_01" class="mainlevel">
+                          <a href="{:U('Home/Index/index')}">网站首页</a>
+                          </li>
+                          <volist name="sds" id="vo">
+                          <li id="mainlevel_02" class="mainlevel">
+
+                          <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
+                            <ul id="sub_02">
+                            <volist name="ses" id="co">
+                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
+                            </ul>
+                         </li>
+                         </volist>
+                      <!-- <li id="mainlevel_01" class="mainlevel">
+                      <a href="{:U('Home/Index/index')}">网站首页</a>
+                      </li>
+                      <li id="mainlevel_02" class="mainlevel">
+                      <a href="{:U('Home/Category/category')}">书籍报刊</a>
+                        <ul id="sub_02">
+                            <li><a href="category.html">资格证/等级考试</a></li>
+                            <li><a href="list.html">考研资料</a></li>
+                            <li><a href="#">教科书</a></li>
+                            <li><a href="#">计算机网络</a></li>
+                            <li><a href="#">小说杂志</a></li>
+                            <li><a href="#">其他</a></li>
+                        </ul>
+                     </li>
+                     <li id="mainlevel_03" class="mainlevel">
+                     <a href="#">闲置日用</a>
+                        <ul id="sub_03">
+                            <li><a href="#">卡卷</a></li>
+                            <li><a href="#">台灯</a></li>
+                            <li><a href="#">椅子</a></li>
+                            <li><a href="#">书柜</a></li>
+                            <li><a href="#">其他</a></li>
+
+                        </ul>
+                     </li>
+                     <li id="mainlevel_04" class="mainlevel">
+                     <a href="#">闲置数码</a>
+                       <ul id="sub_04">
+                            <li><a href="#">笔记本</a></li>
+                            <li><a href="#">手机</a></li>
+                            <li><a href="#">平板</a></li>
+                            <li><a href="#">移动电源</a></li>
+                            <li><a href="#">键盘鼠标</a></li>
+                            <li><a href="#">充电器</a></li>
+                            <li><a href="#">U盘</a></li>
+                            <li><a href="#">其他</a></li>
+                        </ul>
+                     </li>
+                     <li id="mainlevel_05" class="mainlevel">
+                      <a href="#">影音小家电</a>
+                        <ul id="sub_05">
+                            <li><a href="#">小电扇</a></li>
+                            <li><a href="#">吹风机</a></li>
+                            <li><a href="#">音箱</a></li>
+                            <li><a href="#">耳机</a></li>
+                            <li><a href="#">插线板</a></li>
+                            <li><a href="#">饮水机</a></li>
+                            <li><a href="#">其他</a></li>
+                        </ul>
+                    </li>
+                     <li id="mainlevel_06" class="mainlevel">
+                      <a href="#">出行娱乐</a>
+                      <ul id="sub_06">
+                            <li><a href="#">电车</a></li>
+                            <li><a href="#">自行车</a></li>
+                            <li><a href="#">轮滑鞋</a></li>
+                            <li><a href="#">行李箱</a></li>
+                            <li><a href="#">帐篷</a></li>
+                            <li><a href="#">背包</a></li>
+                            <li><a href="#">其他</a></li>
+                            </ul>
+                      </li>
+                    <li id="mainlevel_07" class="mainlevel">
+                      <a href="image.html">失物招领</a>
+                                          
+                    </li>
+                    <li id="mainlevel_08" class="mainlevel">
+                      <a href="#">Girls</a>
+                    </li>
+                    
+                                           -->
+                </ul>
+        </div>
+</div>
+
 <div class="clear"></div>
 <!--content-->
 <div class="wrapper">
@@ -6,7 +144,7 @@
 	<img src="__PUBLIC__/home/img/one_title.png" height="102" width="407">
         <div class="one_title" >
            <a href="#"><img src="__PUBLIC__/home/img/find.png"/ class="icons"></a>
-           <h2><!-- 迷路指南： --><span><a href="#">首页</a>&gt;&gt;<a href="category.html">书籍报刊</a>&gt;&gt;<a href="category.html">资格证/等级考试</a></span></h2>
+           <h2><!-- 迷路指南： --><span><a href="#">首页</a>&gt;&gt;<a href="category.html"><volist name="ess" id="vo">{$vo.name}</volist></a>&gt;&gt;<a href="category.html"><volist name="pos" id="vo">{$vo.name}</volist></a></span></h2>
         </div>
     </div>
 	<div class="content">
@@ -14,108 +152,110 @@
         	<div class="left_one">
                 <img src="__PUBLIC__/home/img/leftone_bg.png" style="height:450px; width:220px; background-color:#E3EEEC">
             	<div>
-            		<h2><a href="category.html" >书籍报刊</a></h2>
+            		<h2><a href="category.html" ><volist name="ess" id="vo">{$vo.name}</volist></a></h2>
                		 <ul>
-						<li><a href="category.html" class="now">资格证/等级考试</a></li>
-						<li><a href="list.html">考研资料</a></li>
+                     <volist name="poss" id="vo">
+						<li><a href="category.html" class="now">{$vo.name}</a></li>
+						<!-- <li><a href="list.html">考研资料</a></li>
 						<li><a href="#">教科书</a></li>
 						<li><a href="#">计算机网络</a></li>
 						<li><a href="#">小说杂志</a></li>
-						<li><a href="#">其他    </a></li>
+						<li><a href="#">其他    </a></li> -->
+                    </volist>
                 	</ul>
                 </div>
             </div>
         </div>
         <div class="content_right">
                 <ul>
-                    <volist name="result" id="vo">
-        	        	<li>
-                            <div>
-                                <a href="show.html"><img src="$vo.picture" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="show.html"><p style="text-align: center">{$vo.name}</p>原价：{$vo.price}  售价：{$vo.secprice}</a>
-                            </div>
+                <volist name="iss" id="vo">
+    	        	<li>
+                        <div>
+                            <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="__PUBLIC__/{$vo.url}" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="{:U('Home/Show/show')}?id={$vo.id}"><p style="text-align: center">教师资格证资料</p>原价：{$vo.price}元  售价{$vo.secprice}元</a>
+                        </div>
 
-                        </li> 
-                        <!-- <li>
-                            <div>
-                                <a href="#"><img src="__PUBLIC__/home/img/考研政治.png" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="#"><p style="text-align: center">考研政治资料</p>原价：45元  售价10元</a>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#"><img src="__PUBLIC__/home/img/六级真题.png" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="#"><p style="text-align: center">英语六级真题</p>原价：45元  售价10元</a>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#"><img src="__PUBLIC__/home/img/四级听力.png" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="#"><p style="text-align: center">四级听力</p>原价：45元  售价10元</a>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#"><img src="__PUBLIC__/home/img/教师.png" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="#"><p style="text-align: center">教师资格证资料</p>原价：45元  售价10元</a>
-                            </div>
-                        
-                        </li> 
-                        <li>
-                            <div>
-                                <a href="#"><img src="__PUBLIC__/home/img/考研政治.png" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="#"><p style="text-align: center">考研政治资料</p>原价：45元  售价10元</a>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#"><img src="__PUBLIC__/home/img/六级真题.png" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="#"><p style="text-align: center">英语六级真题</p>原价：45元  售价10元</a>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#"><img src="__PUBLIC__/home/img/六级真题.png" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="#"><p style="text-align: center">英语六级真题</p>原价：45元  售价10元</a>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#"><img src="__PUBLIC__/home/img/四级听力.png" /  id="p1"></a>
-                            </div>
-                            <div id="t1">
-                                <a href="#"><p style="text-align: center">四级听力</p>原价：45元  售价10元</a>
-                            </div>
-                        
-                        </li> -->
-                    </volist>
+                    </li> 
+                </volist>
+                    <!-- <li>
+                        <div>
+                            <a href="#"><img src="__PUBLIC__/home/img/考研政治.png" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="#"><p style="text-align: center">考研政治资料</p>原价：45元  售价10元</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#"><img src="__PUBLIC__/home/img/六级真题.png" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="#"><p style="text-align: center">英语六级真题</p>原价：45元  售价10元</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#"><img src="__PUBLIC__/home/img/四级听力.png" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="#"><p style="text-align: center">四级听力</p>原价：45元  售价10元</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#"><img src="__PUBLIC__/home/img/教师.png" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="#"><p style="text-align: center">教师资格证资料</p>原价：45元  售价10元</a>
+                        </div>
+
+                    </li> 
+                    <li>
+                        <div>
+                            <a href="#"><img src="__PUBLIC__/home/img/考研政治.png" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="#"><p style="text-align: center">考研政治资料</p>原价：45元  售价10元</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#"><img src="__PUBLIC__/home/img/六级真题.png" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="#"><p style="text-align: center">英语六级真题</p>原价：45元  售价10元</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#"><img src="__PUBLIC__/home/img/六级真题.png" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="#"><p style="text-align: center">英语六级真题</p>原价：45元  售价10元</a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#"><img src="__PUBLIC__/home/img/四级听力.png" /  id="p1"></a>
+                        </div>
+                        <div id="t1">
+                            <a href="#"><p style="text-align: center">四级听力</p>原价：45元  售价10元</a>
+                        </div>
+
+                    </li> -->
 
                 </ul>
             
                 <div class="clear"></div>
-                <div class="page">
+                <!-- <div class="page">
                 	<dl>
                     	<dt><a href="#">首 页</a></dt>
                     	<dt><a href="#">上一页</a></dt>
@@ -128,7 +268,7 @@
                     	<dt><a href="#">下一页</a></dt>
                     	<dt><a href="#">末 页</a></dt>
                     </dl>
-                </div>
+                </div> -->
         </div>   
     </div>
 </div>
@@ -158,8 +298,8 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/bootstrap.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/home/js/re.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/re.js"></script>
 </body>
 </html>

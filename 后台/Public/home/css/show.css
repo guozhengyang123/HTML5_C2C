@@ -1,12 +1,12 @@
 /* 
-* @Author: guo
-* @Date:   2016-12-13 11:01:23
-* @Last Modified by:   guo
+* @Author: anchen
+* @Date:   2016-11-24 13:01:23
+* @Last Modified by:   anchen
 * @Last Modified time: 2016-12-01 17:02:13
 */
-.wrapper{
-    height:1600px;
-}
+/*.wrapper{
+       height:1780px;
+}*/
 .scontent{
     height:485px;
     z-index:10;
@@ -15,7 +15,7 @@
     overflow:hidden;
     margin:0 auto;
     margin-top: -20px;
-}
+ }
 
 .scontentup1{
     float:left;
@@ -25,39 +25,7 @@
     border-style: double;
     margin-top:20px;
     text-align: center;
-    margin-left: 10px;
-}
-#bigimg{
-    width:420px;
-    height:360px;
-}
-#litimg1{
-    float:left;
-    width:100px;
-    height:50px;
-    margin-top:10px;
-    margin-left: 1px;
-}
-#litimg2{
-    float:left;
-    width:100px;
-    height:50px;
-    margin-top:10px;
-    margin-left:6px;
-}
-#litimg3{
-    float:left;
-    width:100px;
-    height:50px;
-    margin-top:10px;
-    margin-left:6px;
-}
-#litimg4{
-    float:left;
-    width:100px;
-    height:50px;
-    margin-top:10px;
-    margin-left:6px;
+     margin-left: 10px;
 }
 .scontentup2{
     float:right;
@@ -72,16 +40,20 @@
 
 }
 .content_price{
-    width:300px;
+    width:520px;
     height:40px;
-
+    background-color: #ffddaa;
 }
 .content_price1{
-    width:130px;
+    width:330px;
     float:left;
-    margin-top:20px;
+    margin-top:5px;
     margin-left: 16px;
-
+   
+}
+.content_price1 span{
+    font-size:30px;
+    color:#e63f00;
 }
 .content_price1 p{
     font-size:18px;
@@ -89,28 +61,36 @@
 }
 .content_price2{
     float:left;
-    margin-top:24px;
-
+    margin-top:20px;
+ 
 }
 .content_icon2{
+    float: right;
     margin-top:25px;
-    margin-left:20px;
+    margin-left:100px;
+    font-size: 20px;
     color:red;
     width:150px;
-    height:40px;
+    height:50px;
+}
+.content_icon21{
+    float: left;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 #min{
-    width:25px;
-    margin-right:-6px;
+    width:20px;
+    margin-right:-13px;
 
 }
-#text_box{
+#text_box{ 
     width:30px;
     text-align: center;
 }
 #add{
-    width:25px;
-    margin-left:-6px;
+    width:20px;
+    margin-left:-13px;
 }
 .scontentup2 div a{
 
@@ -122,7 +102,7 @@
     width:100px;
     height:35px;
     background-color:#f9906f;
-    margin-top:65px;
+    margin-top:35px;
     margin-left:66px;
     color:white;
     font-size: 16px;
@@ -148,7 +128,7 @@
     width:130px;
     height:35px;
     background-color: #aaaaaa;
-    margin-top:65px;
+    margin-top:35px;
     margin-right: 100px;
     color:black;
     font-size: 16px;
@@ -165,28 +145,19 @@
     margin-right:20px;
 }
 .content_icon3{
-    width:130px;
-    height:35px;
-    margin-top:60px;
-    margin-left:360px;
-    display:inline;
-}
-.content_icon3 a{
-    display:inline;
-    float:left;
-    margin-top: 80px;
+       display:inline;
+       float:left;
+       height:40px;
+       text-align: center;
+       margin-top: 10px;
+       margin-bottom: 60px;
 }
 .icon3_left{
     float:left;
-    width:80px;
-    height:35px;
-}
-.icon3_right{
-    float:right;
-    margin-right:20px;
-    margin-top:-5px;
-    width:30px;
-    height:35px;
+    width:130px;
+    height:15px;
+    font-size: 15px;
+    margin-left: 30px;
 }
 #scontentbot{
 
@@ -197,67 +168,66 @@
     border:black 1px solid;
 
 }
-
 .m-sidebar
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    background:#008800;
-    width: 35px;
-    height: 100%;
-    font-size: 12px;
-    color: #fff;
-}
-.cart
-{
-    color: #fff;
-    text-align: center;
-    line-height: 20px;
-    padding: 200px 0 0 0px;
-}
-.cart span
-{
-    display: block;
-    width: 20px;
-    margin: 0 auto;
-}
-.cart i
-{
-    width: 35px;
-    height: 35px;
-    display: block;
-    background: url(car.png) no-repeat;
-}
-#msg
-{
-    position: fixed;
-    top: 300px;
-    right: 35px;
-    z-index: 10000;
-    width: 1px;
-    height: 52px;
-    line-height: 52px;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-    background: #360;
-    display: none;
-}
-.u-flyer
-{
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    position: fixed;
-    z-index: 9999;
-}
-
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background:#008800;
+            width: 35px;
+            height: 100%;
+            font-size: 12px;
+            color: #fff;
+        }
+        .cart
+        {
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            padding: 200px 0 0 0px;
+        }
+        .cart span
+        {
+            display: block;
+            width: 20px;
+            margin: 0 auto;
+        }
+        .cart i
+        {
+            width: 35px;
+            height: 35px;
+            display: block;
+            background: url(car.png) no-repeat;
+        }
+        #msg
+        {
+            position: fixed;
+            top: 300px;
+            right: 35px;
+            z-index: 10000;
+            width: 1px;
+            height: 52px;
+            line-height: 52px;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+            background: #360;
+            display: none;
+        }
+        .u-flyer
+        {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: fixed;
+            z-index: 9999;
+        }
+        
 .detail{
     width:980px;
     height:300px;
-    /* border:black 1px solid;*/
+   /* border:black 1px solid;*/
     margin-top:10px;
 }
 .active_tab{
@@ -267,7 +237,7 @@
     border-bottom:#e4393c solid 1px;
     height:37px;
     line-height:37px;
-    background:#f7f7f7;
+    background:#f7f7f7; 
 }
 .active_tab a{
     color:#666666;font-size: 14px;
@@ -294,12 +264,12 @@
     color: #ffffff;
 }
 .act_active a{color:#ffffff; font-size: 14px;}
-.act_title_right{
+.act_title_right{  
     float:right;
 }
 .mui-ac{
     background: #e4393c none repeat scroll 0 0;
-
+    
     float: left;
     font-size: 14px;
     height:25px;
@@ -334,7 +304,7 @@
     font-size: 14px;
     line-height: 2;
     overflow: hidden;
-}
+}   
 #ui-a ul li img{
     width:950px;
     height: 100%;
@@ -342,7 +312,7 @@
 }
 .comment{
     width:800px;
-    height:70px;
+    height:50px;
     border-bottom:#e4393c dashed 1px;
     padding-left:17px;
     padding-top:10px;
@@ -366,8 +336,8 @@
     outline-width:medium;
     padding:2px;
     width:100%;
-
-}
+ 
+} 
 .comment ul{
     height:80px;
     width:800px;
