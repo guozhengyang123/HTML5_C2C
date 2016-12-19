@@ -1,74 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc42aef4-f92d-48b1-976b-e14917cec678" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Public/home/img/bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Public/home/img/qq1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Public/home/img/ren.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Public/home/img/school.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Public/home/img/timg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Common/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Conf/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Conf/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/AdvController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/CategoryController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/GoodsController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/IndexController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/LandPController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/LoginController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/MessageController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/PasswordController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/VipController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Controller/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/Model/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Adv/adv.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Adv/advadd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Category/cate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Category/cateadd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Category/cateedit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Goods/goods.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Goods/goodsadd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Goods/goodsedit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Index/info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/LandP/lost.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/LandP/pick.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Login/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Message/message.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Password/password.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Vip/vip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/Vip/vipadd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/View/tips.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/Admin/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Admin/View/Goods/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/Controller/GwcController.calss.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/Controller/ImageController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/Controller/MessageController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Gwc/gwc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Image/image.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/List/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Login/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/User/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/User/register.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+    <list default="true" id="cc42aef4-f92d-48b1-976b-e14917cec678" name="Default" comment="Default">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/Controller/ShiwuzhaolingController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Shiwuzhaoling/diushi.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Shiwuzhaoling/image.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Shiwuzhaoling/zhaoling.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/后台/Application/Home/Controller/ImageController.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/后台/Application/Home/View/zhaoling/image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/后台/Application/Home/View/zhaoling/zhaoling.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/后台/Application/Home/View/zhaoling/zhaoling2.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Admin/Controller/GoodsController.class.php" afterPath="$PROJECT_DIR$/后台/Application/Admin/Controller/GoodsController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Admin/View/Goods/goodsadd.html" afterPath="$PROJECT_DIR$/后台/Application/Admin/View/Goods/goodsadd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/Conf/config.php" afterPath="$PROJECT_DIR$/后台/Application/Home/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/Controller/CategoryController.class.php" afterPath="$PROJECT_DIR$/后台/Application/Home/Controller/CategoryController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/后台/Application/Home/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/Controller/ShowController.class.php" afterPath="$PROJECT_DIR$/后台/Application/Home/Controller/ShowController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/后台/Application/Home/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/View/Category/category.html" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Category/category.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/View/Index/index.html" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/View/Service/service.html" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Service/service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/View/Show/show.html" afterPath="$PROJECT_DIR$/后台/Application/Home/View/Show/show.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/View/User/user1.html" afterPath="$PROJECT_DIR$/后台/Application/Home/View/User/user1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/View/User/user2.html" afterPath="$PROJECT_DIR$/后台/Application/Home/View/User/user2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/View/User/user3.html" afterPath="$PROJECT_DIR$/后台/Application/Home/View/User/user3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Application/Home/View/User/user4.html" afterPath="$PROJECT_DIR$/后台/Application/Home/View/User/user4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台/Public/home/css/show.css" afterPath="$PROJECT_DIR$/后台/Public/home/css/show.css" />
     </list>
     <ignored path="HTML5_C2C.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,6 +31,20 @@
   <component name="FavoritesManager">
     <favorites_list name="HTML5_C2C" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="image.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/后台/Application/Home/View/Shiwuzhaoling/image.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="129" column="60" selection-start-line="129" selection-start-column="60" selection-end-line="129" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -101,7 +57,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -117,8 +73,8 @@
     <OptionsSetting value="true" id="更新" />
     <OptionsSetting value="true" id="状态" />
     <OptionsSetting value="true" id="编辑" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <ConfirmationsSetting value="0" id="添加" />
+    <ConfirmationsSetting value="0" id="移除" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -135,7 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -144,14 +100,187 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="后台" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="后台" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="后台" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="后台" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="后台" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shiwuzhaoling" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="后台" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML5_C2C" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="后台" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -179,6 +308,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -213,30 +348,33 @@
       <option name="presentableId" value="Default" />
       <updated>1481786177239</updated>
       <workItem from="1481786178466" duration="12000" />
+      <workItem from="1482138103830" duration="394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12000" />
+    <option name="totallyTimeSpent" value="406000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -252,8 +390,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/后台/Application/Home/View/Shiwuzhaoling/image.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="129" column="60" selection-start-line="129" selection-start-column="60" selection-end-line="129" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

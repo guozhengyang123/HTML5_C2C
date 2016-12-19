@@ -143,163 +143,132 @@
 <body>
 <div class="header_bg">
 
-    <div class="logo_search">
-        <div class="logo"><a href="#"><img src="__PUBLIC__/home/img/logo.png" /></a></div>
-        <div class="search">
-            <ul>
-                <li>
-                    <div style="Z-INDEX:8888;POSITION:absolute;-moz-opacity:0.50;opacity:0.3;filter:alpha(opacity=30);BACKGROUND-COLOR:#000;display:none;" id="show">
-                    </div>
-
-                    <div class="topDiv" id="show_win">
-
-                        <h1>注册</h1>
-
-                        <!-- <div id="register_bottom"> -->
-                        <form method="post" class="form" style="height:500px; width:500px;">
-
-                            <h5 style="text-align: center; line-height: 30px; margin-bottom: 10px">欢迎您注册网站会员，如果您已拥有账户，则可在此<a href="#">登录</a></h5>
-                            <table>
-                                <tr>
-                                    <td>昵称:</td>
-                                    <td><input type="text" class="input_one" required="required"/><b style="margin-left: 6px">*</b></td>
-                                </tr>
-                                <tr>
-                                    <td>用 户 名:</td><td><input type="text" class="input_one" required="required"/><b style="margin-left: 6px">*</b></td>
-                                </tr>
-                                <tr>
-                                    <td>设置密码:</td>
-                                    <td><input type="password" class="input_one" required="required"/><b style="margin-left: 6px">*</b></td>
-                                </tr>
-                                <tr>
-                                    <td>确认密码:</td>
-                                    <td><input type="password" class="input_one" required="required"/><b style="margin-left: 6px">*</b></td>
-                                </tr>
-                                <tr>
-                                    <td>性别:</td>
-                                    <td><input id="man" type="radio" name="1" />男<input id="woman" type="radio"  name="1"/>女<input id="man" type="radio" checked="checked" name="1" />保密</td>
-                                </tr>
-                                <tr>
-                                    <td>选择省市:</td>
-                                    <td><select name="province" class="input_three" id="selProvince" onChange = "getCity(this.options[this.selectedIndex].value)">
-                                    </select>
-                                        <select name="city" class="input_four" id="selCity">
-                                            <option>北京</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>学校:</td>
-                                    <td><input type="text" class="input_one"></td>
-                                </tr>
-                                <tr>
-                                    <td>E - mail:</td>
-                                    <td><input type="email" class="input_one" class="input_one" name="user_email"/></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" style="text-align: center"><input type="checkbox" name="save" value="yes" />已同意<a href="">c2c网站服务条款</a></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><button class="but" type="submit"><a href="index.html">立即注册</a></button></td>
-                                </tr>
-                            </table>
-                        </form>
-                        <!--   </div> -->
+            <div class="logo_search">
+                <div class="logo"><a href="#"><img src="__PUBLIC__/home/img/logo.png" /></a></div>
+                <div class="search">
+                    <if condition="$Think.session.username neq null">
+                        <ul class="nav">
+                            <li class="drop">
+                                <a href="#" class="dropdown">你好，{$Think.session.username}</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{:U('Home/User/user1')}">个人中心</a></li>
+                                    <li><a href="{:U('Home/User/logout')}">退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <else/>
+                        <ul class="nav">
+                            <li>
+                                <a href="{:U('Home/User/login')}">登录</a>
+                            </li>
+                            <li>
+                                <a href="{:U('Home/User/register')}">注册</a>
+                            </li>
+                        </ul>
+                    </if>
+                    <div class="clear"></div>
+                    <div class="form">
+                        <div name="" type="button" class="inbut" value=""></div>
+                        <input name="" type="text" class="intext"/>
 
                     </div>
-
-                    <a href="javascript:void(0);" onclick="javascript:showDiv();">注册 |</a></li>
-                <li><a href="#">登录</a>&nbsp&nbsp</li>
-
-                <li><a href="gwc.html">购物车</a> |</li>
-                <li><a href="user3.html">收藏夹</a> |</li>
-                <li><a href="user1.html">个人中心</a> |</li>
-                <li><a href="#">客户服务</a></li>
-            </ul>
+                </div>
+            </div>
             <div class="clear"></div>
-            <form>
-                <input name="" type="text" class="intext"/><input name="" type="button" class="inbut" value="" />
-            </form>
+            <!--nav-->
+            <div id="menu">
+                    <!-- <ul id="nav">
+                          <li id="mainlevel_01" class="mainlevel">
+                          <a href="{:U('Home/Index/index')}">网站首页</a>
+                          </li>
+                          <li id="mainlevel_02" class="mainlevel">
+                          <a href="{:U('Home/Category/category')}">书籍报刊</a>
+                            <ul id="sub_02">
+                                <li><a href="{:U('Home/Category/category')}">资格证/等级考试</a></li>
+                                <li><a href="{:U('Home/List/list')}">考研资料</a></li>
+                                <li><a href="#">教科书</a></li>
+                                <li><a href="#">计算机网络</a></li>
+                                <li><a href="#">小说杂志</a></li>
+                                <li><a href="#">其他</a></li>
+                            </ul>
+                         </li>
+                         <li id="mainlevel_03" class="mainlevel">
+                          <a href="#">闲置日用</a>
+                                              <ul id="sub_03">
+                                                    <li><a href="#">卡卷</a></li>
+                                                    <li><a href="#">台灯</a></li>
+                                                    <li><a href="#">椅子</a></li>
+                                                    <li><a href="#">书柜</a></li>
+                                                    <li><a href="#">其他</a></li>
+
+                                                    </ul>
+                                              </li>
+                         <li id="mainlevel_04" class="mainlevel">
+                          <a href="#">闲置数码</a>
+                                              <ul id="sub_04">
+                                                    <li><a href="#">笔记本</a></li>
+                                                    <li><a href="#">手机</a></li>
+                                                    <li><a href="#">平板</a></li>
+                                                    <li><a href="#">移动电源</a></li>
+                                                    <li><a href="#">键盘鼠标</a></li>
+                                                    <li><a href="#">充电器</a></li>
+                                                    <li><a href="#">U盘</a></li>
+                                                    <li><a href="#">其他</a></li>
+                                                    </ul>
+                                              </li>
+                         <li id="mainlevel_05" class="mainlevel">
+                          <a href="#">影音小家电</a>
+                                              <ul id="sub_05">
+                                                    <li><a href="#">小电扇</a></li>
+                                                    <li><a href="#">吹风机</a></li>
+                                                    <li><a href="#">音箱</a></li>
+                                                    <li><a href="#">耳机</a></li>
+                                                    <li><a href="#">插线板</a></li>
+                                                    <li><a href="#">饮水机</a></li>
+                                                    <li><a href="#">其他</a></li>
+                                                    </ul>
+                                              </li>
+                         <li id="mainlevel_06" class="mainlevel">
+                          <a href="#">出行娱乐</a>
+                                              <ul id="sub_06">
+                                                    <li><a href="#">电车</a></li>
+                                                    <li><a href="#">自行车</a></li>
+                                                    <li><a href="#">轮滑鞋</a></li>
+                                                    <li><a href="#">行李箱</a></li>
+                                                    <li><a href="#">帐篷</a></li>
+                                                    <li><a href="#">背包</a></li>
+                                                    <li><a href="#">其他</a></li>
+                                                    </ul>
+                                              </li>
+                        <li id="mainlevel_07" class="mainlevel">
+                          <a href="image.html">失物招领</a>
+                                              
+                        </li>
+                        <li id="mainlevel_08" class="mainlevel">
+                          <a href="#">Girls</a>
+                        </li>
+                        
+                                              
+                    </ul> -->
+                    <ul id="nav">
+
+                          <li id="mainlevel_01" class="mainlevel">
+                          <a href="{:U('Home/Index/index')}">网站首页</a>
+                          </li>
+                          <volist name="list[0]" id="vo">
+                              <li id="mainlevel_01" class="mainlevel">
+                              <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
+                                <ul id="sub_02">
+                                    <volist name="list[$vo['id']]" id='vo2'>
+                                        <li><a href="{:U('Home/Category/category')}?id={$vo2.id}">{$vo2.name}</a></li> 
+                                    </volist>
+                                </ul>
+                             </li>
+                        </volist>
+                    </ul>
+                </div>
         </div>
-    </div>
     <div class="clear"></div>
-    <!--nav-->
-    <div id="menu">
-        <ul id="nav">
-            <li id="mainlevel_01" class="mainlevel">
-                <a href="index.html">网站首页</a>
-            </li>
-            <li id="mainlevel_02" class="mainlevel">
-                <a href="category.html">书籍报刊</a>
-                <ul id="sub_02">
-                    <li><a href="category.html">资格证/等级考试</a></li>
-                    <li><a href="#">考研资料</a></li>
-                    <li><a href="#">教科书</a></li>
-                    <li><a href="#">计算机网络</a></li>
-                    <li><a href="#">小说杂志</a></li>
-                    <li><a href="#">其他</a></li>
-                </ul>
-            </li>
-            <li id="mainlevel_03" class="mainlevel">
-                <a href="#">闲置日用</a>
-                <ul id="sub_03">
-                    <li><a href="#">卡卷</a></li>
-                    <li><a href="#">台灯</a></li>
-                    <li><a href="#">椅子</a></li>
-                    <li><a href="#">书柜</a></li>
-                    <li><a href="#">其他</a></li>
-
-                </ul>
-            </li>
-            <li id="mainlevel_04" class="mainlevel">
-                <a href="#">闲置数码</a>
-                <ul id="sub_04">
-                    <li><a href="#">笔记本</a></li>
-                    <li><a href="#">手机</a></li>
-                    <li><a href="#">平板</a></li>
-                    <li><a href="#">移动电源</a></li>
-                    <li><a href="#">键盘鼠标</a></li>
-                    <li><a href="#">充电器</a></li>
-                    <li><a href="#">U盘</a></li>
-                    <li><a href="#">其他</a></li>
-                </ul>
-            </li>
-            <li id="mainlevel_05" class="mainlevel">
-                <a href="#">影音小家电</a>
-                <ul id="sub_05">
-                    <li><a href="#">小电扇</a></li>
-                    <li><a href="#">吹风机</a></li>
-                    <li><a href="#">音箱</a></li>
-                    <li><a href="#">耳机</a></li>
-                    <li><a href="#">插线板</a></li>
-                    <li><a href="#">饮水机</a></li>
-                    <li><a href="#">其他</a></li>
-                </ul>
-            </li>
-            <li id="mainlevel_06" class="mainlevel">
-                <a href="#">出行娱乐</a>
-                <ul id="sub_06">
-                    <li><a href="#">电车</a></li>
-                    <li><a href="#">自行车</a></li>
-                    <li><a href="#">轮滑鞋</a></li>
-                    <li><a href="#">行李箱</a></li>
-                    <li><a href="#">帐篷</a></li>
-                    <li><a href="#">背包</a></li>
-                    <li><a href="#">其他</a></li>
-                </ul>
-            </li>
-            <li id="mainlevel_07" class="mainlevel">
-                <a href="image.html">失物招领</a>
-
-            </li>
-            <li id="mainlevel_08" class="mainlevel">
-                <a href="#">Girls</a>
-            </li>
-
-
-        </ul>
-    </div>
-</div>
 <!-- banner -->
 <div class="fbanner">
     <div class="scroll">
@@ -343,7 +312,7 @@
             <a href="zhaoling.html">添加招领</a>
         </div>
         <div class="btn2">
-            <a href="zhaoling2.html">查找丢失</a>
+            <a href="diushi.html">发布丢失</a>
         </div>
         <!-- 滚动图 -->
 
