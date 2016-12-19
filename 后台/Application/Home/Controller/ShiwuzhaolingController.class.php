@@ -5,12 +5,25 @@ use Think\Upload;
 class ShiwuzhaolingController extends Controller {
 
     public function image(){
-    	
+    	$class=M("category");
+        $data=$class->select();
+        $list=array();
+        foreach($data as $arr){
+            $list[$arr['pid']][]=$arr;
+        }
+        $this->assign("list",$list);
 
 		$this->display();
     }//image()
 
     public function diushi(){
+    	$class=M("category");
+        $data=$class->select();
+        $list=array();
+        foreach($data as $arr){
+            $list[$arr['pid']][]=$arr;
+        }
+        $this->assign("list",$list);
 
     	$this->display();
     }//diushi()
@@ -71,6 +84,14 @@ class ShiwuzhaolingController extends Controller {
     }//diushideal()   
 
     public function zhaoling(){
+
+    	$class=M("category");
+        $data=$class->select();
+        $list=array();
+        foreach($data as $arr){
+            $list[$arr['pid']][]=$arr;
+        }
+        $this->assign("list",$list);
     	$this->display();
     }//zhaoling()
 
