@@ -46,7 +46,6 @@
     </div>
 
     <div class="logo_search">
-                <!-- 欢迎你：{$_SESSION['username']} -->
                 <div class="logo"><a href="#"><img src="__PUBLIC__/home/img/logo.png" /></a></div>
                 <div class="search">
                     <if condition="$Think.session.username neq null">
@@ -84,16 +83,22 @@
                            <li id="mainlevel_01" class="mainlevel">
                           <a href="{:U('Home/Index/index')}">网站首页</a>
                           </li>
-                          <volist name="sds" id="vo">
-                          <li id="mainlevel_02" class="mainlevel">
-
-                          <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                            <ul id="sub_02">
-                            <volist name="ses" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                            </ul>
-                         </li>
-                         </volist>
+                         <volist name='list[0]' id='vo'>
+                              <li class="mainlevel" id="mainlevel_02">
+                              <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
+                                <ul id="sub_02">
+                                    <volist name="list[$vo['id']]" id='vo2'>
+                                        <li><a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo2.name}</a></li> 
+                                    </volist>
+                                    <!-- <li><a href="{:U('Home/Category/category')}">资格证/等级考试</a></li>
+                                    <li><a href="{:U('Home/List/list')}">考研资料</a></li>
+                                    <li><a href="#">教科书</a></li>
+                                    <li><a href="#">计算机网络</a></li>
+                                    <li><a href="#">小说杂志</a></li>
+                                    <li><a href="#">其他</a></li> -->
+                                </ul>
+                             </li>
+                        </volist>
                           <!-- <a href="{:U('Home/Category/category')}">书籍报刊</a>
                             <ul id="sub_02">
                                 <li><a href="{:U('Home/Category/category')}">资格证/等级考试</a></li>
@@ -170,21 +175,18 @@
 
 <!--content-->
 <div class="wrapper">
-
-<volist name="are" id="vo">
 	<div class="daohang"> 
         <img src="__PUBLIC__/home/img/one_title.png" height="102" width="407">
-            <div class="one_title" >
-                <a href="#"><img src="__PUBLIC__/home/img/find.png"/ class="icons"></a>
-                 <h2>迷路指南：<span><a href="#">首页</a>&gt;&gt;<a href="#">书籍报刊</a>&gt;&gt;<a href="#">教师资格证</a></span></h2>
-                </div>
-                
+          <div class="one_title" >
+              <a href="#"><img src="__PUBLIC__/home/img/find.png"/ class="icons"></a>
+               <h2>迷路指南：<span><a href="{:U('Home/Index/index')}">首页</a>&gt;&gt;<volist name="pid" id="vo"><a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a></volist>&gt;&gt;<volist name="cid" id="vo"><a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a></volist></span></h2>
+          </div>         
     </div>
+
 	<div class="scontent">
-         
-         <div class="scontentup1">
-        
-				<img src="__PUBLIC__/{$vo.url}" height="100%" width="100%">
+    <volist name="are" id="vo"> 
+        <div class="scontentup1">
+				  <img src="{:U($vo['picture'])}" height="100%" width="100%">
 		    </div>
          <div class="scontentup2">
                 <h2>{$vo.name}</h2><br/>
@@ -202,7 +204,8 @@
 					<input id="add" name="" type="button" value="+" />  
 					<h3>(剩余{$vo.quantity}件)</h3>
 
-				</div></volist>
+				</div>
+      </volist>
                 <div class="content_icon3">
                 <volist name="is" id="vo">
                 <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="110%" color=#987cb9 SIZE=1>
@@ -285,6 +288,7 @@
                   </div>
                   <div id="content" class="active_list"> 
                      <!-- <div id="ui-a" class="ui-a"> -->
+                     <if condition="$Think.session.username neq null">
                         <div class="form">
                           <form id="dreamduform" action={:U('home/show/message')} method="post">
                                 <label for="text">发表评论：</label>
@@ -297,7 +301,7 @@
                       <volist name="result" id="vo">
                       <div class="comment">
                            <ul>
-                               <li>用户：<a href="#">李大庄</a></li>
+                               <li>用户：<a href="#">{$Think.session.username}</a></li>
                                 <li>
                                    <!-- <div class="question">问题：</div> -->
                                    <div class="q_content">{$vo.wr_info}</div>
@@ -305,6 +309,9 @@
                            </ul> 
                       </div>
                       </volist>
+                      <else/>
+                        <a href="{:U('Home/User/login')}">登录后才能发表评论</a>
+                    </if>
                   </div>
                   
                </div>

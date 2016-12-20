@@ -8,23 +8,82 @@ class GoodsController extends Controller {
         $this->assign('goods', $data);
         $this->display();
     }
-    public function cate(){
-        $categoryModel = M('category');
 
-        $data = $categoryModel->select();
-        $data2=$categoryModel->select();
-        $this->assign('category',$data2);
-        //dump($data);
-        $this->assign('pid',$data);
+
+    public function goodsadd(){
+    
+        $data=M('category');
+        $father=$data->where('tag=1')->select();
+        $this->assign('cate',$father);                  
+        
         $this->display();
-
     }
 
-    public function cateadd(){
-        $categoryModel = M('category');
-        $result = $categoryModel->where("tag=1")->select();
-        $this->assign('result',$result);
+ 
+     public function store(){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize=3145728 ;// 设置附件上传大小
+        $upload->exts=array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  = THINK_PATH; // 设置附件上传根目录
+        $upload->savePath  ='../Public/uploads/'; // 设置附件上传（子）目录
+        // 上传文件 
+        $info   =   $upload->upload();
+        if(!$info) {// 上传错误提示错误信息
+            $this->error($upload->getError());
+        }else{// 上传成功
+            //$this->success('上传成功！');
+            //创建模型
+            $goodsModel = M('goods');
+
+            //组织数据
+            $data = $goodsModel->create();
+
+            //设置thumb字段属性(目录+名字)
+            $data['name']=I('name');
+            $data['cid']=I('cid');
+            $data['quantuty']=I('quantuty');
+            $data['price']=I('price');
+            $data['secprice']=I('secprice');
+            $data['condition']=I('condition');
+            $data['intro']=I('intro');
+            $data['username']=I('username');
+            $data['picture']=$info['picture']['savepath'].$info['picture']['savename'];
+            //添加
+            if($goodsModel->add($data)){
+                $this->success('数据添加成功', 'goods');
+            }else{
+                $this->showError('数据添加失败');
+            }
+        }
+    }
+   public function edit(){
+        $id = I('id');
+        $goodsModel = M('goods');
+        $data = $goodsModel->find($id);
+        $first = $goodsModel->where("tag=1")->select();
+        $this->assign('first',$first);
+        $this->assign('goods',$data);
         $this->display();
+    }
+    public function update(){
+        $id = I('id');
+        $goodsModel = M('goods');
+        $data = array();
+        $data['name']=I('name');
+        $data['cid']=I('cid');
+        $data['picture']=I('picture');
+        $data['quantuty']=I('quantuty');
+        $data['price']=I('price');
+        $data['secprice']=I('secprice');
+        $data['condition']=I('condition');
+        $data['intro']=I('intro');
+        $data['username']=I('username');
+        $result = $goodsModel->where("id=$id")->save($data);
+        if($result){
+                $this->success('数据添加成功', 'goods');
+            }else{
+                $this->showError('数据添加失败');
+            }
     }
      public function delete(){
             $id = I('id');
@@ -54,4 +113,23 @@ class GoodsController extends Controller {
         }
     }
 
+ public function gett(){
+            //var_dump ("123");
+        if (IS_POST) {
+            $cateid = I('post.name');
+            $data=M('category');
+            $cate=$data->where("pid=$cateid")->select();
+            $name[name]="zhangsan";
+            $name[id]=2;
+            $this->ajaxReturn($cate,'json');
+        }else{
+            //echo("出错了");
+            // $name[name]="lisi";
+            // $name[id]=1;
+            // $this->ajaxReturn($name,'json');
+        // }
+        }
+        
+
+    }
 }

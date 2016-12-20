@@ -49,90 +49,20 @@
         <!--nav-->
         <div id="menu">
                 <ul id="nav">
-                         <li id="mainlevel_01" class="mainlevel">
+
+                          <li id="mainlevel_01" class="mainlevel">
                           <a href="{:U('Home/Index/index')}">网站首页</a>
                           </li>
-                          <volist name="sds" id="vo">
-                          <li id="mainlevel_02" class="mainlevel">
-
-                          <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                            <ul id="sub_02">
-                            <volist name="ses" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                            </ul>
-                         </li>
-                         </volist>
-                      <!-- <li id="mainlevel_01" class="mainlevel">
-                      <a href="{:U('Home/Index/index')}">网站首页</a>
-                      </li>
-                      <li id="mainlevel_02" class="mainlevel">
-                      <a href="{:U('Home/Category/category')}">书籍报刊</a>
-                        <ul id="sub_02">
-                            <li><a href="category.html">资格证/等级考试</a></li>
-                            <li><a href="list.html">考研资料</a></li>
-                            <li><a href="#">教科书</a></li>
-                            <li><a href="#">计算机网络</a></li>
-                            <li><a href="#">小说杂志</a></li>
-                            <li><a href="#">其他</a></li>
-                        </ul>
-                     </li>
-                     <li id="mainlevel_03" class="mainlevel">
-                     <a href="#">闲置日用</a>
-                        <ul id="sub_03">
-                            <li><a href="#">卡卷</a></li>
-                            <li><a href="#">台灯</a></li>
-                            <li><a href="#">椅子</a></li>
-                            <li><a href="#">书柜</a></li>
-                            <li><a href="#">其他</a></li>
-
-                        </ul>
-                     </li>
-                     <li id="mainlevel_04" class="mainlevel">
-                     <a href="#">闲置数码</a>
-                       <ul id="sub_04">
-                            <li><a href="#">笔记本</a></li>
-                            <li><a href="#">手机</a></li>
-                            <li><a href="#">平板</a></li>
-                            <li><a href="#">移动电源</a></li>
-                            <li><a href="#">键盘鼠标</a></li>
-                            <li><a href="#">充电器</a></li>
-                            <li><a href="#">U盘</a></li>
-                            <li><a href="#">其他</a></li>
-                        </ul>
-                     </li>
-                     <li id="mainlevel_05" class="mainlevel">
-                      <a href="#">影音小家电</a>
-                        <ul id="sub_05">
-                            <li><a href="#">小电扇</a></li>
-                            <li><a href="#">吹风机</a></li>
-                            <li><a href="#">音箱</a></li>
-                            <li><a href="#">耳机</a></li>
-                            <li><a href="#">插线板</a></li>
-                            <li><a href="#">饮水机</a></li>
-                            <li><a href="#">其他</a></li>
-                        </ul>
-                    </li>
-                     <li id="mainlevel_06" class="mainlevel">
-                      <a href="#">出行娱乐</a>
-                      <ul id="sub_06">
-                            <li><a href="#">电车</a></li>
-                            <li><a href="#">自行车</a></li>
-                            <li><a href="#">轮滑鞋</a></li>
-                            <li><a href="#">行李箱</a></li>
-                            <li><a href="#">帐篷</a></li>
-                            <li><a href="#">背包</a></li>
-                            <li><a href="#">其他</a></li>
-                            </ul>
-                      </li>
-                    <li id="mainlevel_07" class="mainlevel">
-                      <a href="image.html">失物招领</a>
-                                          
-                    </li>
-                    <li id="mainlevel_08" class="mainlevel">
-                      <a href="#">Girls</a>
-                    </li>
-                    
-                                           -->
+                         <volist name="list[0]" id="vo">
+                              <li id="mainlevel_01" class="mainlevel">
+                              <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
+                                <ul id="sub_02">
+                                    <volist name="list[$vo['id']]" id='vo2'>
+                                        <li><a href="{:U('Home/Category/category')}?id={$vo2.id}">{$vo2.name}</a></li> 
+                                    </volist>
+                                </ul>
+                             </li>
+                        </volist>        
                 </ul>
         </div>
 </div>
@@ -144,7 +74,7 @@
 	<img src="__PUBLIC__/home/img/one_title.png" height="102" width="407">
         <div class="one_title" >
            <a href="#"><img src="__PUBLIC__/home/img/find.png"/ class="icons"></a>
-           <h2><!-- 迷路指南： --><span><a href="#">首页</a>&gt;&gt;<a href="category.html"><volist name="ess" id="vo">{$vo.name}</volist></a>&gt;&gt;<a href="category.html"><volist name="pos" id="vo">{$vo.name}</volist></a></span></h2>
+           <h2><!-- 迷路指南： --><span><a href="{:U('Home/Index/index')}">首页</a>&gt;&gt;<a href="{:U('Home/Category/category')}?id={$vo.id}"><volist name="ess" id="vo">{$vo.name}</volist></a>&gt;&gt;<a href="{:U('Home/Category/category')}?id={$vo.id}"><volist name="pos" id="vo">{$vo.name}</volist></a></span></h2>
         </div>
     </div>
 	<div class="content">
@@ -152,10 +82,10 @@
         	<div class="left_one">
                 <img src="__PUBLIC__/home/img/leftone_bg.png" style="height:450px; width:220px; background-color:#E3EEEC">
             	<div>
-            		<h2><a href="category.html" ><volist name="ess" id="vo">{$vo.name}</volist></a></h2>
+            		<h2><volist name="ess" id="vo"><a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a></volist></h2>
                		 <ul>
                      <volist name="poss" id="vo">
-						<li><a href="category.html" class="now">{$vo.name}</a></li>
+						<li><a href="{:U('Home/Category/category')}?id={$vo.id}" class="now">{$vo.name}</a></li>
 						<!-- <li><a href="list.html">考研资料</a></li>
 						<li><a href="#">教科书</a></li>
 						<li><a href="#">计算机网络</a></li>
@@ -171,7 +101,7 @@
                 <volist name="iss" id="vo">
     	        	<li>
                         <div>
-                            <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="__PUBLIC__/{$vo.url}" /  id="p1"></a>
+                            <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="{:U($vo['picture'])}"  id="p1"></a>
                         </div>
                         <div id="t1">
                             <a href="{:U('Home/Show/show')}?id={$vo.id}"><p style="text-align: center">教师资格证资料</p>原价：{$vo.price}元  售价{$vo.secprice}元</a>

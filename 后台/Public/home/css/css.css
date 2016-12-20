@@ -50,6 +50,11 @@ body {
 .hid{
 	display:none;
 }
+
+ul.nav{
+	margin-right: 65px;
+}
+
 .search {
 	float:right;
 	margin-right:25px;

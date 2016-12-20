@@ -6,15 +6,15 @@
 <title>大学生校园二手网站</title>
 <link href="__PUBLIC__/home/css/css.css" rel="stylesheet" type="text/css">
 <link href="__PUBLIC__/home/css/reset.css" rel="stylesheet" type="text/css">
-<!-- <link href="__PUBLIC__/home/css/zhucedenglu.css" rel="stylesheet" type="text/css"> -->
-<!-- <link href="__PUBLIC__/home/css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+<link href="__PUBLIC__/home/css/zhucedenglu.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/home/css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="__PUBLIC__/home/css/publish.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.8.2.min.js"></script>
 <!--[if !IE]>导航条样式　JS<![endif]-->
 <script type="text/javascript" src="__PUBLIC__/home/js/thcic_menu.js"></script>
 <!--[if !IE]>banner图片  JS<![endif]-->
-<!-- <script type="text/javascript" src="__PUBLIC__/home/js/solideForK13-min.js"></script> -->
+<script type="text/javascript" src="__PUBLIC__/home/js/solideForK13-min.js"></script>
 
 </head>
 <body style="margin:0px">
@@ -54,177 +54,148 @@
             <div class="clear"></div>
             <!--nav-->
             <div id="menu">
-                <!-- <ul id="nav">
-                    <li id="mainlevel_01" class="mainlevel">
-                    <a href="{:U('Home/Index/index')}">网站首页</a>
-                    </li>
-                    <li id="mainlevel_02" class="mainlevel">
-                    <a href="{:U('Home/Category/category')}">书籍报刊</a>
-                    <ul id="sub_02">
-                    <li><a href="{:U('Home/Category/category')}">资格证/等级考试</a></li>
-                    <li><a href="{:U('Home/List/list')}">考研资料</a></li>
-                    <li><a href="#">教科书</a></li>
-                    <li><a href="#">计算机网络</a></li>
-                    <li><a href="#">小说杂志</a></li>
-                    <li><a href="#">其他</a></li>
-                    </ul>
-                    </li>
-                    <li id="mainlevel_03" class="mainlevel">
-                    <a href="#">闲置日用</a>
-                    <ul id="sub_03">
-                    <li><a href="#">卡卷</a></li>
-                    <li><a href="#">台灯</a></li>
-                    <li><a href="#">椅子</a></li>
-                    <li><a href="#">书柜</a></li>
-                    <li><a href="#">其他</a></li>
-
-                    </ul>
-                    </li>
-                    <li id="mainlevel_04" class="mainlevel">
-                    <a href="#">闲置数码</a>
-                    <ul id="sub_04">
-                    <li><a href="#">笔记本</a></li>
-                    <li><a href="#">手机</a></li>
-                    <li><a href="#">平板</a></li>
-                    <li><a href="#">移动电源</a></li>
-                    <li><a href="#">键盘鼠标</a></li>
-                    <li><a href="#">充电器</a></li>
-                    <li><a href="#">U盘</a></li>
-                    <li><a href="#">其他</a></li>
-                    </ul>
-                    </li>
-                    <li id="mainlevel_05" class="mainlevel">
-                    <a href="#">影音小家电</a>
-                    <ul id="sub_05">
-                    <li><a href="#">小电扇</a></li>
-                    <li><a href="#">吹风机</a></li>
-                    <li><a href="#">音箱</a></li>
-                    <li><a href="#">耳机</a></li>
-                    <li><a href="#">插线板</a></li>
-                    <li><a href="#">饮水机</a></li>
-                    <li><a href="#">其他</a></li>
-                    </ul>
-                    </li>
-                    <li id="mainlevel_06" class="mainlevel">
-                    <a href="#">出行娱乐</a>
-                    <ul id="sub_06">
-                    <li><a href="#">电车</a></li>
-                    <li><a href="#">自行车</a></li>
-                    <li><a href="#">轮滑鞋</a></li>
-                    <li><a href="#">行李箱</a></li>
-                    <li><a href="#">帐篷</a></li>
-                    <li><a href="#">背包</a></li>
-                    <li><a href="#">其他</a></li>
-                    </ul>
-                    </li>
-                    <li id="mainlevel_07" class="mainlevel">
-                    <a href="image.html">失物招领</a>
-
-                    </li>
-                    <li id="mainlevel_08" class="mainlevel">
-                    <a href="#">Girls</a>
-                    </li>
-                        
-                                              
-                </ul> -->
                     <ul id="nav">
-
                           <li id="mainlevel_01" class="mainlevel">
                           <a href="{:U('Home/Index/index')}">网站首页</a>
                           </li>
-                          <volist name="list[0]" id="vo">
-                              <li id="mainlevel_01" class="mainlevel">
-                              <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                                <ul id="sub_02">
-                                    <volist name="list[$vo['id']]" id='vo2'>
-                                        <li><a href="{:U('Home/Category/category')}?id={$vo2.id}">{$vo2.name}</a></li> 
-                                    </volist>
-                                </ul>
-                             </li>
-                        </volist>
+                          <li id="mainlevel_02" class="mainlevel">
+                          <a href="{:U('Home/Category/category')}">书籍报刊</a>
+                            <ul id="sub_02">
+                                <li><a href="{:U('Home/Category/category')}">资格证/等级考试</a></li>
+                                <li><a href="{:U('Home/List/list')}">考研资料</a></li>
+                                <li><a href="#">教科书</a></li>
+                                <li><a href="#">计算机网络</a></li>
+                                <li><a href="#">小说杂志</a></li>
+                                <li><a href="#">其他</a></li>
+                            </ul>
+                         </li>
+                         <li id="mainlevel_03" class="mainlevel">
+                          <a href="#">闲置日用</a>
+                                              <ul id="sub_03">
+                                                    <li><a href="#">卡卷</a></li>
+                                                    <li><a href="#">台灯</a></li>
+                                                    <li><a href="#">椅子</a></li>
+                                                    <li><a href="#">书柜</a></li>
+                                                    <li><a href="#">其他</a></li>
+
+                                                    </ul>
+                                              </li>
+                         <li id="mainlevel_04" class="mainlevel">
+                          <a href="#">闲置数码</a>
+                                              <ul id="sub_04">
+                                                    <li><a href="#">笔记本</a></li>
+                                                    <li><a href="#">手机</a></li>
+                                                    <li><a href="#">平板</a></li>
+                                                    <li><a href="#">移动电源</a></li>
+                                                    <li><a href="#">键盘鼠标</a></li>
+                                                    <li><a href="#">充电器</a></li>
+                                                    <li><a href="#">U盘</a></li>
+                                                    <li><a href="#">其他</a></li>
+                                                    </ul>
+                                              </li>
+                         <li id="mainlevel_05" class="mainlevel">
+                          <a href="#">影音小家电</a>
+                                              <ul id="sub_05">
+                                                    <li><a href="#">小电扇</a></li>
+                                                    <li><a href="#">吹风机</a></li>
+                                                    <li><a href="#">音箱</a></li>
+                                                    <li><a href="#">耳机</a></li>
+                                                    <li><a href="#">插线板</a></li>
+                                                    <li><a href="#">饮水机</a></li>
+                                                    <li><a href="#">其他</a></li>
+                                                    </ul>
+                                              </li>
+                         <li id="mainlevel_06" class="mainlevel">
+                          <a href="#">出行娱乐</a>
+                                              <ul id="sub_06">
+                                                    <li><a href="#">电车</a></li>
+                                                    <li><a href="#">自行车</a></li>
+                                                    <li><a href="#">轮滑鞋</a></li>
+                                                    <li><a href="#">行李箱</a></li>
+                                                    <li><a href="#">帐篷</a></li>
+                                                    <li><a href="#">背包</a></li>
+                                                    <li><a href="#">其他</a></li>
+                                                    </ul>
+                                              </li>
+                        <li id="mainlevel_07" class="mainlevel">
+                          <a href="image.html">失物招领</a>
+                                              
+                        </li>
+                        <li id="mainlevel_08" class="mainlevel">
+                          <a href="#">Girls</a>
+                        </li>
+                        
+                                              
                     </ul>
                 </div>
         </div>
     <div class="clear"></div>
 
-<div class="pub_content" >
-<div class="pub_bg">
+<div class="publish_content">
     <form method="post" action="{:U('Home/Publish/uploadfile')}" role="form" enctype="multipart/form-data">
-        <table>
-            <tr>
-                <td class="td_1">
-                
-                    <div class="pub_1">
-                        <b>*</b>所属分类:
-                        <select name="" id="cattype" class="pub_1_1">
-                            <option>请选择父类别</option>
-                            <volist name="cate" id="val">
-                                <option value="{$val.id}">{$val.name}</option>
-                            </volist>
-                        </select>
-                        
-                        <select name="cateid" id="catchild" class="pub_1_2">
-                            <option>请选择子类别</option>
-                        </select>
-                        <!-- <select name="lable" size="1" id="lables">
-                        </select> -->
-                    </div>
-                    <!-- <div class="pub_2"><b>*</b>有 效 期:
-                        <select name="term">
-                            <option value="无">选择有效期</option>
-                            <option value="一星期">一星期</option>
-                            <option value="一个月">一个月</option>
-                            <option value="一年">一年</option>
-                            <option value="长期有效">长期有效</option>
-                        </select>
-                    </div> -->
-                    <div class="pub_3"><b>*</b>商品名称:<input type="text" name="name" value=""></div>
-                    <!-- <div class="pub_4"><b>*</b>付款方式:
-                        <label><input name="pay" type="checkbox" value="" />面对面交易</label>
-                        <label><input name="pay" type="checkbox" value="" />网银</label>
-                        <label><input name="pay" type="checkbox" value="" />支付宝 </label>
-                        <label><input name="pay" type="checkbox" value="" />微信 </label>
-                    </div> -->
-                    <div class="pub_4"><b>*</b>商品原价:<input type="text" name="price"> 元</div>
-                    <div class="pub_5"><b>*</b>价&nbsp;&nbsp;格:<input type="text" name="secprice"> 元</div>
-                    <div class="pub_6"><b>*</b>数&nbsp;&nbsp;量:<input type="text" name="quantity"></div>
-                    
-                    <div class="pub_8"><b>*</b>新旧程度:
-                        <select name="condition">
-                            <option value="无">选择新旧程度</option>
-                            <option value="全新">全新</option>
-                            <option value="9成新">9成新</option>
-                            <option value="8成新">8成新</option>
-                            <option value="4">7成新</option>
-                            <option value="7成新">6成新</option>
-                            <option value="5成新及以下">5成新及以下</option>
-                        </select>
-                    </div>
-                
-                    <div class="pub_9">
-                        <div class="pub_9_1"><b>*</b>上传图片:</div>
-                        <div class="pub_9_2">
-                            <div><input type="file" name="photo[]" /></div>
-                            <!-- <div><input type="file" name="photo[]"/></div>
-                            <div><input type="file" name="photo[]"/></div>
-                            <div><input type="file" name="photo[]"/></div> -->
-                        </div>
-                    </div>
-                </td>
-
-                <td class="td_2">    
-                    <div class="pub_7">商家所在地:<input type="text" name="address"></div>
-                    <div class="pub_10"><b>*</b>内容详情 :<input type="text" name="content"></div>
-                    <div class="pub_11"><b>*</b>联 系 人 :<input type="text" name="linkman"></div>
-                    <div class="pub_12"><b>*</b>联系电话 :<input type="text" name="linktel"></div>
-                    <div class="pub_13"><b>*</b>联系 Q Q :<input type="text" name="qq"></div>
-                    <div class="pub_14"><b>*</b>电子邮箱 :<input type="text" name="email"></div>
-                </td>
-            </tr>
-        </table>
-        <input type="submit" class="pub_15" value="填写完成&nbsp;&nbsp;&nbsp;立刻上传" >
+        <div class="pub_1">
+            <b>*</b>所属分类:
+            <select name="" id="cattype" class="pub_1_1">
+                <option>请选择父类别</option>
+                <volist name="cate" id="val">
+                    <option value="{$val.id}">{$val.name}</option>
+                </volist>
+            </select>
+            
+            <select name="cateid" id="catchild" class="pub_1_2">
+                <option>请选择子类别</option>
+            </select>
+            <!-- <select name="lable" size="1" id="lables">
+            </select> -->
+        </div>
+        <!-- <div class="pub_2"><b>*</b>有 效 期:
+            <select name="term">
+                <option value="无">选择有效期</option>
+                <option value="一星期">一星期</option>
+                <option value="一个月">一个月</option>
+                <option value="一年">一年</option>
+                <option value="长期有效">长期有效</option>
+            </select>
+        </div> -->
+        <div class="pub_3"><b>*</b>商品名称:<input type="text" name="name" value=""></div>
+        <!-- <div class="pub_4"><b>*</b>付款方式:
+            <label><input name="pay" type="checkbox" value="" />面对面交易</label>
+            <label><input name="pay" type="checkbox" value="" />网银</label>
+            <label><input name="pay" type="checkbox" value="" />支付宝 </label>
+            <label><input name="pay" type="checkbox" value="" />微信 </label>
+        </div> -->
+        <div class="pub_4"><b>*</b>商品原价:<input type="text" name="price"> 元</div>
+        <div class="pub_5"><b>*</b>价&nbsp;&nbsp;格:<input type="text" name="secprice"> 元</div>
+        <div class="pub_6"><b>*</b>数&nbsp;&nbsp;量:<input type="text" name="quantity"></div>
+        
+        <div class="pub_8"><b>*</b>新旧程度:
+            <select name="condition">
+                <option value="无">选择新旧程度</option>
+                <option value="全新">全新</option>
+                <option value="9成新">9成新</option>
+                <option value="8成新">8成新</option>
+                <option value="4">7成新</option>
+                <option value="7成新">6成新</option>
+                <option value="5成新及以下">5成新及以下</option>
+            </select>
+        </div>
+        <div class="pub_9">
+            <div class="pub_9_1"><b>*</b>上传图片:</div>
+            <div class="pub_9_2">
+                <div><input type="file" name="photo[]" /></div>
+                <!-- <div><input type="file" name="photo[]"/></div>
+                <div><input type="file" name="photo[]"/></div>
+                <div><input type="file" name="photo[]"/></div> -->
+            </div>
+        </div>
+        <div class="pub_7">商家所在地:<input type="text" name="address"></div>
+        <div class="pub_10"><b>*</b>内容详情:<input type="text" name="content"></div>
+        <div class="pub_11"><b>*</b>联 系 人:<input type="text" name="linkman"></div>
+        <div class="pub_12"><b>*</b>联系电话:<input type="text" name="linktel"></div>
+        <div class="pub_13"><b>*</b>联系 Q Q:<input type="text" name="qq"></div>
+        <div class="pub_14"><b>*</b>电子邮箱:<input type="text" name="email"></div>
+        <input type="submit" class="pub_15" value="马上发布" >
     </form>
-</div><!--bg-->
 </div><!--publish_content-->
 
 <!--    底部 -->

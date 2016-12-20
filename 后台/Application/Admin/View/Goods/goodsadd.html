@@ -8,153 +8,133 @@
 <title></title>
 <link rel="stylesheet" href="__PUBLIC__/admin/css/pintuer.css">
 <link rel="stylesheet" href="__PUBLIC__/admin/css/admin.css">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/table.css">
+
 <script src="__PUBLIC__/admin/js/jquery.js"></script>
 <script src="__PUBLIC__/admin/js/pintuer.js"></script>
+<script src="__PUBLIC__/admin/js/jquery.2.1.4-min.js"></script>
 </head>
 <body>
 <div class="panel admin-panel">
   <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="">  
-      <div class="form-group">
-        <div class="label">
-          <label>标题：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" value="" name="title" data-validate="required" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>图片：</label>
-        </div>
-        <div class="field">
-          <input type="text" id="url1" name="img" class="input tips" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
-          <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
-          <div class="tipss">图片尺寸：500*500</div>
-        </div>
-      </div>     
-      
-      <if condition="$iscid eq 1">
-        <div class="form-group">
-          <div class="label">
-            <label>分类标题：</label>
-          </div>
-          <div class="field">
-            <select name="cid" class="input w50">
-              <option value="">请选择分类</option>
-              <option value="">产品分类</option>
-              <option value="">产品分类</option>
-              <option value="">产品分类</option>
-              <option value="">产品分类</option>
-            </select>
-            <div class="tips"></div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="label">
-            <label>其他属性：</label>
-          </div>
-          <div class="field" style="padding-top:8px;"> 
-            首页 <input id="ishome"  type="checkbox" />
-            推荐 <input id="isvouch"  type="checkbox" />
-            置顶 <input id="istop"  type="checkbox" /> 
-         
-          </div>
-        </div>
-      </if>
-      <div class="form-group">
-        <div class="label">
-          <label>描述：</label>
-        </div>
-        <div class="field">
-          <textarea class="input" name="note" style=" height:90px;"></textarea>
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>内容：</label>
-        </div>
-        <div class="field">
-          <textarea name="content" class="input" style="height:450px; border:1px solid #ddd;"></textarea>
-          <div class="tips"></div>
-        </div>
-      </div>
-     
-      <div class="clear"></div>
-      <div class="form-group">
-        <div class="label">
-          <label>关键字标题：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="s_title" value="" />
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>内容关键字：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="s_keywords" value=""/>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>关键字描述：</label>
-        </div>
-        <div class="field">
-          <textarea type="text" class="input" name="s_desc" style="height:80px;"></textarea>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>排序：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="sort" value="0"  data-validate="number:排序必须为数字" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>发布时间：</label>
-        </div>
-        <div class="field"> 
-          <script src="js/laydate/laydate.js"></script>
-          <input type="text" class="laydate-icon input w50" name="datetime" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" value=""  data-validate="required:日期不能为空" style="padding:10px!important; height:auto!important;border:1px solid #ddd!important;" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>作者：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="authour" value=""  />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>点击次数：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="views" value="" data-validate="member:只能为数字"  />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label></label>
-        </div>
-        <div class="field">
-          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
-        </div>
-      </div>
-    </form>
+   <form action="{:U('Admin/Goods/store')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+      <table class="insert-tab" width="100%">
+          <tbody>
+              <tr>
+                  <th><i class="require-red">*</i>标题：</th>
+                  <td><input name="name" class="common-text required" style="width: 20%;" /></td>
+              </tr>
+              
+              <tr>
+                  <th width="120"><i class="require-red">*</i>分类：</th>
+                  <td>
+                    
+                      <select name="" id="cattype">
+                        <option>请选择父类别</option>
+                        <volist name="cate" id="val">
+                            <option value="{$val.id}">{$val.name}</option>
+                        </volist>
+                    </select>
+            
+                    <select name="cid" id="catchild">
+                        <option>请选择子类别</option>
+                    </select>
+
+                  </td>
+              </tr>
+
+              <tr>
+                  <th><i class="require-red">*</i>数量：</th>
+                  <td><input name="quantity" class="common-text required" style="width: 20%;" /></td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>原价：</th>
+                  <td><input name="price" class="common-text required" style="width: 20%;" /></td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>售价：</th>
+                  <td><input name="secprice" class="common-text required" style="width: 20%;" /></td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>新旧程度：</th>
+                  <td>
+                    <select  name="condition" class="required">
+                      <option value="1">1成新</option>
+                      <option value="2">2成新</option>
+                      <option value="3">3成新</option>
+                      <option value="4">4成新</option>
+                      <option value="5">5成新</option>
+                      <option value="6">6成新</option>
+                      <option value="7">7成新</option>
+                      <option value="8">8成新</option>
+                      <option value="9">9成新</option>
+                      <option value="10">10成新</option>
+                    </select>
+                  </td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>描述：</th>
+                  <td><input name="intro" class="common-text required" style="width: 70%;" /></td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>图片：</th>
+                  <td>
+                    <input name="picture" type="file">
+                  </td>
+              </tr>
+              <tr>
+                  <th><i class="require-red">*</i>上传用户：</th>
+                  <td><input name="username" class="common-text required" style="width: 70%;" /></td>
+              </tr>
+              <tr>
+                  <th></th>
+                  <td>
+                      <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                      <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                  </td>
+              </tr>
+          </tbody>
+          </table>
+  </form>
   </div>
 </div>
+
+<script type="text/javascript">
+console.log("1314");
+$("#cattype").change(function(){
+    var catid = $(this).val(); //获取切换的类别的id
+    console.log(catid);
+    $.ajax({
+        url :"{:U('admin/Goods/gett')}",
+        data:{"name":catid},
+        type:'POST',
+        dataType:"json",       
+        // error:function(){
+        //     console.log({:U("home/Publish/get")});
+        // },
+
+        success:function(data){
+            $('#catchild option[value!=""]').remove(); //清空option 每次改变option的时候载入新的数据
+        //alert(data.length);
+            if(data==''){
+                vals="<option value='data[i].id'>"+"请选择子类别"+"</option>";
+                $(vals).appendTo("#catchild");
+            }else{
+                for(var i=0;i<data.length;i++){
+                    var vals='';
+                    vals+="<option value="+data[i].id+">"+data[i].name+"</option>";
+                    $(vals).appendTo("#catchild");
+                }
+            }
+
+            console.log(data);    
+           
+               
+        
+        }
+    });
+});
+</script>
 
 </body></html>

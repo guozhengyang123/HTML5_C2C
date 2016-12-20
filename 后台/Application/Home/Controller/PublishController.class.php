@@ -7,16 +7,7 @@ class PublishController extends Controller {
     public function publish(){
     	$data=M('category');
         $father=$data->where('tag=1')->select();
-        $this->assign('cate',$father);
-
-        $class=M("category");
-        $data=$class->select();
-        $list=array();
-        foreach($data as $arr){
-            $list[$arr['pid']][]=$arr;
-        }
-        $this->assign("list",$list);
-                  		
+        $this->assign('cate',$father);          		
 		$this->display();
     }//publish()
     public function gett(){
@@ -46,8 +37,8 @@ class PublishController extends Controller {
 			$data=$_POST;
 			session('[start]'); 
 			// session('id','5');  
-			$data['pubman']= session('uid');
-			$data['time']=date("Y-m-d H-i-s" ,time());
+			$data['username']= session('id');
+			$data['time']=date("Y-m-d" ,time());
 
 			// 取得成功上传的文件信息
 			//$info=$upload()->upload();
@@ -58,7 +49,7 @@ class PublishController extends Controller {
 			//dump($info);
 			if (!$info) {
 				# code...
-				$this->error($upload->getError());
+				dump($upload->getError());
 				exit;
 			}else{
 				foreach ($info as $file) {
@@ -68,7 +59,7 @@ class PublishController extends Controller {
 				}
 			}
 			//dump($imageurl);
-			$data['imgurl'] = $imageurl;
+			$data['imgurl1'] = $imageurl;
 			
 
 

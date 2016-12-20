@@ -22,134 +22,6 @@
             <div class="logo_search">
                 <div class="logo"><a href="#"><img src="__PUBLIC__/home/img/logo.png" /></a></div>
                 <div class="search">
-                    <!-- <ul>
-                        <li>
-                            <div style="Z-INDEX:8888;POSITION:absolute;-moz-opacity:0.50;opacity:0.3;filter:alpha(opacity=30);BACKGROUND-COLOR:#000;display:none;" id="show">
-                            </div>
-                            <div class="topDiv" id="show_win">
-                                    <h1>注册</h1>  
-                                    <a href="index.html"><input id="btnClose" type="button" value="×" onClick="custom_close()" / style="width:17px"></a>
-
-                                        <form method="post" role="form" style="height:610px; width:490px;" class="form"> 
-                                                
-                                                <h5 style="text-align: center; line-height: 30px; margin-bottom: 10px">欢迎您注册网站会员，如果您已拥有账户，则可在此<a href="#">登录</a></h5>
-                                                
-                                                <div class="form-group">
-                                                    <label for="user-name" class="control   -label">用户名：</label>
-                                                    <input type="text" class="form-control" id="user-name" onblur="checkUserName()" placeholder="3~16个字符，且不能包含”@”和”#”字符"/>
-
-                                
-                                                    <div class="r">
-                                                        <span id="nameInfo"></span>
-                                                    </div>
-                                                </div>
-                                               
-                                                <div class="form-group">
-                                                    <label for="password" class="control-label">密码：</label>
-                                                    <input type="password" class="form-control" id="password"  onblur="checkPassword()"
-                                                               placeholder="长度在8个字符到16个字符"/>
-                                                    
-                                                    <div class="r">
-                                                        <span id="passwordInfo"></span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="repassword" class="control-label">校验密码：</label>
-                                                    <input type="password" class="form-control" id="repassword" onblur="checkRepassword()"placeholder="长度在8个字符到16个字符">
-                                                   
-                                                    <div class="r">
-                                                        <span id="repasswordInfo"></span>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="form-group">
-                                                    <label>选择省市：</label>
-                                                    <select name="province" class="input_three" id="selProvince" onChange = "getCity(this.options[this.selectedIndex].value)">  
-                                                    </select>  
-                                                    <select name="city" class="input_four" id="selCity">  
-                                                        <option>北京</option>  
-                                                    </select>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label  for="school" class="control-label">学校:</label>
-                                                    <input type="text" class="form-control" id="school" onblur="checkSchool()">
-                                                    <div class="r">
-                                                        <span id="schoolInfo"></span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label  for="school" class="control-label">E-mail:</label>
-                                                    <input type="text" class="form-control" id="email" onblur="checkEmail()">
-                                                    <div class="r">
-                                                        <span id="emailInfo"></span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group" style="text-align: center">
-                                                    <input type="checkbox" name="save" value="yes" />已同意<a href="">c2c网站服务条款</a></td>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <div style="text-align: center">
-                                                        <button type="submit" id="submit" class="btn btn-success" onclick="validateForm()">提交</button>
-                                                        <br/><br/>
-                                                        <label><a href="#">注册帮助信息请点击这里</a></label>
-                                                    </div>
-                                                </div>
-  
-                                        </form>
-                     
-                            </div>
-                            <a href="javascript:void(0);" onclick="javascript:showDiv();">注册 |</a>
-                        </li>
-                        <li>
-                            <div style="Z-INDEX:8888;POSITION:absolute;-moz-opacity:0.50;opacity:0.3;filter:alpha(opacity=30);BACKGROUND-COLOR:#000;display:none;" id="show1">
-                            </div>
-                            <div class="topDiv1" id="show_win1">
-                                    <h1>登录</h1>  
-                                    <a href="index.html"><input id="btnClose" type="button" value="×" onClick="custom_close()" / style="width:17px"></a>
-                                   
-                                        <form method="post" role="form" style="height:300px; width:500px;" class="form">  
-                                            <div class="form-group">
-                                                    <label for="user-name" class="control-label">用户名：</label>
-                                                    <input type="text" class="form-control" id="user-name" onblur="checkUserName()" placeholder="请输入用户名！"/>
-                                                    <div class="r">
-                                                        <span id="nameInfo"></span>
-                                                    </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                    <label for="password" class="control-label">密码：</label>
-                                                    <input type="password" class="form-control" id="password"  onblur="checkPassword()" placeholder="请输入密码！"/>
-                                                    <div class="r">
-                                                        <span id="passwordInfo"></span>
-                                                    </div>
-                                            </div>
-                                            <div class="form-group" style="margin-top: 50px">
-                                                    <div style="text-align: center">
-                                                        <button type="submit" id="submit" class="btn btn-success" onclick="validateForm()">登录</button>
-                                                       
-                                                    </div>
-                                                </div>
-                                    
-
-                                                <span class="register" style="text-align: center;">
-                                                    <h3 style="line-height: 70px">还没有账户吗，先去注册一下吧！</h3>
-                                                </span>
-                                        </form>  
-                                        
-                                            
-                            </div>
-                            <a href="javascript:void(1);" onclick="javascript:showDiv1();">登录 |</a>
-                        </li>
-                        <li ><a href="{:U('Home/Gwc/gwc')}">购物车</a> |</li>
-                        <li><a href="{:U('Home/User/user3')}">收藏夹</a> |</li>
-                        <li><a href="{:U('Home/User/user1')}">个人中心</a> |</li>
-                        <li><a href="{:U('Home/Service/service')}">客户服务</a></li>
-                    </ul> -->
                     <if condition="$Think.session.username neq null">
                         <ul class="nav">
                             <li class="drop">
@@ -186,73 +58,16 @@
                           <li id="mainlevel_01" class="mainlevel">
                           <a href="{:U('Home/Index/index')}">网站首页</a>
                           </li>
-                          <volist name="sds" id="vo">
-                          <li id="mainlevel_02" class="mainlevel">
-
-                          <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                            <ul id="sub_02">
-                            <volist name="ses" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                            </ul>
-                         </li>
-                         </volist>
-                         <!-- <volist name="ses" id="vo">
-                         <li id="mainlevel_03" class="mainlevel">
-                           <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                                              <ul id="sub_03">
-                                                    <volist name="sos" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                                                    </ul>
-                                              </li>
-                                              </volist>
-                         <volist name="sfs" id="vo">
-                         <li id="mainlevel_04" class="mainlevel">
-                          <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                                              <ul id="sub_04">
-                                                    <volist name="ees" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                                                    </ul>
-                                              </li>
-                                              </volist>
-                         <volist name="sgs" id="vo">
-                         <li id="mainlevel_05" class="mainlevel">
-                          <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                                              <ul id="sub_05">
-                                                    <volist name="efs" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                                                    </ul>
-                                              </li>
-                                              </volist>
-                         <volist name="shs" id="vo">
-                         <li id="mainlevel_06" class="mainlevel">
-                          <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                                              <ul id="sub_06">
-                                                    <volist name="egs" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                                                    </ul>
-                                              </li>
-                                              </volist>
-                         <volist name="sls" id="vo">
-                        <li id="mainlevel_07" class="mainlevel">
-                          <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                                           <ul id="sub_07">  
-                                             <volist name="ehs" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                                    
-                                            </ul> 
-                        </li>
+                          <volist name="list[0]" id="vo">
+                              <li id="mainlevel_01" class="mainlevel">
+                              <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
+                                <ul id="sub_02">
+                                    <volist name="list[$vo['id']]" id='vo2'>
+                                        <li><a href="{:U('Home/Category/category')}?id={$vo2.id}">{$vo2.name}</a></li> 
+                                    </volist>
+                                </ul>
+                             </li>
                         </volist>
-                         <volist name="sms" id="vo">
-                        <li id="mainlevel_08" class="mainlevel">
-                         <a href="{:U('Home/Category/category')}?id={$vo.id}">{$vo.name}</a>
-                           <ul id="sub_08">  
-                                             <volist name="els" id="co">
-                                <li><a href="{:U('Home/Category/category')}">{$co.name}</a></li></volist>
-                                    
-                                            </ul> 
-                        </li>
-                        </volist> -->
-                                              
                     </ul>
                 </div>
         </div>
@@ -288,7 +103,7 @@
             <volist name="ess" id="vo">
                 <li>
                     <div>
-                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="__PUBLIC__/{$vo.url}" /  id="p1"></a>
+                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="{:U($vo['picture'])}" /  id="p1"></a>
                     </div>
                     <div id="t1">
                         <a href="{:U('Home/Show/show')}?id={$vo.id}"><p style="text-align: center">{$vo.name}</p>原价：{$vo.price}元  售价{$vo.secprice}元</a>
@@ -335,7 +150,7 @@
            <volist name="iss" id="vo">
                 <li>
                     <div>
-                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="__PUBLIC__/{$vo.url}" /  id="p2"></a>
+                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="{:U($vo['picture'])}" /  id="p2"></a>
                     </div>
                     <div id="t1">
                         <a href="{:U('Home/Show/show')}?id={$vo.id}"><p style="text-align: center">{$vo.name}</p>原价：{$vo.price}元  售价{$vo.secprice}元</a>
@@ -383,7 +198,7 @@
             <volist name="dss" id="vo">
                 <li>
                     <div>
-                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="__PUBLIC__/{$vo.url}" /  id="p2"></a>
+                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="{:U($vo['picture'])}" /  id="p2"></a>
                     </div>
                     <div id="t1">
                         <a href="{:U('Home/Show/show')}?id={$vo.id}"><p style="text-align: center">{$vo.name}</p>原价：{$vo.price}元  售价{$vo.secprice}元</a>
@@ -431,7 +246,7 @@
            <volist name="fss" id="vo">
                 <li>
                     <div>
-                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="__PUBLIC__/{$vo.url}" /  id="p2" style="height:105px; margin-top: 35px"></a>
+                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="{:U($vo['picture'])}" /  id="p2" style="height:105px; margin-top: 35px"></a>
                     </div>
                     <div id="t1">
                         <a href="{:U('Home/Show/show')}?id={$vo.id}"><p style="text-align: center">{$vo.name}</p>原价：{$vo.price}元  售价{$vo.secprice}元</a>
@@ -479,7 +294,7 @@
            <volist name="pss" id="vo">
                 <li>
                     <div>
-                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="__PUBLIC__/{$vo.url}" /  id="p2" style="height:105px; margin-top: 35px"></a>
+                        <a href="{:U('Home/Show/show')}?id={$vo.id}"><img src="{:U($vo['picture'])}" /  id="p2" style="height:105px; margin-top: 35px"></a>
                     </div>
                     <div id="t1">
                         <a href="{:U('Home/Show/show')}?id={$vo.id}"><p style="text-align: center">{$vo.name}</p>原价：{$vo.price}元  售价{$vo.secprice}元</a>

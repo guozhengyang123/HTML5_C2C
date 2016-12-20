@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
     <title>登录</title>  
-    <link rel="stylesheet" href="/C2C/Public/admin/css/pintuer.css">
-    <link rel="stylesheet" href="/C2C/Public/admin/css/admin.css">
-    <script src="/C2C/Public/admin/js/jquery.js"></script>
-    <script src="/C2C/Public/admin/js/pintuer.js"></script>  
+    <link rel="stylesheet" href="/xxx/Public/admin/css/pintuer.css">
+    <link rel="stylesheet" href="/xxx/Public/admin/css/admin.css">
+    <script src="/xxx/Public/admin/js/jquery.js"></script>
+    <script src="/xxx/Public/admin/js/pintuer.js"></script>  
 </head>
 <body>
 <div class="bg"></div>
@@ -35,13 +35,12 @@
                             <span class="icon icon-key margin-small"></span>
                         </div>
                     </div>
-                    <!-- <div class="form-group">
+                    <div class="form-group">
                         <div class="field">
-                            <input type="text" class="input input-big" name="Captcha" placeholder="填写右侧的验证码" data-validate="required:请填写右侧的验证码" />
-                           <img src="images/passcode.jpg" alt="" width="100" height="32" class="passcode" style="height:43px;cursor:pointer;" onclick="this.src=this.src+'?'">  
-                                                   
+                            <input type="text" class="input input-big" name="verify" placeholder="填写右侧的验证码" data-validate="required:请填写右侧的验证码" />
+                            <img id="ver" src="<?php echo U('Admin/Login/verify');?>" alt="verify_code" onclick="this.src='<?php echo U('Admin/Login/verify');?>'" />
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <div style="padding:30px;"><input type="submit" class="button button-block bg-main text-big input-big" value="登录"></div>
             </div>

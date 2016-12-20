@@ -1,22 +1,22 @@
 <?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="renderer" content="webkit">
-    <title>后台管理中心</title>  
-    <link rel="stylesheet" href="/C2C/Public/admin/css/pintuer.css">
-    <link rel="stylesheet" href="/C2C/Public/admin/css/admin.css">
-    <script src="/C2C/Public/admin/js/jquery.js"></script>   
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="renderer" content="webkit">
+  <title>后台管理中心</title>
+  <link rel="stylesheet" href="/xxx/Public/admin/css/pintuer.css">
+  <link rel="stylesheet" href="/xxx/Public/admin/css/admin.css">
+  <script src="/xxx/Public/admin/js/jquery.js"></script>
 </head>
 <body style="background-color:#f2f9fd;">
 <div class="header bg-main">
   <div class="logo margin-big-left fadein-top">
-    <h1><img src="/C2C/Public/admin/images/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />C2C管理中心</h1>
+    <h1><img src="/xxx/Public/admin/images/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />C2C管理中心</h1>
   </div>
   <div class="head-l">
-    <a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;
+    <a class="button button-little bg-green" href="<?php echo U('Home/Index/index');?>" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;
   </div>
   <div class="head-r">
     <a class="head-r-top" href="<?php echo U('Admin/Index/info');?>" target="right"><span class="icon-home"></span> 返回首页</a>
@@ -24,7 +24,7 @@
     <a class="head-r-top" href="<?php echo U('Admin/Login/login');?>"><span class="icon-repeat"></span> 用户注销</a>
     <a class="head-r-top" href="#"><span class="icon-question"></span> 帮助中心</a>
     <div class="head-r-bot">
-    <span class="icon-user">&nbsp当前用户：admin&nbsp&nbsp&nbsp欢迎您登陆C2C管理系统&nbsp&nbsp2016年11月9日</span>
+      <span class="icon-user">&nbsp当前用户：<?php echo ($_SESSION['username']); ?>&nbsp&nbsp&nbsp欢迎您登陆C2C管理系统&nbsp&nbsp2016年11月9日</span>
     </div>
   </div>
 </div>
@@ -33,40 +33,43 @@
   <h2><span class="icon-cog"></span>基本设置</h2>
   <ul style="display:block">
     <li><a href="<?php echo U('Admin/Index/info');?>" target="right"><span class="icon-caret-right"></span>网站介绍</a></li>
-    <li><a href="<?php echo U('Admin/Password/password');?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>  
-    <li><a href="<?php echo U('Adv/adv');?>" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>   
+    <li><a href="<?php echo U('Admin/Password/password');?>" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
+    <li><a href="<?php echo U('Adv/adv');?>" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
     <li><a href="<?php echo U('Vip/vip');?>" target="right"><span class="icon-caret-right"></span>会员查看</a></li>
     <li><a href="<?php echo U('Message/message');?>" target="right"><span class="icon-caret-right"></span>留言管理</a></li>
-    <li><a href="<?php echo U('Order/order');?>" target="right"><span class="icon-caret-right"></span>订单管理</a></li>     
-  </ul> 
+    <li><a href="<?php echo U('Message/message');?>" target="right"><span class="icon-caret-right"></span>订单管理</a></li>
+
+  </ul>
   <h2><span class="icon-shopping-cart"></span>商品管理</h2>
   <ul>
-    <li><a href="<?php echo U('Goods/goods');?>" target="right"><span class="icon-caret-right"></span>所有商品</a></li>        
+    <li><a href="<?php echo U('Goods/goods');?>" target="right"><span class="icon-caret-right"></span>所有商品</a></li>
+    <li><a href="<?php echo U('Goods/goodsadd');?>" target="right"><span class="icon-caret-right"></span>添加商品</a></li>
+
   </ul>
   <h2><span class="icon-th-large"></span>分类管理</h2>
   <ul>
     <li><a href="<?php echo U('Category/cate');?>" target="right"><span class="icon-caret-right"></span>所有分类</a></li>
-    <li><a href="<?php echo U('Category/cateadd');?>" target="right"><span class="icon-caret-right"></span>添加分类</a></li>    
+    <li><a href="<?php echo U('Category/cateadd');?>" target="right"><span class="icon-caret-right"></span>添加分类</a></li>
   </ul>
-   
+
   <h2><span class="icon-bell"></span>失物招领</h2>
   <ul>
     <li><a href="<?php echo U('LandP/lost');?>" target="right"><span class="icon-caret-right"></span>丢失物品</a></li>
-    <li><a href="<?php echo U('LandP/pick');?>" target="right"><span class="icon-caret-right"></span>招领物品</a></li>    
-  </ul>      
+    <li><a href="<?php echo U('LandP/pick');?>" target="right"><span class="icon-caret-right"></span>招领物品</a></li>
+  </ul>
 </div>
 <script type="text/javascript">
-$(function(){
-  $(".leftnav h2").click(function(){
-	  $(this).next().slideToggle(200);	
-	  $(this).toggleClass("on"); 
-  })
-  $(".leftnav ul li a").click(function(){
-	    $("#a_leader_txt").text($(this).text());
-  		$(".leftnav ul li a").removeClass("on");
-		$(this).addClass("on");
-  })
-});
+  $(function(){
+    $(".leftnav h2").click(function(){
+      $(this).next().slideToggle(200);
+      $(this).toggleClass("on");
+    })
+    $(".leftnav ul li a").click(function(){
+      $("#a_leader_txt").text($(this).text());
+      $(".leftnav ul li a").removeClass("on");
+      $(this).addClass("on");
+    })
+  });
 </script>
 <ul class="bread">
   <li><a href="<?php echo U('Index/info');?>" target="right" class="icon-home"> 首页</a></li>

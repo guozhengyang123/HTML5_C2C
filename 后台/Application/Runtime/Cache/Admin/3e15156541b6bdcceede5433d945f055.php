@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
     <title></title>  
-    <link rel="stylesheet" href="/C2C/Public/admin/css/pintuer.css">
-    <link rel="stylesheet" href="/C2C/Public/admin/css/admin.css">
-    <script src="/C2C/Public/admin/js/jquery.js"></script>
-    <script src="/C2C/Public/admin/js/pintuer.js"></script>  
+    <link rel="stylesheet" href="/xxx/Public/admin/css/pintuer.css">
+    <link rel="stylesheet" href="/xxx/Public/admin/css/admin.css">
+    <script src="/xxx/Public/admin/js/jquery.js"></script>
+    <script src="/xxx/Public/admin/js/pintuer.js"></script>  
 </head>
 <body>
 <form method="post" action="">
@@ -25,28 +25,59 @@
     </div>
     <table class="table table-hover text-center">
       <tr>
-        <th>排序</th>
-        <th>ID</th>
-        <th>商品名称</th>
+        <th width="120">ID</th>
         <th>用户名</th>       
-        <th>留言内容</th>
-        <th>回复内容</th>
-        <th>发布时间</th>
+        <th width="25%">留言内容</th>
+        <th width="25%">回复内容</th>
+        <th width="120">商品ID</th>
+        <th width="15%">发布时间</th>
         <th>操作</th>       
-      </tr> 
-      <?php if(is_array($message)): $i = 0; $__LIST__ = $message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$m): $mod = ($i % 2 );++$i;?><tr>s
-        <td><input type="checkbox" name="id[]" value=" " /> </td>
-        <td><?php echo ($m["id"]); ?></td>
-        <td><?php echo ($m["goodsname"]); ?></td>
-        <td><?php echo ($m["username"]); ?></td>  
-        <td><?php echo ($m["wr_info"]); ?></td>         
-        <td><?php echo ($m["ba_info"]); ?></td>
-        <td><?php echo ($m["time"]); ?></td>
-        <td>
-          <a class="link-update" href="<?php echo U('Admin/Message/edit');?>/id/<?php echo ($data["id"]); ?>">修改</a>
-          <a class="link-del" href="<?php echo U('Admin/Message/destory');?>/id/<?php echo ($data["id"]); ?>">删除</a>
-       </td>
-       </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+      </tr>      
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
       <tr>
         <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
       </tr>

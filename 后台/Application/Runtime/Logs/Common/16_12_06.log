@@ -1,0 +1,6 @@
+[ 2016-12-06T16:53:46+08:00 ] 127.0.0.1 /C2C/index.php/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+ERR: 无法加载模块:Index
+

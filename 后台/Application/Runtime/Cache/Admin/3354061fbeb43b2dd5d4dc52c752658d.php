@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="renderer" content="webkit">
 <title></title>
-<link rel="stylesheet" href="/C2C/Public/admin/css/pintuer.css">
-<link rel="stylesheet" href="/C2C/Public/admin/css/admin.css">
-<script src="/C2C/Public/admin/js/jquery.js"></script>
-<script src="/C2C/Public/admin/js/pintuer.js"></script>
+<link rel="stylesheet" href="/xxx/Public/admin/css/pintuer.css">
+<link rel="stylesheet" href="/xxx/Public/admin/css/admin.css">
+<script src="/xxx/Public/admin/js/jquery.js"></script>
+<script src="/xxx/Public/admin/js/pintuer.js"></script>
 </head>
 <body>
 <div class="panel admin-panel">
   <div class="panel-head"><strong><span class="icon-key"></span> 修改会员密码</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="">
+    <form method="post" class="form-x" action="<?php echo U('Admin/index/index');?>">
       <div class="form-group">
         <div class="label">
           <label for="sitename">管理员帐号：</label>
@@ -31,7 +31,7 @@
           <label for="sitename">原始密码：</label>
         </div>
         <div class="field">
-          <input type="password" class="input w50" id="mpass" name="mpass" size="50" placeholder="请输入原始密码" data-validate="required:请输入原始密码" />       
+          <input type="password" class="input w50" id="mpass" name="mpass" size="50" placeholder="" data-validate="required:请输入原始密码" />       
         </div>
       </div>      
       <div class="form-group">

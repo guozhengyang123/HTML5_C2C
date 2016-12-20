@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+.Safety table{ border-collapse:collapse;}
+.Safety{ font-family:"微软雅黑"; font-size:1.2em;}
+.Safety img,.Safety a{border:0; text-decoration:none;}
+.Safety ol, ul {list-style: none; }
+.clears{ clear:both;}
+.Safety a{color:#333;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	transition: all .3s ease-out;}
+.Safety a:hover{color:#f60;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	transition: all .3s ease-out;}
+
+.Safety{
+	margin-top: 50px;
+}
+
+.Safety input{
+	border:0;
+	}
+.Safety dt {
+	font-size:14px;
+	padding:7px 0;
+	border-bottom:#ddd 1px dotted;
+	height:44px;
+    line-height:30px;
+	}
+.Safety dt strong{
+	display:inline-block;
+	padding-left: 0px;
+	
+	height:30px;
+	}
+.Safety dt span{
+	display:inline-block;
+	height:30px;
+	padding:0 10px;
+	font-weight:400;
+	font-size:12px;
+	color:#999;
+	width:365px;
+	}
+.Safety b{
+	display:inline-block;
+	width:105px;
+	padding:0 10px;
+	background:#E1F3FD;
+	font-size:14px;
+	font-weight:400;
+	}
+.Safety dt b span{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	background:#94CE25;
+	text-align:center;
+	font-size:12px;
+	color:#fff;
+	padding:0;
+	border-radius: 10px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+    -moz-border-radius: 10px; /* Mozilla浏览器的私有属性 */ 
+    -webkit-border-radius: 10px; /* Webkit浏览器的私有属性 */ 
+	margin-right:5px;
+	}
+.Safety dt b span.glyphicon-exclamation-sign{
+	background:#FFB027;
+	}
+.Safety dt em{
+	float:right;
+	width:150px;
+	text-align:right;
+	height:30px;
+	line-height:30px;
+	font-style:normal;
+	color:#06F;
+	cursor:pointer;
+	padding:0 30px;
+	}
+.Safety dd{
+	padding:15px 0;
+	background:#F3F6FA;
+	display:none;
+	}
+.safForm{
+	background:#F3F6FA;
+	}
+.safForm td{
+	padding:5px;
+	}
+.safinput1{
+	border:#D8D8D8 1px solid;
+	background:#fff;
+	height:26px;
+	width:210px;
+	border-radius: 2px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+    -moz-border-radius: 2px; /* Mozilla浏览器的私有属性 */ 
+    -webkit-border-radius: 2px; /* Webkit浏览器的私有属性 */ 
+	}
+.safSub{
+	width:130px;
+	padding:5px 10px;
+	background:#f60;
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	border-radius: 5px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+    -moz-border-radius: 5px; /* Mozilla浏览器的私有属性 */ 
+    -webkit-border-radius: 5px; /* Webkit浏览器的私有属性 */
+	cursor:pointer;
+	}
+.safSub:hover{
+	background:#900;
+	color:#fff;
+	}
+.safinput2{
+	border:#D8D8D8 1px solid;
+	background:#fff;
+	height:26px;
+	width:150px;
+	border-radius: 2px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+    -moz-border-radius: 2px; /* Mozilla浏览器的私有属性 */ 
+    -webkit-border-radius: 2px; /* Webkit浏览器的私有属性 */
+	}
+/*安全设置 手机号码样式*/
+.Step{
+	width:70%;
+	margin:10px auto;
+	margin-bottom:30px;
+	}
+.Step li{
+	float:left;
+	width:33%;
+	height:4px;
+	background:#ccc;
+	text-align:center;
+	}
+.Step li span{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	font-size:12px;
+	text-align:center;
+	line-height:24px;
+	border-radius: 12px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+    -moz-border-radius: 12px; /* Mozilla浏览器的私有属性 */ 
+    -webkit-border-radius: 12px; /* Webkit浏览器的私有属性 */
+	background:#ccc;
+	position:relative;
+	bottom:10px;
+	color:#fff;
+	}
+.Step li.stepCur,.Step li.stepCur span{
+	background:#f60;
+	}
+	
+.sjyz-two{
+	display:none;
+	}
+.sjyz-ok{
+	text-align:center;
+	font-size:20px;
+	display:none;
+	}
+.sjyz-ok span{
+	display:inline-block;
+	width:40px;
+	line-height:40px;
+	color:#fff;
+	background:#94CE25;
+	text-align:center;
+	line-height:40px;
+	border-radius: 20px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+    -moz-border-radius: 20px; /* Mozilla浏览器的私有属性 */ 
+    -webkit-border-radius: 20px; /* Webkit浏览器的私有属性 */
+	}
+
+
+
+/*此样式在窗口小于768px的时候生效*/
+@media screen and (max-width: 768px) {/*768*1024*/
+.flrLeft dl{
+	width:270px;
+	margin:0 auto;
+	}	
+.flrLeft dt,.flrLeft dd{
+	text-align:left;
+	float:none;
+	}	
+.addYinhang{
+	width:300px;
+	margin:-144px 0 0 -151px;
+	}	
+.Safety dt em{
+	padding:0 5px;
+	width:60px;
+	}
+.Safety dd{
+	font-size:12px;
+	}
+}
+/*此样式在窗口小于768px的时候生效*/
+@media screen and (max-width: 640px) {/*768*1024*/
+
+.Safety dt span{
+	display:none;
+	}
+.Safety dt em{
+	padding:0 5px;
+	width:60px;
+	}
+.Safety dd{
+	font-size:12px;
+	}	
+}

@@ -6,129 +6,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="renderer" content="webkit">
 <title></title>
-<link rel="stylesheet" href="/C2C/Public/admin/css/pintuer.css">
-<link rel="stylesheet" href="/C2C/Public/admin/css/admin.css">
-<script src="/C2C/Public/admin/js/jquery.js"></script>
-<script src="/C2C/Public/admin/js/pintuer.js"></script>
+<link rel="stylesheet" href="/xxx/Public/admin/css/pintuer.css">
+<link rel="stylesheet" href="/xxx/Public/admin/css/admin.css">
+<link rel="stylesheet" href="/xxx/Public/admin/css/main.css">
+<link rel="stylesheet" href="/xxx/Public/admin/css/table.css">
+
+
+<script src="/xxx/Public/admin/js/jquery.js"></script>
+<script src="/xxx/Public/admin/js/pintuer.js"></script>
 </head>
 <body>
 <div class="panel admin-panel">
   <div class="panel-head"><strong class="icon-reorder"> 内容列表</strong></div>
   <div class="padding border-bottom">  
-  <button type="button" class="button border-yellow" onclick="window.location.href='#add'"><span class="icon-plus-square-o"></span> 添加内容</button>
+  <button type="button" class="button border-yellow" ><a href="<?php echo U('Admin/adv/advadd');?>"><span class="icon-plus-square-o"></span> 添加内容</a></button>
   </div>
-  <table class="table table-hover text-center">
-    <tr>
-      <th width="10%">ID</th>
-      <th width="20%">图片</th>
-      <th width="15%">名称</th>
-      <th width="20%">描述</th>
-      <th width="10%">排序</th>
-      <th width="15%">操作</th>
-    </tr>
-   
-    <tr>
-      <td>1</td>     
-      <td><img src="/C2C/Public/admin/images/banner_01.jpg" alt="" width="120" height="50" /></td>     
-      <td>首页焦点图</td>
-      <td>描述文字....</td>
-      <td>1</td>
-      <td><div class="button-group">
-      <a class="button border-main" href="#add"><span class="icon-edit"></span> 修改</a>
-      <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1)"><span class="icon-trash-o"></span> 删除</a>
-      </div></td>
-    </tr>
-    <tr>
-      <td>2</td>     
-      <td><img src="/C2C/Public/admin/images/banner_02.jpg" alt="" width="120" height="50" /></td>     
-      <td>首页焦点图</td>
-      <td>描述文字....</td>
-      <td>1</td>
-      <td><div class="button-group">
-      <a class="button border-main" href="#add"><span class="icon-edit"></span> 修改</a>
-      <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1)"><span class="icon-trash-o"></span> 删除</a>
-      </div></td>
-    </tr>
-    <tr>
-      <td>3</td>     
-      <td><img src="/C2C/Public/admin/images/banner_03.jpg" alt="" width="120" height="50" /></td>     
-      <td>首页焦点图</td>
-      <td>描述文字....</td>
-      <td>1</td>
-      <td><div class="button-group">
-      <a class="button border-main" href="#add"><span class="icon-edit"></span> 修改</a>
-      <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1)"><span class="icon-trash-o"></span> 删除</a>
-      </div></td>
-    </tr>
-    
-  </table>
+
+  <form name="myform" id="myform" method="post">
+                
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th>排序</th>
+                            <th>ID</th>
+                            <th>图片名称</th>
+                            <th>图片地址</th>
+                            <th>操作</th>
+
+
+                        </tr>
+                        <?php if(is_array($adv)): $i = 0; $__LIST__ = $adv;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                            <td class="tc"><input name="id[]" value="<?php echo ($vo["id"]); ?>}" type="checkbox"></td>
+                            <td>
+                                <input name="ids[]" value="<?php echo ($vo["id"]); ?>" type="hidden">
+                                <input class="common-input sort-input" name="ord[]" value="<?php echo ($vo["id"]); ?>" type="text">
+                            </td>
+                            <td><?php echo ($vo["id"]); ?></td>
+                            <td><?php echo ($vo["name"]); ?></td>
+                            <td><?php echo ($vo["address"]); ?></td>
+                            <td>
+                                <a class="link-del" href="<?php echo U('Admin/adv/destory');?>/id/<?php echo ($vo["id"]); ?>">删除</a>
+                            </td>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </table>
+                </div>
+            </form>
 </div>
-<script type="text/javascript">
-function del(id,mid){
-	if(confirm("您确定要删除吗?")){
-	
-	}
-}
-</script>
-<div class="panel admin-panel margin-top" id="add">
-  <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 增加内容</strong></div>
-  <div class="body-content">
-    <form method="post" class="form-x" action="">    
-      <div class="form-group">
-        <div class="label">
-          <label>标题：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" value="" name="title" data-validate="required:请输入标题" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>URL：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="url" value=""  />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>图片：</label>
-        </div>
-        <div class="field">
-          <input type="text" id="url1" name="img" class="input tips" style="width:25%; float:left;"  value="" data-toggle="hover" data-place="right" data-image="" />
-          <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
-          <div class="tipss">图片尺寸：980*500</div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>描述：</label>
-        </div>
-        <div class="field">
-          <textarea type="text" class="input" name="note" style="height:120px;" value=""></textarea>
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>排序：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" name="sort" value="0"  data-validate="required:,number:排序必须为数字" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label></label>
-        </div>
-        <div class="field">
-          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-</body></html>
+
+
+</body>
+</html>

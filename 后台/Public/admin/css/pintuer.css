@@ -3,6 +3,16 @@ body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
 article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section{display:block;}
 body{font-size:14px;color:#333;background:#fff;font-family:"Microsoft YaHei","simsun","Helvetica Neue", Arial, Helvetica, sans-serif;}
 img{border:0;vertical-align:bottom;}
+#ver{
+	position: absolute;
+	height: 42px;
+	width: 120px;
+	top: 0;
+	right: 0;
+	border-radius: 0 4px 4px 0;
+	margin: 1px;
+	border-left: solid 1px #ddd;
+}
 ::-webkit-input-placeholder{color:#999;}
 :-moz-placeholder{color:#999;}
 ::-moz-placeholder{color:#999;}

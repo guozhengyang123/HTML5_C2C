@@ -5,90 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
-    <title></title>
+    <title></title>  
     <link rel="stylesheet" href="__PUBLIC__/admin/css/pintuer.css">
     <link rel="stylesheet" href="__PUBLIC__/admin/css/admin.css">
     <script src="__PUBLIC__/admin/js/jquery.js"></script>
-    <script src="__PUBLIC__/admin/js/pintuer.js"></script>
+    <script src="__PUBLIC__/admin/js/pintuer.js"></script>  
 </head>
 <body>
 <form method="post" action="">
-    <div class="panel admin-panel">
-        <div class="panel-head"><strong class="icon-reorder"> 留言管理</strong></div>
-        <div class="padding border-bottom">
-            <ul class="search">
-                <li>
-                    <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
-                    <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
-                </li>
-            </ul>
-        </div>
-        <table class="table table-hover text-center">
-            <tr>
-                <th>排序</th>
-                <th>ID</th>
-                <th>商品名称</th>
-                <th>用户名</th>
-                <th>留言内容</th>
-                <th>回复内容</th>
-                <th>发布时间</th>
-                <th>操作</th>
-            </tr>
-            <volist name="message" id="m">
-                <tr>
-                    <td><input type="checkbox" name="id[]" value=" " /> </td>
-                    <td name=>{$m.id}</td>
-                    <td>{$m.goodsname}</td>
-                    <td>{$m.username}</td>
-                    <td>{$m.wr_info}</td>
-                    <td>{$m.ba_info}</td>
-                    <td>{$m.time}</td>
-                    <td>
-                        <a class="link-del" href="__APP__/admin/message/destory?id={$m.id}">删除</a>
-                    </td>
-                </tr>
-            </volist>
-            <tr>
-                <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
-            </tr>
-        </table>
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 留言管理</strong></div>
+    <div class="padding border-bottom">
+      <ul class="search">
+        <li>
+          <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
+          <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
+        </li>
+      </ul>
     </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="120">ID</th>
+        <th>用户名</th>       
+        <th width="25%">留言内容</th>
+        <th width="25%">回复内容</th>
+        <th width="120">商品ID</th>
+        <th width="15%">发布时间</th>
+        <th>操作</th>       
+      </tr>      
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="id[]" value="1" />1</td>
+        <td>zzz</td>
+        <td>哈哈哈</td>
+        <td>呵呵呵</td>  
+        <td>1</td>         
+        <td>2016-07-01</td>
+        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+      <tr>
+        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+      </tr>
+    </table>
+  </div>
 </form>
 <script type="text/javascript">
 
-    function del(id){
-        if(confirm("您确定要删除吗?")){
+function del(id){
+	if(confirm("您确定要删除吗?")){
+		
+	}
+}
 
-        }
-    }
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
 
-    $("#checkall").click(function(){
-        $("input[name='id[]']").each(function(){
-            if (this.checked) {
-                this.checked = false;
-            }
-            else {
-                this.checked = true;
-            }
-        });
-    })
-
-    function DelSelect(){
-        var Checkbox=false;
-        $("input[name='id[]']").each(function(){
-            if (this.checked==true) {
-                Checkbox=true;
-            }
-        });
-        if (Checkbox){
-            var t=confirm("您确认要删除选中的内容吗？");
-            if (t==false) return false;
-        }
-        else{
-            alert("请选择您要删除的内容!");
-            return false;
-        }
-    }
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false; 		
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
 
 </script>
 </body></html>

@@ -35,13 +35,12 @@
                             <span class="icon icon-key margin-small"></span>
                         </div>
                     </div>
-                    <!-- <div class="form-group">
+                    <div class="form-group">
                         <div class="field">
-                            <input type="text" class="input input-big" name="Captcha" placeholder="填写右侧的验证码" data-validate="required:请填写右侧的验证码" />
-                           <img src="images/passcode.jpg" alt="" width="100" height="32" class="passcode" style="height:43px;cursor:pointer;" onclick="this.src=this.src+'?'">  
-                                                   
+                            <input type="text" class="input input-big" name="verify" placeholder="填写右侧的验证码" data-validate="required:请填写右侧的验证码" />
+                            <img id="ver" src="{:U('Admin/Login/verify')}" alt="verify_code" onclick="this.src='{:U('Admin/Login/verify')}'" />
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <div style="padding:30px;"><input type="submit" class="button button-block bg-main text-big input-big" value="登录"></div>
             </div>
