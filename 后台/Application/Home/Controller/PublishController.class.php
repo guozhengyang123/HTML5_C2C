@@ -7,10 +7,20 @@ class PublishController extends Controller {
     public function publish(){
     	$data=M('category');
         $father=$data->where('tag=1')->select();
-        $this->assign('cate',$father);          		
+        $this->assign('cate',$father);
+
+        $class=M("category");
+        $data=$class->select();
+        $list=array();
+        foreach($data as $arr){
+            $list[$arr['pid']][]=$arr;
+        }
+        $this->assign("list",$list);
+                  		
 		$this->display();
     }//publish()
-    public function get(){
+    public function gett(){
+    	//var_dump ("123");
     	if (IS_POST) {
     		$cateid = I('post.name');
     		$data=M('category');
@@ -25,7 +35,7 @@ class PublishController extends Controller {
     	}
     	
 
-    }//get()
+    }//gett()
 	
 	public function uploadfile(){    
 
@@ -36,8 +46,8 @@ class PublishController extends Controller {
 			$data=$_POST;
 			session('[start]'); 
 			// session('id','5');  
-			$data['username']= session('id');
-			$data['time']=date("Y-m-d" ,time());
+			$data['pubman']= session('uid');
+			$data['time']=date("Y-m-d H-i-s" ,time());
 
 			// 取得成功上传的文件信息
 			//$info=$upload()->upload();
@@ -48,7 +58,7 @@ class PublishController extends Controller {
 			//dump($info);
 			if (!$info) {
 				# code...
-				dump($upload->getError());
+				$this->error($upload->getError());
 				exit;
 			}else{
 				foreach ($info as $file) {
@@ -58,19 +68,27 @@ class PublishController extends Controller {
 				}
 			}
 			//dump($imageurl);
-			$data['imgurl1'] = $imageurl;
+			$data['imgurl'] = $imageurl;
 			
 
 
 			$result=$user->data($data)->add();
 			//var_dump($result);
-			if($result){    //设置成功后跳转页面的地址，默认的返回页面是$_SERVER['HTTP_REFERER']    								
-				//var_dump($data);
-				 echo "<script>alert('商品发布成功！');location.href='".$_SERVER["HTTP_REFERER"]."';</script>";
-			} 
-			else {    //错误页面的默认跳转页面是返回前一页，通常不需要设置    
-				echo "<script>alert('上传失败，请重新提交');history.go(-1)</script>"; 
-			}
+			// if($result){    //设置成功后跳转页面的地址，默认的返回页面是$_SERVER['HTTP_REFERER']    								
+			// 	//var_dump($data);
+			// 	 echo "<script>alert('商品发布成功！');location.href='".$_SERVER["HTTP_REFERER"]."';</script>";
+			// } 
+			// else {    //错误页面的默认跳转页面是返回前一页，通常不需要设置    
+			// 	echo "<script>alert('上传失败，请重新提交');history.go(-1)</script>"; 
+			// }
+			if($result)
+		        {	
+		            $this->success('商品发布成功！等待管理员审核');
+		        }
+		        else
+		        {
+		            $this->error('商品发布失败');
+		        }
 		 }
 
 
